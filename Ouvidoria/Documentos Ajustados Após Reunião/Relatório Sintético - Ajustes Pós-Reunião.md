@@ -1,0 +1,47 @@
+# Relatório de Ajustes e Alinhamento Setorial – Ouvidoria-Geral
+
+**Documento de Origem:** Análise Técnica e Síntese de Alinhamento da Chefia Setorial (Outubro de 2026)
+**Ciclo de Planejamento:** 2027–2030
+**Planilha Vinculada:** `Plano_Acao_Ouvidoria.xlsx`
+
+---
+
+## 1. Diretrizes Técnicas e Ajustes de Governabilidade da Chefia
+
+1. **Divisão Institucional de Competências em Apuração:** Ouvidoria responsável pela triagem, acolhimento e encaminhamento tempestivo; a apuração material de desvios cabe com exclusividade à Corregedoria-Geral.
+2. **Rotina Interna nos Sistemas Oficiais:** Acompanhamento de prazos via relatórios oficiais do e-OUV e e-SIC (CGE), sem assunção de alertas automatizados externos.
+3. **Fluxo Normatizado de Prazos Setoriais:** Regulamentação validada pela Administração Superior para fixação de prazos de respostas das áreas técnicas demandadas e reiteração direta às chefias em atraso.
+4. **Sigilo e Proteção de Dados (LGPD):** Relatórios de ouvidoria concebidos com dados agregados e estatísticos anonimizados; proteção incondicional a dados sensíveis e denúncias.
+5. **Combate ao Assédio nos Canais Oficiais:** Aperfeiçoamento do fluxo interno nos canais do Sistema Estadual de Ouvidorias (Dec. 39.054/2024), sem estruturação de canais paralelos.
+6. **Metodologia da Escala de Transparência EBT Adaptada:** Definição prévia de escala adaptada à PGE-MA para estabelecimento da linha de base; avaliação integral anual e acompanhamento semestral de pendências; informações protegidas por sigilo processual/fiscal ou LGPD não configuram descumprimento de transparência.
+
+---
+
+## 2. Metas Oficiais Canônicas (Lista Mestre Pós-Reuniões)
+
+| Objetivo Estratégico | KR (Ref) | Meta Oficial Canônica | Responsáveis / Atuação |
+| :--- | :---: | :--- | :--- |
+| O1: Melhorar a experiência do usuário dos serviços da PGE | KR2 | Alcançar índice de satisfação do usuário externo igual ou superior a 90% até 2030 | Ouvidoria, Todas as Especializadas, SGA, Gabinete |
+| O1: Melhorar a experiência do usuário dos serviços da PGE | KR3 | Garantir retorno conclusivo a 100% das manifestações da Ouvidoria dentro do prazo legal até 2030 | Ouvidoria, Todas as Especializadas, SGA |
+| O2: Fortalecer a Governança e a Integridade Institucional | KR1 | Garantir a apuração de 100% das denúncias e manifestações dentro do prazo legal até 2030 | Corregedoria-Geral, Ouvidoria, SGA |
+| O2: Fortalecer a Governança e a Integridade Institucional | KR2 | Alcançar nota 9 em escala de transparência interna da PGE até 2030 | Ouvidoria, SGA, Supervisão de Informática |
+
+---
+
+## 3. Matriz Consolidada de Ações e Subações Ajustadas (13 Iniciativas)
+
+| Nº | Ação (O QUÊ) | Subação (COMO) | Responsáveis (QUEM) | Prazo (QUANDO) |
+| :---: | :--- | :--- | :--- | :---: |
+| **01** | **Capacitar a equipe da Ouvidoria e setores de atendimento em acolhimento, escuta ativa e CNV** | Promover capacitações periódicas em articulação com a ESAP, Comitê de Equidade e Corregedoria-Geral, focadas em acolhimento humanizado, escuta ativa e Comunicação Não-Violenta (CNV), como iniciativa estruturante para qualificar a experiência dos usuários nos serviços da PGE-MA. | Líder: Ouvidoria; Coexecutores: Escola Superior da Advocacia Pública (ESAP), Comitê de Equidade, Corregedoria-Geral | 120 dias / Semestral |
+| **02** | **Instituir rotina interna de monitoramento dos prazos das manifestações nos sistemas oficiais** | Instituir rotina interna de acompanhamento tempestivo dos prazos de respostas a manifestações e pedidos de acesso à informação, utilizando os relatórios gerenciais e dados disponibilizados pelos sistemas oficiais (e-OUV e e-SIC da CGE) e, quando tecnicamente viável junto à TIC, instrumentos internos complementares de controle. | Líder: Ouvidoria; Coexecutores: Supervisão de Informática (TIC) | 90 dias |
+| **03** | **Propor fluxo interno institucionalmente validado para encaminhamento e prazos setoriais** | Propor ato ou fluxo interno normatizado e validado pelo Gabinete do Procurador-Geral para encaminhamento, prazos de resposta das áreas técnicas demandadas, mecanismos formais de reiteração e comunicação direta às respectivas chefias em caso de atraso na tramitação. | Líder: Ouvidoria; Coexecutores: Gabinete do Procurador-Geral, Chefias de todas as Unidades | 60 dias |
+| **04** | **Elaborar e disponibilizar cartilha informativa e materiais digitais sobre a Ouvidoria** | Produzir materiais didáticos e digitais em cooperação com a ASCOM para ampla divulgação dos canais de atendimento da Ouvidoria, prazos legais, direitos dos cidadãos e orientações sobre como registrar manifestações, aprimorando a clareza e o acesso público. | Líder: Ouvidoria; Coexecutores: Assessoria de Comunicação (ASCOM) | 90 dias |
+| **05** | **Elaborar relatório semestral de acompanhamento das manifestações com dados agregados** | Elaborar relatório semestral consolidando volume, tipologia, cumprimento de prazos, temas recorrentes e oportunidades de melhoria com base nos sistemas oficiais, assegurando que eventuais publicizações contenham estritamente dados estatísticos anonimizados e agregados, em rigorosa observância à LGPD e à preservação do sigilo de denúncias e informações pessoais. | Líder: Ouvidoria | Semestral |
+| **06** | **Assegurar o tratamento e o encaminhamento tempestivo de denúncias para apuração competente** | Assegurar a triagem qualificada, acolhimento com proteção de identidade e encaminhamento tempestivo à Corregedoria-Geral ou unidade competente das manifestações que demandem formal apuração correcional ou administrativa, cabendo à Corregedoria a condução e conclusão do procedimento apuratório. | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Subprocuradoria-Geral Adjunta | Fluxo permanente / Imediato |
+| **07** | **Contribuir para a elaboração do Manual de Boas Práticas e Integridade da PGE-MA** | Contribuir ativamente na construção e atualização de instrumento institucional de boas práticas, conduta ética e integridade, em articulação com a Corregedoria-Geral, Comitê de Equidade, ESAP e unidades competentes, compatibilizando seu escopo com o futuro Plano de Integridade da PGE-MA. | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Comitê de Equidade, ESAP, Gabinete do Procurador-Geral | 180 dias |
+| **08** | **Promover ações periódicas de capacitação sobre integridade e combate a desvios** | Promover, após a aprovação formal do Manual/Plano de Integridade pela Administração Superior, oficinas periódicas e palestras de difusão das normas de ética, integridade institucional, prevenção de irregularidades e assédio, em parceria com a ESAP e Corregedoria. | Líder: Ouvidoria; Coexecutores: ESAP, Corregedoria-Geral | A partir da aprovação do instrumento / Anual |
+| **09** | **Aperfeiçoar fluxo interno da Ouvidoria Especializada de Combate ao Assédio** | Aperfeiçoar o fluxo interno de acolhimento humanizado, orientação e encaminhamento protegido das manifestações relativas a assédio moral e sexual, utilizando os canais oficiais do Sistema Estadual de Ouvidorias, observando as diretrizes da OGE/STC, o Decreto nº 39.054/2024, a LGPD e as regras de sigilo, com campanhas educativas anuais com a ASCOM e Comitê de Equidade. | Líder: Ouvidoria; Coexecutores: ASCOM, Corregedoria-Geral, Comitê de Equidade | 90 dias para aperfeiçoamento de fluxo / Campanhas anuais |
+| **10** | **Realizar reuniões periódicas de alinhamento preventivo com a Corregedoria-Geral** | Realizar reuniões periódicas conjuntas para avaliação, em nível agregado e com estrita preservação do sigilo funcional, de temas recorrentes e causas-raiz identificadas nas manifestações, traçando medidas e recomendações preventivas para aprimoramento da gestão e mitigação de desvios. | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral | Bimestral |
+| **11** | **Definir metodologia e matriz da Escala de Transparência Interna Adaptada à PGE-MA** | Definir, validar junto à Administração Superior e aplicar metodologia própria de avaliação de transparência adaptada às peculiaridades da PGE-MA, resguardando o sigilo da advocacia pública, segredos de justiça e a LGPD, realizando a primeira aferição para fixação técnica da linha de base de transparência ativa e passiva. | Líder: Ouvidoria; Coexecutores: Subprocuradoria-Geral Adjunta, Corregedoria-Geral, Supervisão de Informática | 120 dias para metodologia e linha de base |
+| **12** | **Aplicar checklist de transparência e notificar setores para atualização de dados** | Aplicar checklist dos requisitos de transparência institucional, identificando dados públicos desatualizados ou faltantes no Portal da PGE e oficiando às respectivas unidades responsáveis para imediata atualização e saneamento, acompanhando o cumprimento das diligências com observância aos limites legais de publicidade. | Líder: Ouvidoria; Coexecutores: ASCOM, Supervisão de Informática (TIC), Unidades produtoras de dados | Semestral |
+| **13** | **Realizar avaliação integral anual de transparência e monitoramento semestral de pendências** | Executar avaliação integral anual da conformidade em transparência e acompanhamento semestral das pendências identificadas, prevendo na metodologia que dados legitimamente protegidos por sigilo processual/fiscal ou LGPD serão classificados como não aplicáveis ou plenamente conformes, nunca como descumprimento de meta. | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Subprocuradoria-Geral Adjunta | Avaliação anual com acompanhamento semestral |

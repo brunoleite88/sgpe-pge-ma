@@ -1,0 +1,61 @@
+# Ficha Individualizada de Pactuação Setorial — SMP (Serviço de Material e Patrimônio)
+**Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030**
+
+## 1. Identificação e Governança da Unidade
+- **Unidade:** SMP — Serviço de Material e Patrimônio
+- **Chefia / Interlocutor(a):** Soraya Maranhão (Despacho nº 057/2026)
+- **Processo SEI:** `2026.11103.07208` | **Status de Pactuação:** **Respondido no SEI**
+- **Total de Ações Pactuadas:** 19 ações distribuídas em 6 Metas (`E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E7.O2.KR1, E8.O1.KR1, E9.O2.KR1`)
+- **Atuação Intersetorial:** Líder em 19 ações | Coexecutor em 0 | Articulador em 0 | Demandada externamente em 10 ações
+- **Síntese da Pauta e Deliberações Setoriais:** Controle de almoxarifado e patrimônio (Eixo 2), logística reversa e sustentabilidade (Eixo 8) e alimentação do Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI).
+
+## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
+
+| # | Meta (KR) | Pilar 3 Ps | Ação (O QUÊ) | Subação / Metodologia (COMO) | Responsáveis (QUEM) | Prazo |
+| :---: | :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | `E2.O1.KR1` | Outros Eixos / Governança | Triagem técnica e filtro restritivo das requisições de compras dos setores da PGE-MA (Despacho SEI nº 057/2026) | Implementar protocolo obrigatório de auditoria de consumo histórico para indeferir pedidos de compra excessivos ou redundantes, impedindo formação de estoques ociosos nos gabinetes e desperdício de material de consumo. | Líder: Serviço de Material e Patrimônio (SMP); Coexecutores: UGAM, Todas as Unidades da PGE-MA | Imediato / Contínuo até 2026 |
+| 2 | `E2.O1.KR1` | Outros Eixos / Governança | Modernização e informatização do controle de estoque do almoxarifado central (Despacho SEI nº 057/2026) | Implantar inventário digital com parametrização de estoque mínimo e ponto de ressuprimento automático; repactuar contratos contínuos de fornecimento para redução de 10% de despesas de custeio. | Líder: SMP; Coexecutores: UGAM, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI) | 180 dias |
+| 3 | `E2.O1.KR1` | Outros Eixos / Governança | Instituir programa permanente de eficiência de gastos da PGE-MA | Editar ato interno criando programa de eficiência de gastos, com escopo sobre contratos fixos, material de escritório, consumo administrativo e custos recorrentes | Líder: Procurador-Geral Adjunto | 45 dias |
+| 4 | `E2.O1.KR1` | Outros Eixos / Governança | Consolidar linha de base de custos operacionais 2025/2026 | Levantar custos com contratos fixos, papel, material de escritório, consumo de almoxarifado, manutenção e despesas administrativas recorrentes | Líder: Procurador-Geral Adjunto | 60 dias |
+| 5 | `E2.O1.KR1` | Outros Eixos / Governança | Implementar política de racionalização de materiais de consumo | Revisar padrões de requisição, fixar cotas internas por setor e reforçar rotinas de uso racional de papel e materiais | Líder: Procurador-Geral Adjunto | 120 dias |
+| 6 | `E2.O1.KR1` | Outros Eixos / Governança | Instituir comissão interna e definir a Tabela de Temporariedade Documental da PGE-MA. | Diagnóstico do acervo atual e confecção da minuta da tabela de temporariedade. | Líder: Procurador-Geral Adjunto | Até dezembro de 2027 |
+| 7 | `E2.O1.KR1` | Outros Eixos / Governança | Executar descarte e desmobilização de 40% do arquivo físico inativo baseado na tabela. | Eliminação de documentos obsoletos e liberação de espaço de armazenamento físico. | Líder: Procurador-Geral Adjunto | Até 2030 |
+| 8 | `E2.O1.KR2` | Outros Eixos / Governança | Realizar inventário patrimonial integral e classificação de uso | Levantar bens móveis e equipamentos, classificando-os como em uso, subutilizados, recuperáveis, ociosos ou inservíveis | Líder: Procurador-Geral Adjunto | 180 dias |
+| 9 | `E2.O1.KR2` | Outros Eixos / Governança | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Definir quais bens serão realocados, recuperados, descartados ou encaminhados à SEGEP | Líder: Procurador-Geral Adjunto | 240 dias |
+| 10 | `E2.O1.KR2` | Outros Eixos / Governança | Priorizar reaproveitamento interno antes de novas aquisições | Inserir checagem obrigatória de disponibilidade patrimonial em processos de compra de equipamentos e materiais permanentes | Líder: Procurador-Geral Adjunto | 120 dias |
+| 11 | `E2.O1.KR2` | Outros Eixos / Governança | Integrar renovação tecnológica com descarte racional de bens obsoletos | Vincular o cronograma de renovação do parque tecnológico às rotinas de tombamento, remanejamento e baixa dos equipamentos substituídos | Líder: Procurador-Geral Adjunto | Conforme cronograma das contratações estruturantes |
+| 12 | `E7.O2.KR1` | Outros Eixos / Governança | Consolidar inventário tecnológico com classificação de obsolescência | Levantar parque atual, identificar equipamentos defasados, criticidade por unidade e prioridade de substituição | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| 13 | `E7.O2.KR1` | Outros Eixos / Governança | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Integrar renovação do parque à governança de tombamento, realocação e descarte dos equipamentos substituídos | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
+| 14 | `E8.O1.KR1` | Outros Eixos / Governança | Instituir Programa de Sustentabilidade e Inclusão da PGE-MA | Editar ato interno criando programa com dois módulos integrados: sustentabilidade operacional e equidade/diversidade/inclusão | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 60 dias |
+| 15 | `E8.O1.KR1` | Outros Eixos / Governança | Coletar linha de base do manejo de resíduos nas unidades da PGE | Levantar volume atual de resíduos gerados, fração reciclável, forma de destinação, contratos de coleta e pontos de descarte existentes | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 90 dias |
+| 16 | `E8.O1.KR1` | Outros Eixos / Governança | Mapear infraestrutura mínima de coleta seletiva por unidade | Identificar necessidade de lixeiras específicas, sinalização, ponto de armazenamento e rotina de retirada | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 120 dias |
+| 17 | `E8.O1.KR1` | Outros Eixos / Governança | Implantar política de coleta seletiva e destinação correta | Formalizar fluxo de segregação de resíduos, acondicionamento, retirada, registro e destinação final | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 180 dias |
+| 18 | `E9.O2.KR1` | Outros Eixos / Governança | Levantar necessidades anuais de capacitação da unidade e indicar trilhas técnicas ao Plano Anual de Capacitação (PAC) | Mapear anualmente as demandas prioritárias de qualificação técnica da equipe (com foco em gestão patrimonial e de almoxarifado no setor público, inventário de bens móveis e imóveis, depreciação contábil, desfazimento de inservíveis e compras sustentáveis), encaminhar sugestões de cursos e oficinas práticas à ESAP e ao SGRH para composição do Plano Anual de Capacitação (PAC) e viabilizar a participação ativa de ao menos 40% dos integrantes do setor. | Líder: Serviço de Material e Patrimônio (SMP); Coexecutores: Escola Superior da Advocacia Pública (ESAP), Serviço de Gestão de Recursos Humanos (SGRH) | Ciclo Anual até 2029 |
+| 19 | `E2.O2.KR1` | Outros Eixos / Governança | Integrar e alimentar o Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI) | Compartilhar em painel integrado com a CSL, o Serviço de Controle de Contratos (SCC) e a TIC os dados atualizados de inventário patrimonial, demandas de materiais e baixa de equipamentos obsoletos, agilizando a instrução da fase preparatória das contratações. | Líder: Serviço de Material e Patrimônio (SMP); Coexecutores: Comissão Setorial de Licitação (CSL), Serviço de Controle de Contratos (SCC), Assessoria em TIC da PGAAE / INOVA | 90 dias / Contínuo |
+
+## 3. Compromissos Cruzados (Ações de Outras Unidades que Demandam SMP)
+
+| Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
+| :---: | :---: | :--- | :--- | :--- |
+| **CSL** | `E2.O2.KR1` | Implantação de Painel Compartilhado de Visibilidade e Transparência Intersetorial de Demandas | Liderança: CSL, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Apoio: Serviço de Controle de Contratos, Serviço de Material e Patrimônio | 90 dias |
+| **SCC** | `E2.O1.KR1` | Instituir programa setorial de revisão e eficiência de contratos fixos | Líder: Serviço de Controle de Contratos; Coexecutores: Procurador-Geral Adjunto; Unidade Gestora de Atividade Meio (UGAM); Serviço de Material e Patrimônio | 45 dias |
+| **SCC** | `E2.O2.KR1` | Integrar e alimentar o Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI) | Líder: Serviço de Controle de Contratos (SCC); Coexecutores: Comissão Setorial de Licitação (CSL), Serviço de Material e Patrimônio (SMP), Assessoria em TIC da PGAAE / INOVA | 90 dias / Contínuo |
+| **UGAM** | `E2.O1.KR1` | Instituir programa permanente de eficiência de gastos da PGE-MA | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 45 dias |
+| **UGAM** | `E2.O1.KR1` | Consolidar linha de base de custos operacionais 2025/2026 | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
+| **UGAM** | `E2.O1.KR2` | Realizar inventário patrimonial integral e classificação de uso | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 180 dias |
+| **UGAM** | `E2.O1.KR2` | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 240 dias |
+| **UGAM** | `E5.O7.KR1` | Avaliar necessidade de contratação ou recomposição de apoio técnico especializado | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 150 dias |
+| **UGAM** | `E8.O1.KR1` | Instituir Programa de Sustentabilidade e Inclusão da PGE-MA | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
+| **UGAM** | `E8.O1.KR1` | Coletar linha de base do manejo de resíduos nas unidades da PGE | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 90 dias |
+
+## 4. Termo / Despacho Padrão de Homologação no SEI
+
+```text
+À Chefia da Serviço de Material e Patrimônio (SMP),
+
+No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: 2026.11103.07208), e em conformidade com o alinhamento técnico realizado com a unidade (Soraya Maranhão (Despacho nº 057/2026)), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_SMP.xlsx, contemplando 19 ações estratégicas vinculadas aos resultados-chave E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E7.O2.KR1, E8.O1.KR1, E9.O2.KR1).
+
+Destaques técnicos consolidados: Controle de almoxarifado e patrimônio (Eixo 2), logística reversa e sustentabilidade (Eixo 8) e alimentação do Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI).
+
+Solicita-se a conferência e o lançamento de despacho simplificado de validação ("Com reunião de alinhamento e planilha saneada anexada aos autos, valido os dados e o Plano de Ação desta unidade para o ciclo 2027–2030"), restituindo-se os autos à Assessoria de Planejamento / PGAAE para homologação final.
+```

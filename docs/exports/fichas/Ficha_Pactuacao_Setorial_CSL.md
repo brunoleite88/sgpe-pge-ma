@@ -1,0 +1,57 @@
+# Ficha Individualizada de Pactuação Setorial — CSL (Comissão Setorial de Licitação)
+**Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030**
+
+## 1. Identificação e Governança da Unidade
+- **Unidade:** CSL — Comissão Setorial de Licitação
+- **Chefia / Interlocutor(a):** Presidência da CSL
+- **Processo SEI:** `Verificar SEI` | **Status de Pactuação:** **Reunião Realizada**
+- **Total de Ações Pactuadas:** 10 ações distribuídas em 2 Metas (`E2.O2.KR1, E9.O2.KR1`)
+- **Atuação Intersetorial:** Líder em 5 ações | Coexecutor em 5 | Articulador em 0 | Demandada externamente em 15 ações
+- **Síntese da Pauta e Deliberações Setoriais:** Padronização de artefatos da Lei 14.133/2021, licitações do Profisco III/BID (E3.O1.KR3), compras sustentáveis (E8.O1.KR2) e Painel Compartilhado de Visibilidade Intersetorial (CSL, SCC, SMP e TI).
+
+## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
+
+| # | Meta (KR) | Pilar 3 Ps | Ação (O QUÊ) | Subação / Metodologia (COMO) | Responsáveis (QUEM) | Prazo |
+| :---: | :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | `E2.O2.KR1` | Outros Eixos / Governança | Instituir grupo de trabalho permanente de contratações | Formalizar GT multidisciplinar composto por PGA, Comissão Setorial de Licitação, Serviço de Controle de Contratos, Finanças, Material e Patrimônio e unidades demandantes, visando governança ágil e integração do ciclo de compras. | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Serviço de Controle de Contratos, UGAM, USF | 30 dias |
+| 2 | `E2.O2.KR1` | Outros Eixos / Governança | Mapear o fluxo completo de contratação, do pedido ao pagamento (AS-IS e TO-BE) | Desenhar as etapas atuais (AS-IS) e o fluxo otimizado (TO-BE), mensurando a duração média em cada fase: autuação da demanda, ETP, TR, pesquisa mercadológica, manifestação jurídica referencial, sessão licitatória, homologação, empenho e execução. | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Serviço de Controle de Contratos, UGAM | 90 dias |
+| 3 | `E2.O2.KR1` | Outros Eixos / Governança | Padronizar artefatos e manifestações processuais de contratação | Desenvolver e disponibilizar no SEI modelos-padrão institucionais de Estudo Técnico Preliminar (ETP), Termo de Referência (TR), pesquisa de preços, despacho motivador de demanda e pareceres jurídicos referenciais, eliminando retrabalhos e exigências saneadoras recorrentes. | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Especializada Consultiva/PGA, Setores Demandantes | 120 dias |
+| 4 | `E2.O2.KR1` | Outros Eixos / Governança | Implantar checklists obrigatórios de conformidade processual por etapa | Definir e regulamentar listas de checagem obrigatórias para admissibilidade inicial da demanda, fase interna preparatória, fase externa de habilitação jurídica/técnica e formalização contratual. | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Serviço de Controle de Contratos | 120 dias |
+| 5 | `E2.O2.KR1` | Outros Eixos / Governança | Segregar carteira estratégica de contratações estruturantes PROFISCO III / BID | Estruturar rito célere e trilha de acompanhamento prioritário para contratações do PROFISCO III e financiamentos externos, com matriz de riscos dedicada, cronograma alinhado aos marcos do BID e fiscal técnico designado. | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Supervisão de Informática, Coordenação PROFISCO III | 60 dias |
+| 6 | `E2.O2.KR1` | Outros Eixos / Governança | Realizar reunião executiva mensal de monitoramento do ciclo de compras | Avaliar mensalmente a duração média dos certames, causas de atraso ou devolução processual, contratações críticas em andamento e alinhamento com o Plano Anual de Contratações. | Líder: Procurador-Geral Adjunto; Participantes: CSL, Serviço de Controle de Contratos, UGAM, Demandantes | Mensal |
+| 7 | `E2.O2.KR1` | Outros Eixos / Governança | Fortalecimento Institucional e Expansão da Capacidade Operacional da CSL (Pleito Prioritário) | Pleitear formalmente junto à Administração Superior a ampliação do quadro funcional da unidade mediante a alocação de Assessor Técnico (efetivo ou comissionado) ou contratação de Residente Jurídico, superando a sobrecarga de operar com apenas 1 servidor titular e viabilizando a dedicação às rotinas de planejamento e gestão estratégica. | Liderança: CSL; Instância Deliberativa: Procurador-Geral Adjunto / Procurador-Geral do Estado | Imediato / Contínuo |
+| 8 | `E2.O2.KR1` | Outros Eixos / Governança | Mapeamento Ativo de Necessidades e Diálogo Contínuo com Unidades Demandantes | Instituir rotina de escuta ativa e pesquisa técnica continuada junto aos setores demandantes da PGE-MA para calibrar previamente os Termos de Referência às particularidades reais das rotinas da Procuradoria, reduzindo impugnações e pedidos de esclarecimento. | Liderança: CSL; Coexecutores: UGAM, Unidades Demandantes | 180 dias; periodicidade continuada |
+| 9 | `E2.O2.KR1` | Outros Eixos / Governança | Implantação de Painel Compartilhado de Visibilidade e Transparência Intersetorial de Demandas | Desenvolver painel gerencial unificado de acesso compartilhado (dashboard integrado) com o inventário de bens, status de processos licitatórios e cronograma de aquisições entre CSL, Contratos, Patrimônio e TI, superando a peregrinação física intersetorial para levantamento de dados. | Liderança: CSL, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Apoio: Serviço de Controle de Contratos, Serviço de Material e Patrimônio | 90 dias |
+| 10 | `E9.O2.KR1` | Outros Eixos / Governança | Levantar necessidades anuais de capacitação da unidade e indicar trilhas técnicas ao Plano Anual de Capacitação (PAC) | Mapear anualmente as demandas prioritárias de qualificação técnica da equipe (com foco em Nova Lei de Licitações e Contratos (Lei 14.133/2021), formação de pregoeiros/agentes de contratação, pesquisa de preços, ETP e gestão de riscos nas contratações), encaminhar sugestões de cursos e oficinas práticas à ESAP e ao SGRH para composição do Plano Anual de Capacitação (PAC) e viabilizar a participação ativa de ao menos 40% dos integrantes do setor. | Líder: Comissão Setorial de Licitação (CSL); Coexecutores: Escola Superior da Advocacia Pública (ESAP), Serviço de Gestão de Recursos Humanos (SGRH) | Ciclo Anual até 2029 |
+
+## 3. Compromissos Cruzados (Ações de Outras Unidades que Demandam CSL)
+
+| Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
+| :---: | :---: | :--- | :--- | :--- |
+| **ASJUR** | `E5.O5.KR2` | Consolidar repositório de minutas-padrão de editais, contratos, convênios e pareceres referenciais no SEI/SPA | Líder: Assessoria Jurídica / Consultoria-Geral; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação (CSL) | 180 dias / Contínuo até 2029 |
+| **PA** | `E5.O3.KR1` | Criar normas e orientações internas de conformidade e compliance para licitações e contratações diretas | Líder: Procuradoria Administrativa; Coexecutores: PGAAE, CSL | 180 dias |
+| **PJ** | `E7.O3.KR2` | Implantar a ferramenta 'Minuta IA' para demandas repetitivas do Grupo 2 | Líder: Procuradoria Judicial; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação | 180 dias |
+| **PT** | `E4.O1.KR1` | Adequar fluxos e rotinas de resposta rápida a consultas das secretarias sobre terceirização e regime trabalhista | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, CSL, SEGEP | 60 dias |
+| **PT** | `E4.O1.KR1` | Elaborar minutas padronizadas e pareceres referenciais sobre fiscalização contratual trabalhista | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, CSL | 90 dias |
+| **PT** | `E5.O2.KR1` | Elaborar cartilha de fiscalização de contratos terceirizados para os órgãos estaduais | Líder: Procuradoria Trabalhista; Coexecutores: CSL, ESAP, SEGEP | Até 2026 |
+| **PT** | `E5.O3.KR1` | Mapear a matriz de riscos trabalhistas das contratações terceirizadas de grande porte | Líder: Procuradoria Trabalhista; Coexecutores: CSL, PGAAJ, SEGEP | Até 2027 |
+| **PT** | `E5.O3.KR2` | Implantar reuniões trimestrais de alinhamento com a Comissão Setorial de Licitações e fiscais de contrato | Líder: Procuradoria Trabalhista; Coexecutores: CSL, SEGEP | Trimestral até 2030 |
+| **SCC** | `E2.O2.KR2` | Criar rotina preventiva de conformidade contratual | Líder: Serviço de Controle de Contratos; Coexecutores: Comissão Setorial de Licitação (CSL); Unidade Setorial de Finanças (USF) | 90 dias |
+| **SCC** | `E2.O2.KR3` | Implantar sistema automatizado de alerta de vencimentos contratuais | Líder: Serviço de Controle de Contratos; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Comissão Setorial de Licitação (CSL) | 60 dias |
+| **SCC** | `E2.O2.KR3` | Vincular renovações contratuais ao Plano de Contratações Anual (PCA) | Líder: Serviço de Controle de Contratos; Coexecutores: Comissão Setorial de Licitação (CSL); Unidade Gestora de Atividade Meio (UGAM) | 90 dias |
+| **SCC** | `E2.O2.KR1` | Integrar e alimentar o Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI) | Líder: Serviço de Controle de Contratos (SCC); Coexecutores: Comissão Setorial de Licitação (CSL), Serviço de Material e Patrimônio (SMP), Assessoria em TIC da PGAAE / INOVA | 90 dias / Contínuo |
+| **SMP** | `E2.O2.KR1` | Integrar e alimentar o Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI) | Líder: Serviço de Material e Patrimônio (SMP); Coexecutores: Comissão Setorial de Licitação (CSL), Serviço de Controle de Contratos (SCC), Assessoria em TIC da PGAAE / INOVA | 90 dias / Contínuo |
+| **UGAM** | `E2.O2.KR3` | Implantar sistema de alerta de vencimentos contratuais | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Comissão Setorial de Licitação (CSL); Serviço de Controle de Contratos | 60 dias |
+| **UGAM** | `E2.O2.KR3` | Vincular renovação contratual ao plano anual de contratações | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Comissão Setorial de Licitação (CSL); Serviço de Controle de Contratos | 90 dias |
+
+## 4. Termo / Despacho Padrão de Homologação no SEI
+
+```text
+À Chefia da Comissão Setorial de Licitação (CSL),
+
+No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: Verificar SEI), e em conformidade com o alinhamento técnico realizado com a unidade (Presidência da CSL), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_CSL.xlsx, contemplando 10 ações estratégicas vinculadas aos resultados-chave E2.O2.KR1, E9.O2.KR1).
+
+Destaques técnicos consolidados: Padronização de artefatos da Lei 14.133/2021, licitações do Profisco III/BID (E3.O1.KR3), compras sustentáveis (E8.O1.KR2) e Painel Compartilhado de Visibilidade Intersetorial (CSL, SCC, SMP e TI).
+
+Solicita-se a conferência e o lançamento de despacho simplificado de validação ("Com reunião de alinhamento e planilha saneada anexada aos autos, valido os dados e o Plano de Ação desta unidade para o ciclo 2027–2030"), restituindo-se os autos à Assessoria de Planejamento / PGAAE para homologação final.
+```

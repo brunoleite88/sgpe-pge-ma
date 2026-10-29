@@ -1,0 +1,61 @@
+# Ficha Individualizada de Pactuação Setorial — GAB (Gabinete do Procurador-Geral do Estado)
+**Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030**
+
+## 1. Identificação e Governança da Unidade
+- **Unidade:** GAB — Gabinete do Procurador-Geral do Estado
+- **Chefia / Interlocutor(a):** Márcia Fernanda Bastos (Chefe de Gabinete)
+- **Processo SEI:** `2026.11103.07184` | **Status de Pactuação:** **Reunião Realizada**
+- **Total de Ações Pactuadas:** 11 ações distribuídas em 9 Metas (`E5.O5.KR1, E5.O5.KR3, E5.O7.KR1, E5.O7.KR2, E6.O1.KR1, E6.O2.KR1, E7.O3.KR1, E8.O1.KR2, E9.O2.KR1`)
+- **Atuação Intersetorial:** Líder em 8 ações | Coexecutor em 3 | Articulador em 0 | Demandada externamente em 18 ações
+- **Síntese da Pauta e Deliberações Setoriais:** Coordenação institucional superior, edição de portarias normativas (prazos consultivos, fluxo ASCOM, governança de dados) e articulação estratégica de alto nível.
+
+## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
+
+| # | Meta (KR) | Pilar 3 Ps | Ação (O QUÊ) | Subação / Metodologia (COMO) | Responsáveis (QUEM) | Prazo |
+| :---: | :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | `E5.O5.KR1` | 3º P: Padronização e Prevenção | Implementar Painel de Controle de prazos de processos administrativos em tramitação na PGE via SEI | Monitorar quantitativamente os processos pendentes de providência por especializada, identificando gargalos e atrasos de fluxo de forma automatizada e visual. | Chefia de Gabinete e Assessoria (Desenvolvimento/Painel: Assessoria em TIC da PGAAE / INOVA; Suporte de Infraestrutura: SI) | 120 dias e monitoramento contínuo |
+| 2 | `E5.O5.KR3` | Outros Eixos / Governança | Implantar sistemática de mensuração de produtividade setorial do Gabinete | Definir e disponibilizar modelos padronizados de manifestações, despachos e portarias para uniformização, celeridade e eliminação de retrabalho documental. | Chefia de Gabinete e Assessoria | 90 dias |
+| 3 | `E5.O5.KR3` | Outros Eixos / Governança | Revisar e desregulamentar fluxos burocráticos de mero expediente entre Gabinete e Especializadas | Mapear e instituir delegações formais de competência e fluxos diretos de tramitação para expedientes de rotina, desonerando o Gabinete para matérias estritamente decisórias. | Chefia de Gabinete e Subprocuradoria-Geral Adjunta | 180 dias |
+| 4 | `E5.O7.KR1` | Outros Eixos / Governança | Planejar e formalizar os atos de nomeação e posse dos novos servidores concursados | Coordenar cronograma integrado de nomeações junto à Subprocuradoria-Geral Adjunta e SGRH, acompanhando publicação oficial, posse e lotação nas unidades estratégicas da PGE. | Líder: Gabinete do Procurador-Geral; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | Conforme cronograma do concurso até 2028 |
+| 5 | `E5.O7.KR2` | Outros Eixos / Governança | Adotar providências institucionais e atos executivos para nomeação e posse de Procuradores do Estado | Articular com o Conselho Superior da PGE-MA e Casa Civil a formalização dos decretos de nomeação e posse dos novos membros da carreira, recompondo o quadro das especializadas e regionais. | Chefia de Gabinete, Conselho Superior e Subprocuradoria-Geral Adjunta | Conforme cronograma homologado até 2028 |
+| 6 | `E6.O1.KR1` | Outros Eixos / Governança | Fornecer subsídios estratégicos e divulgar atos e conquistas relevantes do Gabinete para cobertura institucional | Estabelecer canal direto e rotina semanal de repasse de pautas entre a Chefia de Gabinete e a ASCOM para publicizar acordos, audiências, representações institucionais e atos de gestão. | Chefia de Gabinete e Assessoria de Comunicação (ASCOM) | Contínuo |
+| 7 | `E6.O2.KR1` | Outros Eixos / Governança | Prospectar e formalizar termos de cooperação, convênios e projetos institucionais de alto impacto | Estruturar e gerenciar carteira executiva de acordos com órgãos públicos estaduais e federais, universidades, institutos e Fóruns da Advocacia Pública (CONPEG/FONACE) para intercâmbio técnico e soluções conjuntas. | Gabinete do Procurador-Geral, ESAP, PGAAE e Procuradoria de Brasília | 180 dias e contínuo até 2030 |
+| 8 | `E6.O2.KR1` | Outros Eixos / Governança | Liderar programa de benchmarking e missões de cooperação entre Procuradorias-Gerais de Estado | Articular intercâmbio de experiências exitosas com outras PGEs, identificando boas práticas replicáveis em governança, transformação digital, conciliação e gestão do contencioso. | Gabinete do Procurador-Geral e ESAP | Anual até 2030 |
+| 9 | `E7.O3.KR1` | Outros Eixos / Governança | Exercer o patrocínio executivo e acompanhamento de marcos decisórios dos projetos estratégicos de inovação | Conduzir reuniões semestrais de governança com a Assessoria em TIC da PGAAE / INOVA, ESAP e PGAAE para avaliar entregas, mitigar entraves institucionais e assegurar investimento nas plataformas tecnológicas da PGE. | Gabinete do Procurador-Geral, Assessoria em TIC da PGAAE / INOVA, ESAP e PGAAE | Semestral contínuo até 2030 |
+| 10 | `E8.O1.KR2` | Outros Eixos / Governança | Adotar diretrizes institucionais de equidade e diversidade na designação de cargos e funções de liderança | Monitorar junto ao Comitê de Equidade e SGRH a composição funcional da PGE, promovendo critérios transparentes e de estímulo à participação de grupos sub-representados em posições decisórias. | Líder: Gabinete do Procurador-Geral; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | Revisão anual até 2028 |
+| 11 | `E9.O2.KR1` | Outros Eixos / Governança | Levantar necessidades anuais de capacitação da unidade e indicar trilhas técnicas ao Plano Anual de Capacitação (PAC) | Mapear anualmente as demandas prioritárias de qualificação técnica da equipe (com foco em governança pública, gestão estratégica, assessoramento executivo, cerimonial institucional e tramitação avançada no SEI), encaminhar sugestões de cursos e oficinas práticas à ESAP e ao SGRH para composição do Plano Anual de Capacitação (PAC) e viabilizar a participação ativa de ao menos 40% dos integrantes do setor. | Líder: Gabinete do Procurador-Geral; Coexecutores: Escola Superior da Advocacia Pública (ESAP), Serviço de Gestão de Recursos Humanos (SGRH) | Ciclo Anual até 2029 |
+
+## 3. Compromissos Cruzados (Ações de Outras Unidades que Demandam GAB)
+
+| Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
+| :---: | :---: | :--- | :--- | :--- |
+| **ASCOM** | `E6.O1.KR1` | Propor ato normativo disciplinando o fluxo de captação tempestiva de êxitos processuais | Líder: Assessoria de Comunicação (ASCOM); Coexecutores: Gabinete do Procurador-Geral, Chefias das Procuradorias Especializadas, Subprocuradoria-Geral Adjunta para Assuntos Judiciais (PGAAJ), Subprocuradoria-Geral Adjunta (SGA) | 60 dias para a minuta da Portaria |
+| **ASCOM** | `E6.O1.KR1` | Planejar e executar a comunicação e a cobertura jornalística dos eventos estratégicos da PGE-MA | Líder: Assessoria de Comunicação (ASCOM - Comunicação e Cobertura); Coexecutores: Escola Superior da Advocacia Pública (ESAP - Coordenação Geral), Gabinete do Procurador-Geral, Comissões Organizadoras | Anualmente, durante a vigência do Planejamento (2027–2030) |
+| **ASCOM** | `E6.O1.KR1` | Instituir fluxo institucional para solicitação de apoio e cobertura de comunicação | Líder: Assessoria de Comunicação (ASCOM); Coexecutores: Gabinete do Procurador-Geral, Chefias de todas as Unidades, ESAP | 90 dias |
+| **ASJUR** | `E6.O1.KR2` | Alimentação sistemática da ASCOM com pareceres referenciais, minutas-padrão e marcos normativos relevantes | Líder: Assessoria Jurídica / Consultoria-Geral; Coexecutores: Assessoria de Comunicação (ASCOM), Gabinete do Procurador-Geral | Fluxo Quinzenal / Contínuo |
+| **OUV** | `E4.O1.KR3` | Propor fluxo interno institucionalmente validado para encaminhamento e prazos setoriais | Líder: Ouvidoria; Coexecutores: Gabinete do Procurador-Geral, Chefias de todas as Unidades | 60 dias |
+| **OUV** | `E8.O2.KR1` | Contribuir para a elaboração do Manual de Boas Práticas e Integridade da PGE-MA | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Comitê de Equidade, ESAP, Gabinete do Procurador-Geral | 180 dias |
+| **PB** | `E6.O2.KR1` | Integrar fóruns de cooperação técnica e benchmarking com Procuradorias dos Estados em Brasília | Líder: Procuradoria de Brasília; Coexecutores: Gabinete do Procurador-Geral, ESAP | Contínuo até 2030 |
+| **PCF** | `E5.O1.KR2` | Realizar audiências e despachos qualificados com magistrados em causas tributárias de grande impacto | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGAAJ, Gabinete PGE | Contínuo até 2030 |
+| **PEDU** | `E5.O2.KR1` | Propor via de solução consensual para teses pacificadas contra o Estado | Líder: Procurador-Chefe (interlocução com PGAAE e Gabinete). Coexecutores: assessores | Proposta até 30/09/2027 |
+| **PGARI** | `E3.O1.KR1` | Articular a instituição de Programa Permanente de Captação de Recursos Externos | Articulador: PGARI; Coexecutores: PGAAE, Procuradoria de Brasília, Gabinete | 120 dias |
+| **PGARI** | `E3.O1.KR1` | Prospectar parcerias estratégicas junto a organismos multilaterais e instituições de fomento | Articulador: PGARI; Coexecutores: PGAAE, ESAP, Gabinete | Contínuo |
+| **PGARI** | `E3.O1.KR1` | Articular diretrizes institucionais para captação de emendas parlamentares | Articulador: PGARI; Coexecutores: Gabinete, PGAAE, PGA | 180 dias |
+| **PGARI** | `E5.O4.KR1` | Vincular o monitoramento normativo prévio ao Comitê de Riscos Institucionais e CPARI | Articulador: PGARI; Execução Técnico-Jurídica: Assessoria Jurídica (ASJUR); Coexecutores: CPARI, Gabinete | 120 dias e Contínuo |
+| **PGARI** | `E5.O4.KR1` | Instituir protocolo de alerta institucional para projetos normativos de alto impacto financeiro ou regulatório | Articulador: PGARI; Execução Técnico-Jurídica: Assessoria Jurídica (ASJUR); Coexecutores: CPARI, Gabinete | Mensal até 2030 |
+| **PJ** | `E5.O1.KR2` | Instituir escala de despachos de memoriais e sustentações orais nas Câmaras do TJMA e TRF1 | Líder: Procuradoria Judicial; Coexecutores: Subprocuradoria-Geral Adjunta, Gabinete PGE | 90 dias / Contínuo |
+| **PJEFP** | `E5.O3.KR2` | Elaborar e submeter proposta de regulamentação para celebração de acordos e transações no âmbito dos Juizados da Fazenda Pública | Líder: Procuradoria dos Juizados Especiais da Fazenda Pública; Coexecutores: CPARI, PGAAJ, Gabinete do Procurador-Geral, Subprocuradoria-Geral Adjunta | 120 dias |
+| **PSAU** | `E5.O1.KR2` | Instituir protocolo de atuação qualificada com memoriais técnicos e sustentações orais nas Câmaras Cíveis do TJMA e TRF1 | Líder: Procuradoria da Saúde; Coexecutores: Subprocuradoria-Geral Adjunta, Gabinete do Procurador-Geral | Contínuo |
+| **SI** | `E7.O3.KR1` | Dar suporte de infraestrutura e sustentação técnica à carteira de projetos de inovação da PGE | Líder: Assessoria em TIC da PGAAE / INOVA; Coexecutores: ESAP, PGAAE, Gabinete do Procurador-Geral | Até 2030 (cronograma BID) |
+
+## 4. Termo / Despacho Padrão de Homologação no SEI
+
+```text
+À Chefia da Gabinete do Procurador-Geral do Estado (GAB),
+
+No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: 2026.11103.07184), e em conformidade com o alinhamento técnico realizado com a unidade (Márcia Fernanda Bastos (Chefe de Gabinete)), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_GAB.xlsx, contemplando 11 ações estratégicas vinculadas aos resultados-chave E5.O5.KR1, E5.O5.KR3, E5.O7.KR1, E5.O7.KR2, E6.O1.KR1, E6.O2.KR1, E7.O3.KR1, E8.O1.KR2, E9.O2.KR1).
+
+Destaques técnicos consolidados: Coordenação institucional superior, edição de portarias normativas (prazos consultivos, fluxo ASCOM, governança de dados) e articulação estratégica de alto nível.
+
+Solicita-se a conferência e o lançamento de despacho simplificado de validação ("Com reunião de alinhamento e planilha saneada anexada aos autos, valido os dados e o Plano de Ação desta unidade para o ciclo 2027–2030"), restituindo-se os autos à Assessoria de Planejamento / PGAAE para homologação final.
+```

@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planejamento Estratégico PGE-MA (2027–2030)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: #f1f5f9; }
+    .tab-active { border-bottom: 3px solid #1e3a8a; color: #1e3a8a; font-weight: 700; background-color: #eff6ff; }
+    #network-canvas { width: 100%; height: 500px; border: 1px solid #cbd5e1; border-radius: 0.75rem; background: #ffffff; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+
+    @media print {
+      @page { size: A4 landscape; margin: 10mm; }
+      body { background: #ffffff !important; color: #0f172a !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      header, #toast, #kpi-bar, #rep-cards-grid, .no-print { display: none !important; }
+      main { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      #rep-preview-container { border: none !important; box-shadow: none !important; overflow: visible !important; }
+      #rep-preview-body { max-height: none !important; overflow: visible !important; padding: 8px 0 !important; }
+      .print-avoid-break, tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+      thead { display: table-header-group !important; }
+    }
+  </style>
+</head>
+<body class="text-slate-800">
+
+  <!-- TOP HEADER -->
+  <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-40">
+    <div class="max-w-[1600px] mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-blue-700 flex items-center justify-center font-bold text-sm shadow">PGE</div>
+        <div>
+          <h1 class="text-base font-bold tracking-tight">Planejamento Estratégico PGE-MA (2027–2030)</h1>
+          <p class="text-xs text-slate-400">Gestão de Metas, Planos de Ação e Governança</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="reindexXlsx()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-xs font-medium rounded-md border border-slate-600 transition">
+          Atualizar Planilhas
+        </button>
+        <button onclick="regenerarRelatorios()" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold rounded-md shadow transition">
+          Atualizar Relatórios
+        </button>
+        <button onclick="openAcaoModal()" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-xs font-semibold rounded-md shadow transition">
+          + Nova Ação
+        </button>
+      </div>
+    </div>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="bg-white text-slate-600 border-b border-slate-200 px-6">
+      <div class="max-w-[1600px] mx-auto flex flex-wrap text-sm">
+        <button id="tab-btn-matriz" onclick="switchTab('matriz')" class="px-5 py-2.5 tab-active transition">
+          Planos de Ação
+        </button>
+        <button id="tab-btn-3ps" onclick="switchTab('3ps')" class="px-5 py-2.5 hover:text-blue-900 transition">
+          Reuniões, SEI e 3 Ps
+        </button>
+        <button id="tab-btn-relacoes" onclick="switchTab('relacoes')" class="px-5 py-2.5 hover:text-blue-900 transition">
+          Relações entre Unidades
+        </button>
+        <button id="tab-btn-gts" onclick="switchTab('gts')" class="px-5 py-2.5 hover:text-blue-900 transition">
+          Grupos de Trabalho e Projetos
+        </button>
+        <button id="tab-btn-relatorios" onclick="switchTab('relatorios')" class="px-5 py-2.5 hover:text-blue-900 transition">
+          Relatórios
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-lg shadow-xl bg-slate-900 text-white text-sm font-medium border border-slate-700"></div>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
+
+    <!-- KPI SUMMARY BAR -->
+    <section id="kpi-bar" class="grid grid-cols-2 md:grid-cols-6 gap-4 no-print">
+      <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase">Unidades</div>
+        <div id="kpi-unidades" class="text-2xl font-extrabold text-slate-900 mt-1">41</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">Planilhas padronizadas</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase">Ações</div>
+        <div id="kpi-acoes" class="text-2xl font-extrabold text-blue-700 mt-1">--</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">Sincronizadas (.xlsx)</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase">Metas (KRs)</div>
+        <div id="kpi-krs" class="text-2xl font-extrabold text-indigo-700 mt-1">--</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">Lista Mestre ativa</div>
+      </div>
+      <div class="bg-amber-50 rounded-xl p-4 shadow-sm border border-amber-300 cursor-pointer" onclick="switchTab('3ps')">
+        <div class="text-xs font-bold text-amber-800 uppercase">Reuniões Pendentes</div>
+        <div id="kpi-pendentes" class="text-2xl font-extrabold text-amber-700 mt-1">7</div>
+        <div class="text-[11px] text-amber-800 mt-0.5 font-medium">PGAAE, PGA, PERJP, PDA, PCF, PA, PT</div>
+      </div>
+      <div class="bg-emerald-50 rounded-xl p-4 shadow-sm border border-emerald-200">
+        <div class="text-xs font-bold text-emerald-800 uppercase">Reuniões Realizadas</div>
+        <div id="kpi-realizadas" class="text-2xl font-extrabold text-emerald-700 mt-1">--</div>
+        <div class="text-[11px] text-emerald-800 mt-0.5">Atas consolidadas</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase">Validados no SEI</div>
+        <div id="kpi-sei" class="text-2xl font-extrabold text-teal-700 mt-1">--</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">Processos respondidos</div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 1: PLANOS DE AÇÃO                                               -->
+    <!-- =================================================================== -->
+    <section id="tab-matriz" class="space-y-5">
+      <!-- Eixos Summary Strip -->
+      <div id="eixos-strip" class="grid grid-cols-3 md:grid-cols-9 gap-2"></div>
+
+      <!-- Filter Bar -->
+      <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 grid grid-cols-1 md:grid-cols-7 gap-3 items-end">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Unidade</label>
+          <select id="f-sigla" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todas (41)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Eixo</label>
+          <select id="f-eixo" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todos (9 Eixos)</option>
+            <option value="E1">Eixo 1 – Arrecadação e Dívida Ativa</option>
+            <option value="E2">Eixo 2 – Eficiência Administrativa</option>
+            <option value="E3">Eixo 3 – Orçamento e Profisco/BID</option>
+            <option value="E4">Eixo 4 – Experiência do Usuário</option>
+            <option value="E5">Eixo 5 – Eficiência Judicial/Consultiva</option>
+            <option value="E6">Eixo 6 – Imagem e Comunicação</option>
+            <option value="E7">Eixo 7 – Transformação Digital e IA</option>
+            <option value="E8">Eixo 8 – Sustentabilidade e Integridade</option>
+            <option value="E9">Eixo 9 – Valorização e Capacitação</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Meta (KR)</label>
+          <select id="f-kr" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Pilar 3 Ps</label>
+          <select id="f-3ps" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todos</option>
+            <option value="1º P: Prazo">1º P: Prazo</option>
+            <option value="2º P: Presença nos Tribunais">2º P: Presença nos Tribunais</option>
+            <option value="3º P: Padronização e Prevenção">3º P: Padronização</option>
+            <option value="Outros Eixos / Governança">Outros Eixos</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Papel</label>
+          <select id="f-papel" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todos</option>
+            <option value="Líder">Líder</option>
+            <option value="Articulador">Articulador</option>
+            <option value="Coexecutor">Coexecutor</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Parceiro</label>
+          <select id="f-parceiro" onchange="loadAcoes()" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-white">
+            <option value="">Todos</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Busca</label>
+          <input id="f-q" type="text" oninput="debounceLoadAcoes()" placeholder="Palavra-chave..." class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2" />
+        </div>
+      </div>
+
+      <!-- Selected Unit Quick Bar -->
+      <div id="unit-quick-bar" class="hidden bg-blue-950 text-white p-4 rounded-xl shadow flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <span id="uqb-sigla" class="px-2.5 py-0.5 bg-blue-600 rounded text-xs font-bold"></span>
+            <h3 id="uqb-nome" class="font-bold text-base"></h3>
+            <span id="uqb-status" class="px-2.5 py-0.5 bg-amber-500 text-slate-950 rounded text-xs font-bold"></span>
+          </div>
+          <p id="uqb-pauta" class="text-xs text-blue-200 mt-1"></p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a id="uqb-download" href="#" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs font-bold shadow">
+            Baixar .xlsx
+          </a>
+          <button id="uqb-minutas" class="px-3 py-1.5 bg-white text-slate-900 hover:bg-slate-100 rounded-lg text-xs font-bold shadow">
+            Minutas SEI / WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Actions Table -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+          <span id="acoes-count-label" class="text-xs font-bold text-slate-700">Carregando ações...</span>
+          <button onclick="resetFilters()" class="text-xs text-blue-700 hover:underline font-medium">Limpar Filtros</button>
+        </div>
+        <div class="overflow-x-auto max-h-[680px]">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-800 text-white sticky top-0 z-10">
+              <tr>
+                <th class="p-3 w-24">Unidade</th>
+                <th class="p-3 w-48">Meta (KR)</th>
+                <th class="p-3 w-64">Ação</th>
+                <th class="p-3">Subação / Como Fazer</th>
+                <th class="p-3 w-64">Responsáveis e Parceiros</th>
+                <th class="p-3 w-28">Prazo</th>
+                <th class="p-3 w-24 text-center">Opções</th>
+              </tr>
+            </thead>
+            <tbody id="acoes-tbody" class="divide-y divide-slate-200"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 2: REUNIÕES, SEI E 3 Ps                                         -->
+    <!-- =================================================================== -->
+    <section id="tab-3ps" class="hidden space-y-6">
+
+      <!-- BLOCO DE DESTAQUE: REUNIÕES E SEI -->
+      <div class="bg-white rounded-xl shadow-sm border-2 border-amber-400 overflow-hidden">
+        <div class="bg-amber-500 text-slate-950 px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="font-extrabold text-sm uppercase tracking-wide">
+              Reuniões com Chefias e Tramitação SEI
+            </h2>
+            <p class="text-xs font-medium">
+              Controle das 7 reuniões pendentes (PGAAE, PGA, PERJP, PDA, PCF, PA, PT), atas e geração de despachos SEI e mensagens WhatsApp.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <select id="filter-status-reuniao" onchange="renderUnidadesGestao()" class="text-xs rounded-lg px-3 py-1.5 bg-white text-slate-900 font-semibold border border-amber-700">
+              <option value="PENDENTES">Reuniões Pendentes (7)</option>
+              <option value="TODAS">Todas as Unidades (41)</option>
+              <option value="REALIZADAS">Reuniões Realizadas</option>
+              <option value="SEI">Respondidos no SEI</option>
+            </select>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-100 text-slate-700 border-b border-slate-200">
+              <tr>
+                <th class="p-3 w-20">Sigla</th>
+                <th class="p-3 w-56">Unidade / Chefia</th>
+                <th class="p-3 w-52 whitespace-nowrap">Status</th>
+                <th class="p-3 w-36">Processo SEI</th>
+                <th class="p-3">Pauta e Deliberações</th>
+                <th class="p-3 w-52 text-center">Opções</th>
+              </tr>
+            </thead>
+            <tbody id="unidades-gestao-tbody" class="divide-y divide-slate-200"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- MATRIZ DOS 3 Ps -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="bg-slate-900 text-white px-5 py-3.5 flex items-center justify-between">
+          <div>
+            <h2 class="font-bold text-sm">Cobertura dos "3 Ps" nas Especializadas e Regionais</h2>
+            <p class="text-xs text-slate-300">Clique em 1º P, 2º P ou 3º P para filtrar as ações da unidade.</p>
+          </div>
+          <span class="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs font-bold">100% Coberto</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-800 text-white">
+              <tr>
+                <th class="p-3">Unidade</th>
+                <th class="p-3">Status</th>
+                <th class="p-3 text-center">1º P: Prazo</th>
+                <th class="p-3 text-center">2º P: Presença nos Tribunais</th>
+                <th class="p-3 text-center">3º P: Padronização</th>
+                <th class="p-3 text-center">Total</th>
+                <th class="p-3 text-center">Planilha</th>
+              </tr>
+            </thead>
+            <tbody id="matriz-3ps-tbody" class="divide-y divide-slate-200"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 3: RELAÇÕES ENTRE UNIDADES                                      -->
+    <!-- =================================================================== -->
+    <section id="tab-relacoes" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Interactive Graph -->
+        <div class="lg:col-span-2 bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <h2 class="font-bold text-sm text-slate-900">Mapa de Relações entre Unidades</h2>
+              <p class="text-xs text-slate-500">Clique em uma unidade para ver suas dependências.</p>
+            </div>
+            <select id="rel-unit-select" onchange="selectRelationUnit(this.value)" class="text-xs border border-slate-300 rounded-lg px-3 py-1.5 font-semibold bg-blue-50 text-blue-900">
+            </select>
+          </div>
+          <div id="network-canvas"></div>
+        </div>
+
+        <!-- Top Connections Ranking -->
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+          <h3 class="font-bold text-sm text-slate-900 mb-1">Principais Parcerias</h3>
+          <p class="text-xs text-slate-500 mb-3">Unidades com maior volume de ações conjuntas.</p>
+          <div id="top-edges-list" class="space-y-2 overflow-y-auto max-h-[460px] pr-1"></div>
+        </div>
+      </div>
+
+      <!-- Detailed Incoming vs Outgoing for Selected Unit -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+          <div class="bg-indigo-900 text-white px-4 py-3">
+            <h3 class="font-bold text-xs uppercase tracking-wider">
+              Quem Demanda <span id="rel-in-title" class="underline">PGAAE</span>
+            </h3>
+            <p class="text-[11px] text-indigo-200">Ações de outros setores que citam esta unidade como parceira.</p>
+          </div>
+          <div id="rel-incoming-list" class="divide-y divide-slate-200 max-h-[420px] overflow-y-auto p-3 space-y-2 text-xs"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+          <div class="bg-slate-800 text-white px-4 py-3">
+            <h3 class="font-bold text-xs uppercase tracking-wider">
+              Quem <span id="rel-out-title" class="underline">PGAAE</span> Aciona
+            </h3>
+            <p class="text-[11px] text-slate-300">Parceiros citados nas ações desta unidade.</p>
+          </div>
+          <div id="rel-outgoing-list" class="divide-y divide-slate-200 max-h-[420px] overflow-y-auto p-3 space-y-2 text-xs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 4: GRUPOS DE TRABALHO E PROJETOS                                -->
+    <!-- =================================================================== -->
+    <section id="tab-gts" class="hidden space-y-5">
+      <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 class="font-bold text-base text-slate-900">Grupos de Trabalho (GTs) e Projetos Estruturantes</h2>
+          <p class="text-xs text-slate-600">Frentes intersetoriais, responsáveis, metas vinculadas e checklist de entregas.</p>
+        </div>
+        <button onclick="openGTModal()" class="px-4 py-2 bg-blue-700 hover:bg-blue-600 text-white text-xs font-bold rounded-lg shadow">
+          + Novo GT / Projeto
+        </button>
+      </div>
+
+      <div id="gts-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 5: RELATÓRIOS E EXPORTAÇÃO                                      -->
+    <!-- =================================================================== -->
+    <section id="tab-relatorios" class="hidden space-y-6">
+
+      <!-- 3 CARDS DE EXPORTAÇÃO DIRETA -->
+      <div id="rep-cards-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5 no-print">
+
+        <!-- CARD 1: MAPA ESTRATÉGICO -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-blue-100 text-blue-900 rounded text-xs font-extrabold">Relatório 1</span>
+              <span class="text-xs text-slate-500 font-semibold">9 Eixos • Objetivos</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Mapa Estratégico (Eixos e Objetivos)</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Visão executiva dos 9 Eixos Estratégicos, seus Objetivos (O1, O2...), total de metas, ações e unidades vinculadas.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('mapa-estrategico', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('mapa-estrategico', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('mapa-estrategico', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('mapa')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2: LISTA DE OBJETIVOS E METAS -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-indigo-100 text-indigo-900 rounded text-xs font-extrabold">Relatório 2</span>
+              <span class="text-xs text-slate-500 font-semibold">Lista Mestre Canônica</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Lista de Objetivos e Metas (KRs)</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Relação completa de todos os Objetivos Estratégicos e Resultados-Chave ([Ex.Ox.KRx]), classificação nos 3 Ps e unidades responsáveis.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Filtrar Eixo (Opcional):</label>
+              <select id="rep-eixo-metas" onchange="if(STATE.previewAtivo==='metas') mostrarPreviewRelatorio('metas')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white">
+                <option value="">Todos os 9 Eixos</option>
+                <option value="E1">Eixo 1 – Arrecadação e Dívida Ativa</option>
+                <option value="E2">Eixo 2 – Eficiência Administrativa</option>
+                <option value="E3">Eixo 3 – Orçamento e Profisco/BID</option>
+                <option value="E4">Eixo 4 – Experiência do Usuário</option>
+                <option value="E5">Eixo 5 – Eficiência Judicial/Consultiva</option>
+                <option value="E6">Eixo 6 – Imagem e Comunicação</option>
+                <option value="E7">Eixo 7 – Transformação Digital e IA</option>
+                <option value="E8">Eixo 8 – Sustentabilidade e Integridade</option>
+                <option value="E9">Eixo 9 – Valorização e Capacitação</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('objetivos-metas', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('objetivos-metas', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('objetivos-metas', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('metas')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3: LISTA DOS PLANOS DE AÇÃO DAS UNIDADES -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-900 rounded text-xs font-extrabold">Relatório 3</span>
+              <span class="text-xs text-slate-500 font-semibold">41 Unidades • 5W2H</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Lista dos Planos de Ação das Unidades</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Exportação consolidada de todas as 41 unidades ou do plano de ação individualizado de uma unidade específica.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Selecionar Unidade:</label>
+              <select id="rep-sigla-planos" onchange="if(STATE.previewAtivo==='planos') mostrarPreviewRelatorio('planos')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white">
+                <option value="">Todas as 41 Unidades (Consolidado Geral)</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('planos-acao', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('planos-acao', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('planos-acao', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('planos')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4: MATRIZ DE RESPONSABILIDADES E DEPENDÊNCIAS INTERSETORIAIS -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-purple-100 text-purple-900 rounded text-xs font-extrabold">Relatório 4</span>
+              <span class="text-xs text-slate-500 font-semibold">Líder • Coexecutor • Articulador</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Matriz de Responsabilidades e Dependências</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Mapeia o papel de cada unidade (Líder, Coexecutor, Articulador), parceiros acionados e demandas recebidas de outras pastas.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Filtrar Unidade (Opcional):</label>
+              <select id="rep-sigla-resp" onchange="if(STATE.previewAtivo==='responsabilidades') mostrarPreviewRelatorio('responsabilidades')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white">
+                <option value="">Todas as 41 Unidades</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('matriz-responsabilidades', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('matriz-responsabilidades', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('matriz-responsabilidades', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('responsabilidades')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 5: CRONOGRAMA DE ENTREGAS POR HORIZONTE TEMPORAL -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 rounded text-xs font-extrabold">Relatório 5</span>
+              <span class="text-xs text-slate-500 font-semibold">Curto • Médio • Contínuo</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Cronograma por Horizonte Temporal</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Classifica as 1.174 ações em Curto Prazo (Imediato / até 180 dias), Médio Prazo / Periódico e Execução Contínua (2027–2030).
+            </p>
+            <div class="mt-3 grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Horizonte:</label>
+                <select id="rep-horizonte-cron" onchange="if(STATE.previewAtivo==='cronograma') mostrarPreviewRelatorio('cronograma')" class="w-full text-xs border border-slate-300 rounded-lg px-2 py-1.5 bg-white">
+                  <option value="">Todos os Horizontes</option>
+                  <option value="Curto Prazo">Curto Prazo (Até 180 dias)</option>
+                  <option value="Médio Prazo">Médio Prazo / Periódico</option>
+                  <option value="Contínuo">Contínuo (2027–2030)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-600 mb-1">Unidade:</label>
+                <select id="rep-sigla-cron" onchange="if(STATE.previewAtivo==='cronograma') mostrarPreviewRelatorio('cronograma')" class="w-full text-xs border border-slate-300 rounded-lg px-2 py-1.5 bg-white">
+                  <option value="">Todas (41)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('cronograma-entregas', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('cronograma-entregas', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('cronograma-entregas', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('cronograma')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 6: RELATÓRIO DE GRUPOS DE TRABALHO (GTs) E PROJETOS ESTRUTURANTES -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-cyan-100 text-cyan-900 rounded text-xs font-extrabold">Relatório 6</span>
+              <span class="text-xs text-slate-500 font-semibold">Individualizado por GT/Projeto</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Grupos de Trabalho (GTs) e Projetos</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Dossiê individualizado por GT/Projeto Estruturante com escopo, liderança, checklist de entregáveis e ações setoriais vinculadas.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Selecionar GT / Projeto:</label>
+              <select id="rep-gt-codigo" onchange="if(STATE.previewAtivo==='gt') mostrarPreviewRelatorio('gt')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white">
+                <option value="">Todos os 10 GTs e Projetos Estruturantes</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('relatorio-gt', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('relatorio-gt', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('relatorio-gt', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('gt')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 7: FICHA INDIVIDUALIZADA DE PACTUAÇÃO POR UNIDADE -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between md:col-span-3">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div class="md:col-span-2">
+              <div class="flex items-center gap-3">
+                <span class="px-2.5 py-0.5 bg-rose-100 text-rose-900 rounded text-xs font-extrabold">Relatório 7</span>
+                <span class="text-xs text-slate-500 font-semibold">Termo de Compromisso Setorial • Pronto para Juntada no SEI</span>
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900 mt-1.5">Ficha Individualizada de Pactuação por Unidade</h3>
+              <p class="text-xs text-slate-600 mt-1">
+                Documento completo da unidade selecionada: identificação da chefia e processo SEI, pauta e deliberações, resumo de metas e papéis intersetoriais, plano de ação 5W2H, demandas recebidas de outras pastas e minuta de despacho de homologação SEI.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 mb-1">Unidade da Ficha de Pactuação:</label>
+                <select id="rep-sigla-ficha" onchange="if(STATE.previewAtivo==='ficha') mostrarPreviewRelatorio('ficha')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-slate-50 font-bold text-slate-900">
+                </select>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button onclick="exportarRelatorio('ficha-pactuacao', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                  Excel (.xlsx)
+                </button>
+                <button onclick="exportarRelatorio('ficha-pactuacao', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                  Word (.docx)
+                </button>
+                <button onclick="exportarRelatorio('ficha-pactuacao', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                  .md
+                </button>
+              </div>
+              <button onclick="mostrarPreviewRelatorio('ficha')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+                Visualizar na Tela / Imprimir Ficha
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ÁREA DE VISUALIZAÇÃO INTERATIVA DO RELATÓRIO SELECIONADO -->
+      <div id="rep-preview-container" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="bg-slate-900 text-white px-5 py-3 flex items-center justify-between">
+          <div>
+            <h3 id="rep-preview-title" class="font-bold text-sm">Visualização: Mapa Estratégico (Eixos e Objetivos)</h3>
+            <p id="rep-preview-sub" class="text-xs text-slate-300">Estrutura consolidada em tempo real a partir da base de dados.</p>
+          </div>
+          <button onclick="imprimirRelatorioAtual()" class="no-print px-3 py-1.5 bg-white text-slate-900 hover:bg-slate-100 rounded-lg text-xs font-bold shadow">
+            Imprimir / Salvar PDF
+          </button>
+        </div>
+        <div id="rep-preview-body" class="p-5 overflow-x-auto max-h-[680px]"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =================================================================== -->
+  <!-- MODAL: CRIAR / EDITAR AÇÃO 5W2H (COM ESPELHAMENTO EM PARCEIROS)     -->
+  <!-- =================================================================== -->
+  <div id="modal-acao" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden border border-slate-200">
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <h3 id="modal-acao-title" class="font-bold text-sm">Editar Ação 5W2H (Sincronização Automática com Planilha .xlsx)</h3>
+        <button onclick="closeAcaoModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+      </div>
+      <div class="p-6 space-y-4 max-h-[80vh] overflow-y-auto text-xs">
+        <input type="hidden" id="m-acao-id" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Unidade Titular da Planilha</label>
+            <select id="m-sigla" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white font-semibold"></select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Prazo (QUANDO)</label>
+            <input id="m-prazo" type="text" placeholder="Ex: Contínuo (2027–2030) / 90 dias" class="w-full border border-slate-300 rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Eixo Estratégico</label>
+            <input id="m-eixo" type="text" class="w-full border border-slate-300 rounded-lg px-3 py-2" />
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Objetivo Estratégico</label>
+            <input id="m-objetivo" type="text" class="w-full border border-slate-300 rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">OKR / Meta Canônica (com código [Ex.Ox.KRx])</label>
+          <input id="m-kr" type="text" list="kr-datalist" placeholder="Ex: [E5.O1.KR2] KR2: Garantir atuação processual estratégica..." class="w-full border border-slate-300 rounded-lg px-3 py-2 font-medium" />
+          <datalist id="kr-datalist"></datalist>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Ação (O QUÊ)</label>
+          <input id="m-acao" type="text" class="w-full border border-slate-300 rounded-lg px-3 py-2 font-semibold" />
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Subação / Metodologia (COMO)</label>
+          <textarea id="m-subacao" rows="3" class="w-full border border-slate-300 rounded-lg px-3 py-2"></textarea>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Responsáveis (QUEM - Governança Saneada: Líder / Coexecutores / Articulador)</label>
+          <input id="m-responsaveis" type="text" placeholder="Ex: Líder: PJEFP; Coexecutores: Assessoria em TIC da PGAAE / INOVA, SGRH" class="w-full border border-slate-300 rounded-lg px-3 py-2" />
+        </div>
+        <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+          <label class="block font-bold text-blue-900 mb-1">Espelhar Automaticamente esta Ação em Outras Unidades (Opcional — separado por vírgula)</label>
+          <input id="m-espelhar" type="text" placeholder="Ex: PGAAE, SGRH, ESAP (cria a mesma linha também nas planilhas .xlsx dessas unidades)" class="w-full border border-blue-300 rounded-lg px-3 py-1.5 bg-white" />
+        </div>
+      </div>
+      <div class="bg-slate-100 px-6 py-3 flex items-center justify-end gap-2">
+        <button onclick="closeAcaoModal()" class="px-4 py-2 rounded-lg border border-slate-300 text-xs font-semibold hover:bg-white">Cancelar</button>
+        <button onclick="saveAcao()" class="px-5 py-2 rounded-lg bg-blue-700 hover:bg-blue-600 text-white text-xs font-bold shadow">
+          Salvar e Regravar Planilha (.xlsx)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- MODAL: MINUTAS SEI & WHATSAPP + GESTÃO DE REUNIÃO DA UNIDADE        -->
+  <!-- =================================================================== -->
+  <div id="modal-minutas" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden border border-slate-200">
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <h3 id="modal-minutas-title" class="font-bold text-sm">Gestão de Reunião, Processo SEI e Minutas Automáticas</h3>
+        <button onclick="closeMinutasModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+      </div>
+      <div class="p-6 space-y-4 max-h-[82vh] overflow-y-auto text-xs">
+        <input type="hidden" id="mm-sigla" />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Status da Reunião / Etapa</label>
+            <select id="mm-status" class="w-full border border-slate-300 rounded-lg px-2.5 py-2 bg-white font-bold">
+              <option value="Reunião Pendente (Prioritária)">Reunião Pendente (Prioritária)</option>
+              <option value="Reunião Realizada">Reunião Realizada</option>
+              <option value="Validação via SEI">Validação via SEI</option>
+              <option value="Respondido no SEI">Respondido e Homologado no SEI</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Nº do Processo SEI</label>
+            <input id="mm-sei" type="text" class="w-full border border-slate-300 rounded-lg px-2.5 py-2 bg-white font-mono" />
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Procurador(a)-Chefe / Interlocutor(a)</label>
+            <input id="mm-resp" type="text" class="w-full border border-slate-300 rounded-lg px-2.5 py-2 bg-white" />
+          </div>
+          <div class="md:col-span-3">
+            <label class="block font-bold text-slate-700 mb-1">Pauta Focal / Síntese das Deliberações da Unidade</label>
+            <textarea id="mm-pauta" rows="2" class="w-full border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white"></textarea>
+          </div>
+          <div class="md:col-span-3">
+            <label class="block font-bold text-slate-700 mb-1">Registro de Ata / Anotações da Reunião com a Chefia</label>
+            <textarea id="mm-notas" rows="2" placeholder="Registre aqui os pontos acordados durante a reunião..." class="w-full border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white"></textarea>
+          </div>
+          <div class="md:col-span-3 flex justify-end">
+            <button onclick="saveUnidadeMeta()" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg shadow">
+              Salvar Status da Reunião e Atualizar Minutas
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label class="font-bold text-amber-800">1. WhatsApp — Convite / Agendamento da Reunião</label>
+              <button onclick="copyText('mm-wa-convite')" class="px-2 py-0.5 bg-amber-100 hover:bg-amber-200 text-amber-900 rounded font-bold">Copiar</button>
+            </div>
+            <textarea id="mm-wa-convite" rows="6" readonly class="w-full border border-amber-300 rounded-lg p-2.5 bg-amber-50/40 font-mono text-[11px]"></textarea>
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label class="font-bold text-emerald-800">2. WhatsApp — Pós-Reunião (Aviso de Juntada no SEI)</label>
+              <button onclick="copyText('mm-wa-fechamento')" class="px-2 py-0.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded font-bold">Copiar</button>
+            </div>
+            <textarea id="mm-wa-fechamento" rows="6" readonly class="w-full border border-emerald-300 rounded-lg p-2.5 bg-emerald-50/40 font-mono text-[11px]"></textarea>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="font-bold text-blue-900">3. Minuta de Despacho SEI (Juntada da Planilha Saneada e Solicitação de Validação)</label>
+            <button onclick="copyText('mm-despacho-sei')" class="px-2.5 py-0.5 bg-blue-100 hover:bg-blue-200 text-blue-900 rounded font-bold">Copiar Despacho SEI</button>
+          </div>
+          <textarea id="mm-despacho-sei" rows="6" readonly class="w-full border border-blue-300 rounded-lg p-2.5 bg-blue-50/40 font-mono text-[11px]"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- MODAL: NOVO / EDITAR GRUPO DE TRABALHO (GT)                         -->
+  <!-- =================================================================== -->
+  <div id="modal-gt" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden border border-slate-200">
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <h3 id="modal-gt-title" class="font-bold text-sm">Grupo de Trabalho Compartilhado / Projeto Estruturante</h3>
+        <button onclick="closeGTModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+      </div>
+      <div class="p-6 space-y-3 max-h-[80vh] overflow-y-auto text-xs">
+        <input type="hidden" id="gt-id" />
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block font-bold mb-1">Código (ex: GT-11)</label>
+            <input id="gt-codigo" type="text" class="w-full border rounded-lg px-3 py-2" />
+          </div>
+          <div>
+            <label class="block font-bold mb-1">Tipo</label>
+            <select id="gt-tipo" class="w-full border rounded-lg px-3 py-2 bg-white">
+              <option value="Grupo de Trabalho Compartilhado">Grupo de Trabalho Compartilhado</option>
+              <option value="Projeto Estruturante">Projeto Estruturante</option>
+              <option value="Programa Transversal Permanente">Programa Transversal Permanente</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold mb-1">Status</label>
+            <input id="gt-status" type="text" value="Em Execução" class="w-full border rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Título do GT / Projeto Estruturante</label>
+          <input id="gt-titulo" type="text" class="w-full border rounded-lg px-3 py-2 font-semibold" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold mb-1">Unidade(s) Líder(es)</label>
+            <input id="gt-lider" type="text" placeholder="Ex: PGAAE / PERJP" class="w-full border rounded-lg px-3 py-2" />
+          </div>
+          <div>
+            <label class="block font-bold mb-1">Prazo / Ciclo</label>
+            <input id="gt-prazo" type="text" placeholder="Ex: 90 dias / 2027–2030" class="w-full border rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Unidades Participantes (separadas por vírgula)</label>
+          <input id="gt-unidades" type="text" placeholder="Ex: PGAAE, PERJP, NCALC, PDA, USF" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+        <div>
+          <label class="block font-bold mb-1">KRs Vinculados (separados por vírgula)</label>
+          <input id="gt-krs" type="text" placeholder="Ex: E1.O1.KR1, E1.O1.KR2, E5.O6.KR1" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Objetivo e Escopo de Governança</label>
+          <textarea id="gt-objetivo" rows="3" class="w-full border rounded-lg px-3 py-2"></textarea>
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Entregáveis (1 por linha; prefixe com [x] para concluído ou [ ] para pendente)</label>
+          <textarea id="gt-entregaveis-txt" rows="4" placeholder="[x] Matriz de responsabilidades validada&#10;[ ] Portaria publicada no SEI" class="w-full border rounded-lg px-3 py-2 font-mono"></textarea>
+        </div>
+      </div>
+      <div class="bg-slate-100 px-6 py-3 flex justify-end gap-2">
+        <button onclick="closeGTModal()" class="px-4 py-2 rounded-lg border border-slate-300 text-xs font-semibold">Cancelar</button>
+        <button onclick="saveGT()" class="px-5 py-2 rounded-lg bg-blue-700 text-white text-xs font-bold">Salvar GT / Projeto</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let STATE = {
+      overview: null,
+      acoes: [],
+      matriz3ps: [],
+      relacoes: null,
+      gts: [],
+      relatorios: null,
+      previewAtivo: 'mapa',
+      debounceTimer: null,
+      network: null,
+      staticBundle: null,
+      isStaticMode: false
+    };
+
+    // =========================================================================
+    // ADAPTADOR HÍBRIDO: MODO SERVIDOR LOCAL (FastAPI) + MODO WEB (GitHub Pages)
+    // =========================================================================
+    const _nativeFetch = window.fetch.bind(window);
+    async function ensureStaticBundle() {
+      if (STATE.staticBundle) return STATE.staticBundle;
+      const saved = localStorage.getItem('SGPE_STATIC_BUNDLE_V1');
+      if (saved) {
+        try {
+          STATE.staticBundle = JSON.parse(saved);
+          return STATE.staticBundle;
+        } catch (e) {}
+      }
+      const res = await _nativeFetch('dados_sgpe.json');
+      STATE.staticBundle = await res.json();
+      return STATE.staticBundle;
+    }
+
+    function saveStaticBundle() {
+      if (STATE.staticBundle) {
+        try { localStorage.setItem('SGPE_STATIC_BUNDLE_V1', JSON.stringify(STATE.staticBundle)); } catch (e) {}
+      }
+    }
+
+    function mockJsonResponse(obj) {
+      return new Response(JSON.stringify(obj), { status: 200, headers: { 'Content-Type': 'application/json' } });
+    }
+
+    window.fetch = async function(input, init) {
+      const urlStr = typeof input === 'string' ? input : input.url;
+      if (!urlStr.startsWith('/api/')) {
+        return _nativeFetch(input, init);
+      }
+      if (!STATE.isStaticMode && !window.location.hostname.endsWith('github.io')) {
+        try {
+          const resp = await _nativeFetch(input, init);
+          if (resp.ok || resp.status < 404) return resp;
+        } catch (err) {
+          STATE.isStaticMode = true;
+        }
+      }
+      STATE.isStaticMode = true;
+      const bundle = await ensureStaticBundle();
+      const uObj = new URL(urlStr, window.location.origin);
+      const path = uObj.pathname;
+      const params = uObj.searchParams;
+      const method = (init && init.method) ? init.method.toUpperCase() : 'GET';
+
+      if (path === '/api/overview') return mockJsonResponse(bundle.overview);
+      if (path === '/api/3ps') return mockJsonResponse(bundle.matriz_3ps);
+      if (path === '/api/relacoes') return mockJsonResponse(bundle.relacoes);
+      if (path === '/api/gts' && method === 'GET') return mockJsonResponse(bundle.gts);
+      if (path === '/api/relatorios/dados') return mockJsonResponse(bundle.relatorios);
+
+      if (path === '/api/acoes' && method === 'GET') {
+        let rows = [...bundle.acoes];
+        const sigla = params.get('sigla');
+        const eixo = params.get('eixo');
+        const kr = params.get('kr_codigo');
+        const p3 = params.get('pilar_3ps');
+        const papel = params.get('papel');
+        const parceiro = params.get('parceiro');
+        const q = (params.get('q') || '').toLowerCase();
+        if (sigla) rows = rows.filter(r => r.sigla_unidade === sigla);
+        if (eixo) rows = rows.filter(r => (r.kr_codigo || '').startsWith(eixo + '.'));
+        if (kr) rows = rows.filter(r => r.kr_codigo === kr);
+        if (p3) rows = rows.filter(r => r.pilar_3ps === p3);
+        if (papel) rows = rows.filter(r => r.papel_unidade === papel);
+        if (parceiro) rows = rows.filter(r => (',' + (r.unidades_parceiras || '') + ',').includes(',' + parceiro + ','));
+        if (q) rows = rows.filter(r =>
+          (r.acao || '').toLowerCase().includes(q) ||
+          (r.subacao || '').toLowerCase().includes(q) ||
+          (r.responsaveis || '').toLowerCase().includes(q) ||
+          (r.kr_texto_completo || '').toLowerCase().includes(q)
+        );
+        return mockJsonResponse(rows);
+      }
+
+      const mMinutas = path.match(/^\/api\/unidades\/([^/]+)\/minutas$/);
+      if (mMinutas) {
+        const sig = mMinutas[1];
+        return mockJsonResponse(bundle.minutas[sig] || {});
+      }
+
+      const mUnidPut = path.match(/^\/api\/unidades\/([^/]+)$/);
+      if (mUnidPut && method === 'PUT') {
+        const sig = mUnidPut[1];
+        const body = JSON.parse(init.body || '{}');
+        const u = bundle.overview.unidades.find(x => x.sigla === sig);
+        if (u) Object.assign(u, body);
+        saveStaticBundle();
+        return mockJsonResponse({ status: 'ok' });
+      }
+
+      const mGtPut = path.match(/^\/api\/gts\/(\d+)$/);
+      if (mGtPut && method === 'PUT') {
+        const gtId = Number(mGtPut[1]);
+        const body = JSON.parse(init.body || '{}');
+        const g = bundle.gts.find(x => x.id === gtId);
+        if (g) {
+          Object.assign(g, body);
+          try { g.entregaveis = JSON.parse(body.entregaveis_json || '[]'); } catch (e) {}
+        }
+        saveStaticBundle();
+        return mockJsonResponse({ status: 'ok' });
+      }
+
+      if (path === '/api/reindex-xlsx' || path === '/api/regenerar-relatorios') {
+        localStorage.removeItem('SGPE_STATIC_BUNDLE_V1');
+        STATE.staticBundle = null;
+        await ensureStaticBundle();
+        return mockJsonResponse({ status: 'ok', message: 'Base de dados web recarregada com sucesso.' });
+      }
+
+      return mockJsonResponse({ status: 'ok' });
+    };
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.remove('hidden');
+      setTimeout(() => t.classList.add('hidden'), 3800);
+    }
+
+    function switchTab(tab) {
+      ['matriz', '3ps', 'relacoes', 'gts', 'relatorios'].forEach(t => {
+        document.getElementById('tab-' + t).classList.toggle('hidden', t !== tab);
+        document.getElementById('tab-btn-' + t).classList.toggle('tab-active', t === tab);
+      });
+      if (tab === '3ps') {
+        load3Ps();
+        renderUnidadesGestao();
+      } else if (tab === 'relacoes') {
+        loadRelacoes();
+      } else if (tab === 'gts') {
+        loadGTs();
+      } else if (tab === 'relatorios') {
+        loadRelatoriosTab();
+      }
+    }
+
+    async function loadOverview() {
+      const res = await fetch('/api/overview');
+      const data = await res.json();
+      STATE.overview = data;
+
+      document.getElementById('kpi-unidades').textContent = data.total_unidades;
+      document.getElementById('kpi-acoes').textContent = data.total_acoes;
+      document.getElementById('kpi-krs').textContent = data.total_krs;
+      document.getElementById('kpi-pendentes').textContent = data.qtd_reunioes_pendentes;
+      document.getElementById('kpi-realizadas').textContent = data.qtd_reunioes_realizadas;
+      document.getElementById('kpi-sei').textContent = data.qtd_respondidos_sei;
+
+      // Render Eixos strip
+      const strip = document.getElementById('eixos-strip');
+      strip.innerHTML = data.por_eixo.map(e => `
+        <button onclick="filterByEixo('${e.eixo_cod}')" class="bg-white hover:bg-blue-50 p-2.5 rounded-lg border border-slate-200 text-left shadow-sm transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-blue-900">${e.eixo_cod}</span>
+            <span class="text-[11px] font-bold px-1.5 py-0.5 bg-slate-100 rounded text-slate-700">${e.qtd_acoes} ações</span>
+          </div>
+          <div class="text-[10px] text-slate-500 truncate mt-1" title="${e.eixo}">${e.eixo.replace(/^Eixo \d+ [–-] /, '')}</div>
+        </button>
+      `).join('');
+
+      // Populate selects
+      const selSigla = document.getElementById('f-sigla');
+      const selParceiro = document.getElementById('f-parceiro');
+      const mSigla = document.getElementById('m-sigla');
+      const relSelect = document.getElementById('rel-unit-select');
+      const currSigla = selSigla.value;
+
+      const unitOptions = data.unidades.map(u =>
+        `<option value="${u.sigla}">${u.sigla} — ${u.nome} (${u.total_acoes})</option>`
+      ).join('');
+      selSigla.innerHTML = `<option value="">Todas as 41 Unidades</option>` + unitOptions;
+      selSigla.value = currSigla;
+      selParceiro.innerHTML = `<option value="">Qualquer Parceiro</option>` + data.unidades.map(u => `<option value="${u.sigla}">${u.sigla} — ${u.nome}</option>`).join('');
+      mSigla.innerHTML = data.unidades.map(u => `<option value="${u.sigla}">${u.sigla} — ${u.nome}</option>`).join('');
+      if (relSelect && !relSelect.value) {
+        relSelect.innerHTML = data.unidades.map(u => `<option value="${u.sigla}">${u.sigla} — ${u.nome}</option>`).join('');
+        relSelect.value = 'PGAAE';
+      }
+
+      const selKr = document.getElementById('f-kr');
+      const currKr = selKr.value;
+      selKr.innerHTML = `<option value="">Todos os KRs (${data.krs.length})</option>` + data.krs.map(k =>
+        `<option value="${k.kr_codigo}">${k.kr_codigo} (${k.qtd_acoes} ações em ${k.qtd_unidades} unid.)</option>`
+      ).join('');
+      selKr.value = currKr;
+
+      const dl = document.getElementById('kr-datalist');
+      dl.innerHTML = data.krs.map(k => `<option value="${k.kr_texto_completo}"></option>`).join('');
+    }
+
+    function filterByEixo(eixoCod) {
+      document.getElementById('f-eixo').value = eixoCod;
+      loadAcoes();
+    }
+
+    function resetFilters() {
+      ['f-sigla', 'f-eixo', 'f-kr', 'f-3ps', 'f-papel', 'f-parceiro', 'f-q'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      loadAcoes();
+    }
+
+    function debounceLoadAcoes() {
+      clearTimeout(STATE.debounceTimer);
+      STATE.debounceTimer = setTimeout(loadAcoes, 220);
+    }
+
+    async function loadAcoes() {
+      const sigla = document.getElementById('f-sigla').value;
+      const eixo = document.getElementById('f-eixo').value;
+      const kr = document.getElementById('f-kr').value;
+      const p3 = document.getElementById('f-3ps').value;
+      const papel = document.getElementById('f-papel').value;
+      const parceiro = document.getElementById('f-parceiro').value;
+      const q = document.getElementById('f-q').value;
+
+      const params = new URLSearchParams();
+      if (sigla) params.set('sigla', sigla);
+      if (eixo) params.set('eixo', eixo);
+      if (kr) params.set('kr_codigo', kr);
+      if (p3) params.set('pilar_3ps', p3);
+      if (papel) params.set('papel', papel);
+      if (parceiro) params.set('parceiro', parceiro);
+      if (q) params.set('q', q);
+
+      const res = await fetch('/api/acoes?' + params.toString());
+      const rows = await res.json();
+      STATE.acoes = rows;
+
+      // Update Quick Bar if a single unit is selected
+      const uqb = document.getElementById('unit-quick-bar');
+      if (sigla && STATE.overview) {
+        const u = STATE.overview.unidades.find(x => x.sigla === sigla);
+        if (u) {
+          uqb.classList.remove('hidden');
+          document.getElementById('uqb-sigla').textContent = u.sigla;
+          document.getElementById('uqb-nome').textContent = u.nome;
+          document.getElementById('uqb-status').textContent = u.status_reuniao;
+          document.getElementById('uqb-pauta').textContent = u.pauta_reuniao;
+          document.getElementById('uqb-download').href = STATE.isStaticMode
+            ? `planilhas/Plano_Acao_Pos_Comparacao_${u.sigla}.xlsx`
+            : `/api/download-xlsx/${u.sigla}`;
+          document.getElementById('uqb-minutas').onclick = () => openMinutasModal(u.sigla);
+        }
+      } else {
+        uqb.classList.add('hidden');
+      }
+
+      document.getElementById('acoes-count-label').textContent = `Exibindo ${rows.length} ações estratégicas 5W2H`;
+
+      const tbody = document.getElementById('acoes-tbody');
+      tbody.innerHTML = rows.map(r => {
+        const pBadge = r.pilar_3ps.startsWith('1º') ? 'bg-rose-100 text-rose-800'
+                     : r.pilar_3ps.startsWith('2º') ? 'bg-indigo-100 text-indigo-800'
+                     : r.pilar_3ps.startsWith('3º') ? 'bg-emerald-100 text-emerald-800'
+                     : 'bg-slate-100 text-slate-600';
+        const papelBadge = r.papel_unidade === 'Articulador' ? 'bg-purple-100 text-purple-800'
+                         : r.papel_unidade === 'Coexecutor' ? 'bg-amber-100 text-amber-800'
+                         : 'bg-blue-100 text-blue-800';
+        const parceirosBadges = (r.unidades_parceiras ? r.unidades_parceiras.split(',') : []).map(p =>
+          `<span onclick="filterByParceiro('${p}')" class="cursor-pointer inline-block px-1.5 py-0.5 bg-slate-200 hover:bg-blue-200 text-slate-800 rounded text-[10px] font-bold mr-1 mt-1">${p}</span>`
+        ).join('');
+        return `
+          <tr class="hover:bg-slate-50 align-top">
+            <td class="p-3">
+              <button onclick="selectUnitFilter('${r.sigla_unidade}')" class="font-extrabold text-blue-900 hover:underline">${r.sigla_unidade}</button>
+              <div class="text-[10px] text-slate-500 leading-tight mt-0.5">${r.nome_unidade}</div>
+            </td>
+            <td class="p-3">
+              <span class="px-2 py-0.5 bg-slate-800 text-white rounded font-mono text-[11px] font-bold">${r.kr_codigo}</span>
+              <span class="ml-1 px-1.5 py-0.5 rounded text-[10px] font-bold ${pBadge}">${r.pilar_3ps}</span>
+              <div class="text-[11px] text-slate-600 mt-1 leading-snug">${r.kr_texto_completo}</div>
+            </td>
+            <td class="p-3 font-semibold text-slate-900 leading-snug">${r.acao}</td>
+            <td class="p-3 text-slate-700 leading-relaxed">${r.subacao}</td>
+            <td class="p-3">
+              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${papelBadge}">${r.papel_unidade}</span>
+              <div class="text-[11px] text-slate-700 mt-1 leading-snug">${r.responsaveis}</div>
+              <div class="mt-1">${parceirosBadges}</div>
+            </td>
+            <td class="p-3 text-slate-700 font-medium">${r.prazo}</td>
+            <td class="p-3 text-center whitespace-nowrap">
+              <button onclick='openAcaoModal(${JSON.stringify(r).replace(/'/g, "&#39;")})' class="px-2 py-1 bg-blue-50 hover:bg-blue-100 text-blue-800 rounded font-bold mr-1">Editar</button>
+              <button onclick="deleteAcao(${r.id})" class="px-2 py-1 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded font-bold">Excluir</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function selectUnitFilter(sigla) {
+      document.getElementById('f-sigla').value = sigla;
+      switchTab('matriz');
+      loadAcoes();
+    }
+
+    function filterByParceiro(sigla) {
+      document.getElementById('f-parceiro').value = sigla;
+      loadAcoes();
+    }
+
+    function openAcaoModal(row = null) {
+      document.getElementById('modal-acao').classList.remove('hidden');
+      document.getElementById('m-espelhar').value = '';
+      if (row) {
+        document.getElementById('modal-acao-title').textContent = `Editar Ação #${row.id} (${row.sigla_unidade}) — Sincroniza direto no .xlsx`;
+        document.getElementById('m-acao-id').value = row.id;
+        document.getElementById('m-sigla').value = row.sigla_unidade;
+        document.getElementById('m-eixo').value = row.eixo;
+        document.getElementById('m-objetivo').value = row.objetivo;
+        document.getElementById('m-kr').value = row.kr_texto_completo;
+        document.getElementById('m-acao').value = row.acao;
+        document.getElementById('m-subacao').value = row.subacao;
+        document.getElementById('m-responsaveis').value = row.responsaveis;
+        document.getElementById('m-prazo').value = row.prazo;
+      } else {
+        document.getElementById('modal-acao-title').textContent = 'Nova Ação Estratégica 5W2H';
+        document.getElementById('m-acao-id').value = '';
+        document.getElementById('m-sigla').value = document.getElementById('f-sigla').value || 'PGAAE';
+        document.getElementById('m-eixo').value = 'Eixo 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos';
+        document.getElementById('m-objetivo').value = 'O1: Garantir atuação estratégica nos processos judiciais prioritários';
+        document.getElementById('m-kr').value = '';
+        document.getElementById('m-acao').value = '';
+        document.getElementById('m-subacao').value = '';
+        document.getElementById('m-responsaveis').value = '';
+        document.getElementById('m-prazo').value = 'Contínuo (2027–2030)';
+      }
+    }
+
+    function closeAcaoModal() {
+      document.getElementById('modal-acao').classList.add('hidden');
+    }
+
+    async function saveAcao() {
+      const id = document.getElementById('m-acao-id').value;
+      const espRaw = document.getElementById('m-espelhar').value;
+      const espelhar_em = espRaw ? espRaw.split(',').map(s => s.trim().toUpperCase()).filter(Boolean) : [];
+
+      const payload = {
+        sigla_unidade: document.getElementById('m-sigla').value,
+        eixo: document.getElementById('m-eixo').value,
+        objetivo: document.getElementById('m-objetivo').value,
+        kr_texto_completo: document.getElementById('m-kr').value,
+        acao: document.getElementById('m-acao').value,
+        subacao: document.getElementById('m-subacao').value,
+        responsaveis: document.getElementById('m-responsaveis').value,
+        prazo: document.getElementById('m-prazo').value,
+        espelhar_em
+      };
+
+      const url = id ? `/api/acoes/${id}` : '/api/acoes';
+      const method = id ? 'PUT' : 'POST';
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        closeAcaoModal();
+        showToast(`Ação salva e planilha Plano_Acao_Pos_Comparacao_${payload.sigla_unidade}.xlsx atualizada.`);
+        await loadOverview();
+        await loadAcoes();
+      }
+    }
+
+    async function deleteAcao(id) {
+      if (!confirm('Confirma a exclusão desta ação? A planilha .xlsx da unidade será regravada imediatamente.')) return;
+      const res = await fetch(`/api/acoes/${id}`, { method: 'DELETE' });
+      if (res.ok) {
+        showToast('Ação removida e planilha .xlsx sincronizada.');
+        await loadOverview();
+        await loadAcoes();
+      }
+    }
+
+    // =========================================================================
+    // TAB 2: 3 Ps & GESTÃO DE REUNIÕES / MINUTAS SEI
+    // =========================================================================
+    function renderUnidadesGestao() {
+      if (!STATE.overview) return;
+      const filtro = document.getElementById('filter-status-reuniao').value;
+      let list = STATE.overview.unidades;
+      if (filtro === 'PENDENTES') list = list.filter(u => u.status_reuniao.includes('Pendente'));
+      else if (filtro === 'REALIZADAS') list = list.filter(u => u.status_reuniao === 'Reunião Realizada');
+      else if (filtro === 'SEI') list = list.filter(u => u.status_reuniao === 'Respondido no SEI');
+
+      const tbody = document.getElementById('unidades-gestao-tbody');
+      tbody.innerHTML = list.map(u => {
+        const badge = u.status_reuniao.includes('Pendente')
+          ? 'bg-amber-100 text-amber-900 border border-amber-400'
+          : u.status_reuniao === 'Respondido no SEI'
+          ? 'bg-teal-100 text-teal-900 border border-teal-300'
+          : 'bg-emerald-100 text-emerald-900 border border-emerald-300';
+        return `
+          <tr class="hover:bg-slate-50">
+            <td class="p-3 font-extrabold text-blue-900">${u.sigla}</td>
+            <td class="p-3">
+              <div class="font-bold text-slate-900">${u.nome}</div>
+              <div class="text-[11px] text-slate-500">${u.responsavel}</div>
+            </td>
+            <td class="p-3 whitespace-nowrap">
+              <span class="inline-block whitespace-nowrap px-2.5 py-1 rounded-full text-[11px] font-bold ${badge}">${u.status_reuniao}</span>
+            </td>
+            <td class="p-3 font-mono text-slate-700">${u.processo_sei}</td>
+            <td class="p-3 text-slate-700 leading-snug">
+              ${u.pauta_reuniao}
+              ${u.notas_reuniao ? `<div class="mt-1 p-1.5 bg-yellow-50 border border-yellow-200 rounded text-[11px] text-slate-800"><strong>Ata/Notas:</strong> ${u.notas_reuniao}</div>` : ''}
+            </td>
+            <td class="p-3 text-center whitespace-nowrap space-x-1">
+              <button onclick="openMinutasModal('${u.sigla}')" class="px-2.5 py-1.5 bg-blue-700 hover:bg-blue-600 text-white rounded-lg font-bold">
+                Reunião / SEI / WhatsApp
+              </button>
+              <button onclick="selectUnitFilter('${u.sigla}')" class="px-2.5 py-1.5 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg font-bold">
+                Ver ${u.total_acoes} Ações
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function load3Ps() {
+      const res = await fetch('/api/3ps');
+      const data = await res.json();
+      STATE.matriz3ps = data;
+      const tbody = document.getElementById('matriz-3ps-tbody');
+      tbody.innerHTML = data.map(row => {
+        const isPend = row.status_reuniao.includes('Pendente');
+        return `
+          <tr class="hover:bg-slate-50">
+            <td class="p-3">
+              <div class="font-extrabold text-slate-900">${row.sigla} — ${row.nome}</div>
+              <div class="text-[11px] text-slate-500">${row.responsavel}</div>
+            </td>
+            <td class="p-3 whitespace-nowrap">
+              <span class="inline-block whitespace-nowrap px-2.5 py-1 rounded-full text-[11px] font-bold ${isPend ? 'bg-amber-100 text-amber-900 border border-amber-400' : 'bg-emerald-100 text-emerald-900 border border-emerald-300'}">
+                ${row.status_reuniao}
+              </span>
+            </td>
+            <td class="p-3 text-center">
+              <button onclick="jumpTo3P('${row.sigla}', '1º P: Prazo')" class="px-3 py-1.5 rounded-lg font-bold bg-rose-50 hover:bg-rose-100 text-rose-900 border border-rose-200">
+                ${row.p1_qtd} ações (${row.p1_krs.join(', ')})
+              </button>
+            </td>
+            <td class="p-3 text-center">
+              <button onclick="jumpTo3P('${row.sigla}', '2º P: Presença nos Tribunais')" class="px-3 py-1.5 rounded-lg font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200">
+                ${row.p2_qtd} ações (${row.p2_krs.join(', ') || 'Escopo Consultivo'})
+              </button>
+            </td>
+            <td class="p-3 text-center">
+              <button onclick="jumpTo3P('${row.sigla}', '3º P: Padronização e Prevenção')" class="px-3 py-1.5 rounded-lg font-bold bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200">
+                ${row.p3_qtd} ações (${row.p3_krs.join(', ') || 'Foco ACP'})
+              </button>
+            </td>
+            <td class="p-3 text-center font-extrabold text-slate-800">${row.total_acoes}</td>
+            <td class="p-3 text-center whitespace-nowrap">
+              <a href="${STATE.isStaticMode ? `planilhas/Plano_Acao_Pos_Comparacao_${row.sigla}.xlsx` : `/api/download-xlsx/${row.sigla}`}" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-white rounded font-bold">Baixar .xlsx</a>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function jumpTo3P(sigla, pilar) {
+      resetFilters();
+      document.getElementById('f-sigla').value = sigla;
+      document.getElementById('f-3ps').value = pilar;
+      switchTab('matriz');
+      loadAcoes();
+    }
+
+    async function openMinutasModal(sigla) {
+      const u = STATE.overview.unidades.find(x => x.sigla === sigla);
+      const res = await fetch(`/api/unidades/${sigla}/minutas`);
+      const m = await res.json();
+
+      document.getElementById('mm-sigla').value = sigla;
+      document.getElementById('modal-minutas-title').textContent = `${sigla} — ${u.nome} | Gestão de Reunião e Minutas SEI/WhatsApp`;
+      document.getElementById('mm-status').value = u.status_reuniao;
+      document.getElementById('mm-sei').value = u.processo_sei;
+      document.getElementById('mm-resp').value = u.responsavel;
+      document.getElementById('mm-pauta').value = u.pauta_reuniao;
+      document.getElementById('mm-notas').value = u.notas_reuniao || '';
+
+      document.getElementById('mm-wa-convite').value = m.whatsapp_convite;
+      document.getElementById('mm-wa-fechamento').value = m.whatsapp_fechamento;
+      document.getElementById('mm-despacho-sei').value = m.despacho_sei;
+
+      document.getElementById('modal-minutas').classList.remove('hidden');
+    }
+
+    function closeMinutasModal() {
+      document.getElementById('modal-minutas').classList.add('hidden');
+    }
+
+    async function saveUnidadeMeta() {
+      const sigla = document.getElementById('mm-sigla').value;
+      const payload = {
+        status_reuniao: document.getElementById('mm-status').value,
+        processo_sei: document.getElementById('mm-sei').value,
+        responsavel: document.getElementById('mm-resp').value,
+        pauta_reuniao: document.getElementById('mm-pauta').value,
+        notas_reuniao: document.getElementById('mm-notas').value
+      };
+      const res = await fetch(`/api/unidades/${sigla}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        showToast(`Status e metadados de ${sigla} atualizados.`);
+        await loadOverview();
+        renderUnidadesGestao();
+        await openMinutasModal(sigla);
+      }
+    }
+
+    function copyText(id) {
+      const el = document.getElementById(id);
+      el.select();
+      navigator.clipboard.writeText(el.value);
+      showToast('Texto copiado para a área de transferência.');
+    }
+
+    // =========================================================================
+    // TAB 3: GRAFO E MATRIZ DE CORRELAÇÕES INTERSETORIAIS
+    // =========================================================================
+    async function loadRelacoes() {
+      const res = await fetch('/api/relacoes');
+      const data = await res.json();
+      STATE.relacoes = data;
+
+      // Top edges list
+      const topList = document.getElementById('top-edges-list');
+      topList.innerHTML = data.edges.slice(0, 25).map(e => `
+        <div class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 text-xs">
+          <div class="flex items-center justify-between">
+            <span class="font-extrabold text-slate-900">${e.from} ↔ ${e.to}</span>
+            <span class="px-2 py-0.5 bg-blue-100 text-blue-900 rounded-full font-bold text-[11px]">${e.weight} vínculos</span>
+          </div>
+          <div class="text-[10px] text-slate-500 mt-1">KRs: ${e.krs.join(', ')}</div>
+        </div>
+      `).join('');
+
+      // Render Vis Network
+      const container = document.getElementById('network-canvas');
+      const nodes = new vis.DataSet(data.nodes.map(n => ({
+        id: n.sigla,
+        label: n.sigla,
+        title: `${n.nome} (${n.total_acoes} ações)`,
+        value: Math.max(10, n.total_acoes),
+        color: n.status_reuniao.includes('Pendente')
+          ? { background: '#f59e0b', border: '#b45309' }
+          : { background: '#1d4ed8', border: '#1e3a8a' },
+        font: { color: '#ffffff', size: 12, face: 'Inter', bold: true }
+      })));
+
+      const edges = new vis.DataSet(data.edges.filter(e => e.weight >= 2).map(e => ({
+        from: e.from,
+        to: e.to,
+        value: e.weight,
+        title: `${e.from} ↔ ${e.to}: ${e.weight} ações (${e.krs.join(', ')})`,
+        color: { color: '#94a3b8', highlight: '#1d4ed8' }
+      })));
+
+      const net = new vis.Network(container, { nodes, edges }, {
+        nodes: { shape: 'box', margin: 8, borderWidth: 2, shadow: true },
+        physics: { barnesHut: { gravitationalConstant: -4200, springLength: 140 } },
+        interaction: { hover: true }
+      });
+
+      net.on('click', params => {
+        if (params.nodes.length > 0) {
+          const sig = params.nodes[0];
+          document.getElementById('rel-unit-select').value = sig;
+          selectRelationUnit(sig);
+        }
+      });
+
+      selectRelationUnit(document.getElementById('rel-unit-select').value || 'PGAAE');
+    }
+
+    function selectRelationUnit(sigla) {
+      if (!STATE.relacoes) return;
+      document.getElementById('rel-in-title').textContent = sigla;
+      document.getElementById('rel-out-title').textContent = sigla;
+
+      const inc = STATE.relacoes.incoming[sigla] || [];
+      const out = STATE.relacoes.outgoing[sigla] || [];
+
+      document.getElementById('rel-incoming-list').innerHTML = inc.length === 0
+        ? `<div class="text-slate-400 p-4">Nenhuma menção externa encontrada.</div>`
+        : inc.map(item => `
+          <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-indigo-900">De: ${item.origem} • <span class="font-mono">${item.kr_codigo}</span></span>
+              <button onclick="selectUnitFilter('${item.origem}')" class="text-[11px] text-blue-700 hover:underline font-bold">Abrir planilha de ${item.origem}</button>
+            </div>
+            <div class="font-semibold text-slate-900 mt-1">${item.acao}</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">${item.responsaveis}</div>
+          </div>
+        `).join('');
+
+      document.getElementById('rel-outgoing-list').innerHTML = out.length === 0
+        ? `<div class="text-slate-400 p-4">Nenhum parceiro externo citado.</div>`
+        : out.map(item => `
+          <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-900">Aciona: ${item.parceiro} • <span class="font-mono">${item.kr_codigo}</span></span>
+              <button onclick="selectUnitFilter('${item.parceiro}')" class="text-[11px] text-blue-700 hover:underline font-bold">Ver ${item.parceiro}</button>
+            </div>
+            <div class="font-semibold text-slate-800 mt-1">${item.acao}</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">${item.responsaveis}</div>
+          </div>
+        `).join('');
+    }
+
+    // =========================================================================
+    // TAB 4: GRUPOS DE TRABALHO COMPARTILHADOS (GTs) & PROJETOS ESTRUTURANTES
+    // =========================================================================
+    async function loadGTs() {
+      const res = await fetch('/api/gts');
+      const data = await res.json();
+      STATE.gts = data;
+      const grid = document.getElementById('gts-grid');
+      grid.innerHTML = data.map(gt => {
+        const totalEnt = gt.entregaveis.length;
+        const doneEnt = gt.entregaveis.filter(e => e.concluido).length;
+        const pct = totalEnt ? Math.round((doneEnt / totalEnt) * 100) : 0;
+        const krsArr = gt.krs_vinculados.split(',').map(s => s.trim()).filter(Boolean);
+        return `
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-0.5 bg-slate-900 text-white rounded text-xs font-extrabold">${gt.codigo}</span>
+                <span class="px-2.5 py-0.5 bg-blue-100 text-blue-900 rounded-full text-[11px] font-bold">${gt.tipo}</span>
+                <span class="ml-auto px-2.5 py-0.5 bg-emerald-100 text-emerald-900 rounded text-[11px] font-bold">${gt.status}</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-slate-900 mt-2">${gt.titulo}</h3>
+              <p class="text-xs text-slate-600 mt-1 leading-relaxed">${gt.objetivo}</p>
+
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px]">
+                <span class="font-bold text-slate-700">Líder:</span>
+                <span class="px-2 py-0.5 bg-amber-100 text-amber-900 rounded font-bold">${gt.lider}</span>
+                <span class="font-bold text-slate-700 ml-2">Prazo:</span>
+                <span class="text-slate-700">${gt.prazo}</span>
+              </div>
+
+              <div class="mt-2 text-[11px] text-slate-600">
+                <strong>Unidades:</strong> ${gt.unidades_participantes}
+              </div>
+
+              <div class="mt-2 flex flex-wrap gap-1">
+                ${krsArr.map(k => `<button onclick="jumpToKR('${k}')" class="px-2 py-0.5 bg-slate-800 hover:bg-blue-700 text-white rounded font-mono text-[10px] font-bold">${k}</button>`).join('')}
+              </div>
+
+              <!-- Checklist de Entregáveis -->
+              <div class="mt-4 pt-3 border-t border-slate-200">
+                <div class="flex items-center justify-between text-xs font-bold text-slate-700 mb-2">
+                  <span>Marcos e Entregáveis do GT (${doneEnt}/${totalEnt})</span>
+                  <span>${pct}%</span>
+                </div>
+                <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mb-2.5">
+                  <div class="bg-emerald-600 h-full" style="width:${pct}%"></div>
+                </div>
+                <div class="space-y-1.5">
+                  ${gt.entregaveis.map((ent, idx) => `
+                    <label class="flex items-start gap-2 text-xs cursor-pointer">
+                      <input type="checkbox" ${ent.concluido ? 'checked' : ''} onchange="toggleGTEntregavel(${gt.id}, ${idx})" class="mt-0.5 rounded text-blue-700" />
+                      <span class="${ent.concluido ? 'line-through text-slate-400' : 'text-slate-800 font-medium'}">${ent.item}</span>
+                    </label>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex justify-end">
+              <button onclick='openGTModal(${JSON.stringify(gt).replace(/'/g, "&#39;")})' class="text-xs text-blue-700 hover:underline font-bold">
+                Editar GT / Entregáveis
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function jumpToKR(kr) {
+      resetFilters();
+      document.getElementById('f-kr').value = kr;
+      switchTab('matriz');
+      loadAcoes();
+    }
+
+    async function toggleGTEntregavel(gtId, idx) {
+      const gt = STATE.gts.find(x => x.id === gtId);
+      if (!gt) return;
+      gt.entregaveis[idx].concluido = !gt.entregaveis[idx].concluido;
+      const payload = {
+        codigo: gt.codigo,
+        titulo: gt.titulo,
+        tipo: gt.tipo,
+        krs_vinculados: gt.krs_vinculados,
+        lider: gt.lider,
+        unidades_participantes: gt.unidades_participantes,
+        status: gt.status,
+        prazo: gt.prazo,
+        objetivo: gt.objetivo,
+        entregaveis_json: JSON.stringify(gt.entregaveis)
+      };
+      await fetch(`/api/gts/${gtId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      loadGTs();
+    }
+
+    function openGTModal(gt = null) {
+      document.getElementById('modal-gt').classList.remove('hidden');
+      if (gt) {
+        document.getElementById('gt-id').value = gt.id;
+        document.getElementById('gt-codigo').value = gt.codigo;
+        document.getElementById('gt-titulo').value = gt.titulo;
+        document.getElementById('gt-tipo').value = gt.tipo;
+        document.getElementById('gt-status').value = gt.status;
+        document.getElementById('gt-lider').value = gt.lider;
+        document.getElementById('gt-prazo').value = gt.prazo;
+        document.getElementById('gt-unidades').value = gt.unidades_participantes;
+        document.getElementById('gt-krs').value = gt.krs_vinculados;
+        document.getElementById('gt-objetivo').value = gt.objetivo;
+        document.getElementById('gt-entregaveis-txt').value = (gt.entregaveis || [])
+          .map(e => `${e.concluido ? '[x]' : '[ ]'} ${e.item}`).join('\n');
+      } else {
+        document.getElementById('gt-id').value = '';
+        document.getElementById('gt-codigo').value = `GT-${String(STATE.gts.length + 1).padStart(2, '0')}`;
+        document.getElementById('gt-titulo').value = '';
+        document.getElementById('gt-tipo').value = 'Grupo de Trabalho Compartilhado';
+        document.getElementById('gt-status').value = 'Em Estruturação';
+        document.getElementById('gt-lider').value = '';
+        document.getElementById('gt-prazo').value = '2027–2030';
+        document.getElementById('gt-unidades').value = '';
+        document.getElementById('gt-krs').value = '';
+        document.getElementById('gt-objetivo').value = '';
+        document.getElementById('gt-entregaveis-txt').value = '[ ] Definir plano de trabalho inicial';
+      }
+    }
+
+    function closeGTModal() {
+      document.getElementById('modal-gt').classList.add('hidden');
+    }
+
+    async function saveGT() {
+      const id = document.getElementById('gt-id').value;
+      const lines = document.getElementById('gt-entregaveis-txt').value.split('\n').map(s => s.trim()).filter(Boolean);
+      const entregaveis = lines.map(l => ({
+        concluido: l.toLowerCase().startsWith('[x]'),
+        item: l.replace(/^\[[xX ]\]\s*/, '')
+      }));
+      const payload = {
+        codigo: document.getElementById('gt-codigo').value,
+        titulo: document.getElementById('gt-titulo').value,
+        tipo: document.getElementById('gt-tipo').value,
+        status: document.getElementById('gt-status').value,
+        lider: document.getElementById('gt-lider').value,
+        prazo: document.getElementById('gt-prazo').value,
+        unidades_participantes: document.getElementById('gt-unidades').value,
+        krs_vinculados: document.getElementById('gt-krs').value,
+        objetivo: document.getElementById('gt-objetivo').value,
+        entregaveis_json: JSON.stringify(entregaveis)
+      };
+      const url = id ? `/api/gts/${id}` : '/api/gts';
+      const method = id ? 'PUT' : 'POST';
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        closeGTModal();
+        showToast('Grupo de Trabalho / Projeto Estruturante salvo.');
+        loadGTs();
+      }
+    }
+
+    async function reindexXlsx() {
+      const res = await fetch('/api/reindex-xlsx', { method: 'POST' });
+      const data = await res.json();
+      showToast(data.message);
+      await loadOverview();
+      await loadAcoes();
+    }
+
+    async function regenerarRelatorios() {
+      const res = await fetch('/api/regenerar-relatorios', { method: 'POST' });
+      const data = await res.json();
+      showToast(data.message);
+    }
+
+    // =========================================================================
+    // TAB 5: RELATÓRIOS E EXPORTAÇÃO
+    // =========================================================================
+    async function loadRelatoriosTab() {
+      const res = await fetch('/api/relatorios/dados');
+      STATE.relatorios = await res.json();
+
+      if (STATE.overview) {
+        const unitOptsAll = `<option value="">Todas as 41 Unidades (Consolidado Geral)</option>` +
+          STATE.overview.unidades.map(u => `<option value="${u.sigla}">${u.sigla} — ${u.nome} (${u.total_acoes} ações)</option>`).join('');
+
+        ['rep-sigla-planos', 'rep-sigla-resp', 'rep-sigla-cron'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) {
+            const curr = el.value;
+            el.innerHTML = unitOptsAll;
+            el.value = curr;
+          }
+        });
+
+        const selFicha = document.getElementById('rep-sigla-ficha');
+        if (selFicha) {
+          const currF = selFicha.value || 'PGAAE';
+          selFicha.innerHTML = STATE.overview.unidades.map(u =>
+            `<option value="${u.sigla}">${u.sigla} — ${u.nome} (${u.status_reuniao})</option>`
+          ).join('');
+          selFicha.value = currF;
+        }
+      }
+
+      if (STATE.relatorios && STATE.relatorios.gts) {
+        const selGt = document.getElementById('rep-gt-codigo');
+        if (selGt) {
+          const currGt = selGt.value;
+          selGt.innerHTML = `<option value="">Todos os 10 GTs e Projetos Estruturantes</option>` +
+            STATE.relatorios.gts.map(g => `<option value="${g.codigo}">${g.codigo} — ${g.titulo}</option>`).join('');
+          selGt.value = currGt;
+        }
+      }
+
+      mostrarPreviewRelatorio(STATE.previewAtivo || 'mapa');
+    }
+
+    function exportarRelatorio(tipo, fmt) {
+      const params = new URLSearchParams({ fmt });
+      if (tipo === 'objetivos-metas') {
+        const eixo = document.getElementById('rep-eixo-metas').value;
+        if (eixo) params.set('eixo', eixo);
+      } else if (tipo === 'planos-acao') {
+        const sigla = document.getElementById('rep-sigla-planos').value;
+        if (sigla) params.set('sigla', sigla);
+      } else if (tipo === 'matriz-responsabilidades') {
+        const sigla = document.getElementById('rep-sigla-resp').value;
+        if (sigla) params.set('sigla', sigla);
+      } else if (tipo === 'cronograma-entregas') {
+        const h = document.getElementById('rep-horizonte-cron').value;
+        const sigla = document.getElementById('rep-sigla-cron').value;
+        if (h) params.set('horizonte', h);
+        if (sigla) params.set('sigla', sigla);
+      } else if (tipo === 'relatorio-gt') {
+        const gt = document.getElementById('rep-gt-codigo').value;
+        if (gt) params.set('gt_codigo', gt);
+      } else if (tipo === 'ficha-pactuacao') {
+        const sigla = document.getElementById('rep-sigla-ficha').value || 'PGAAE';
+        params.set('sigla', sigla);
+      }
+      if (STATE.isStaticMode) {
+        if (tipo === 'planos-acao' && fmt === 'xlsx' && params.get('sigla')) {
+          window.location.href = `planilhas/Plano_Acao_Pos_Comparacao_${params.get('sigla')}.xlsx`;
+        } else if (tipo === 'ficha-pactuacao') {
+          const sig = params.get('sigla') || 'PGAAE';
+          window.location.href = `exports/fichas/Ficha_Pactuacao_Setorial_${sig}.${fmt}`;
+        } else {
+          window.location.href = `exports/${tipo}.${fmt}`;
+        }
+        showToast(`Baixando arquivo (${fmt.toUpperCase()})...`);
+        return;
+      }
+      window.location.href = `/api/export/${tipo}?` + params.toString();
+      showToast(`Gerando arquivo (${fmt.toUpperCase()}) para download...`);
+    }
+
+    async function mostrarPreviewRelatorio(qual) {
+      STATE.previewAtivo = qual;
+      if (!STATE.relatorios) {
+        const res = await fetch('/api/relatorios/dados');
+        STATE.relatorios = await res.json();
+      }
+      const titleEl = document.getElementById('rep-preview-title');
+      const subEl = document.getElementById('rep-preview-sub');
+      const bodyEl = document.getElementById('rep-preview-body');
+
+      if (qual === 'mapa') {
+        titleEl.textContent = '1. Mapa Estratégico — Eixos e Objetivos Estratégicos (PGE-MA 2027–2030)';
+        subEl.textContent = '9 Eixos Estratégicos e seus respectivos Objetivos Estratégicos consolidados.';
+        bodyEl.innerHTML = `<div class="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-4">` +
+          STATE.relatorios.mapa_estrategico.map(e => `
+            <div class="print-avoid-break rounded-xl border border-slate-200 bg-slate-50 p-4 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2 mb-2.5">
+                  <span class="px-2.5 py-0.5 bg-blue-900 text-white rounded text-xs font-extrabold">${e.eixo_cod}</span>
+                  <span class="text-[11px] font-bold text-slate-600">${e.objetivos.length} Objetivos • ${e.total_krs} Metas • ${e.total_acoes} Ações</span>
+                </div>
+                <h4 class="font-bold text-xs text-slate-900 mb-3">${e.eixo_nome}</h4>
+                <div class="space-y-2">
+                  ${e.objetivos.map(o => `
+                    <div class="print-avoid-break p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm text-xs">
+                      <div class="flex items-center justify-between">
+                        <span class="font-mono font-bold text-blue-800 text-[11px]">${o.obj_cod}</span>
+                        <span class="text-[10px] font-semibold text-slate-500">${o.qtd_krs} KRs | ${o.qtd_acoes} ações</span>
+                      </div>
+                      <div class="font-semibold text-slate-800 mt-1">${o.objetivo_nome}</div>
+                      <div class="text-[10px] text-slate-500 mt-1"><strong>Unidades:</strong> ${o.unidades.join(', ')}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          `).join('') + `</div>`;
+      } else if (qual === 'metas') {
+        const eixoFiltro = document.getElementById('rep-eixo-metas').value;
+        let metas = STATE.relatorios.objetivos_metas;
+        if (eixoFiltro) metas = metas.filter(m => m.eixo_cod === eixoFiltro);
+        titleEl.textContent = `2. Lista de Objetivos e Metas (${metas.length} Resultados-Chave)`;
+        subEl.textContent = eixoFiltro ? `Filtrado pelo Eixo ${eixoFiltro}` : 'Todos os 9 Eixos da Lista Mestre Canônica';
+        bodyEl.innerHTML = `
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-800 text-white">
+              <tr>
+                <th class="p-2.5 w-24">Cód. KR</th>
+                <th class="p-2.5 w-56">Eixo Estratégico</th>
+                <th class="p-2.5 w-64">Objetivo Estratégico</th>
+                <th class="p-2.5">Meta / Resultado-Chave (KR)</th>
+                <th class="p-2.5 w-20 text-center">Ações</th>
+                <th class="p-2.5 w-64">Unidades Vinculadas</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              ${metas.map(m => `
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-mono font-bold text-blue-900">${m.kr_codigo}</td>
+                  <td class="p-2.5 text-slate-700">${m.eixo_nome}</td>
+                  <td class="p-2.5 font-medium text-slate-800">${m.objetivo_nome}</td>
+                  <td class="p-2.5 font-semibold text-slate-900">${m.kr_texto_completo}</td>
+                  <td class="p-2.5 text-center font-bold">${m.qtd_acoes}</td>
+                  <td class="p-2.5 text-[11px] text-slate-600">${m.unidades.join(', ')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        `;
+      } else if (qual === 'planos') {
+        const sigla = document.getElementById('rep-sigla-planos').value;
+        const params = new URLSearchParams();
+        if (sigla) params.set('sigla', sigla);
+        const res = await fetch('/api/acoes?' + params.toString());
+        const rows = await res.json();
+        titleEl.textContent = `3. Lista dos Planos de Ação das Unidades — ${sigla || 'Todas as 41 Unidades'} (${rows.length} ações)`;
+        subEl.textContent = ' Metodologia 5W2H sincronizada com as planilhas .xlsx oficiais';
+        bodyEl.innerHTML = `
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-800 text-white">
+              <tr>
+                <th class="p-2.5 w-24">Unidade</th>
+                <th class="p-2.5 w-48">Meta (KR)</th>
+                <th class="p-2.5 w-64">Ação (O QUÊ)</th>
+                <th class="p-2.5">Subação / Como Fazer</th>
+                <th class="p-2.5 w-60">Responsáveis (QUEM)</th>
+                <th class="p-2.5 w-28">Prazo</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              ${rows.map(r => `
+                <tr class="hover:bg-slate-50 align-top">
+                  <td class="p-2.5 font-bold text-blue-900">${r.sigla_unidade}</td>
+                  <td class="p-2.5"><span class="font-mono font-bold">${r.kr_codigo}</span><div class="text-[11px] text-slate-500">${r.kr_texto_completo}</div></td>
+                  <td class="p-2.5 font-semibold text-slate-900">${r.acao}</td>
+                  <td class="p-2.5 text-slate-700">${r.subacao}</td>
+                  <td class="p-2.5 text-slate-700">${r.responsaveis}</td>
+                  <td class="p-2.5 font-medium">${r.prazo}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        `;
+      } else if (qual === 'responsabilidades') {
+        const sigla = document.getElementById('rep-sigla-resp').value;
+        let unids = STATE.relatorios.matriz_unidades || [];
+        let acoes = STATE.relatorios.acoes_enriquecidas || [];
+        if (sigla) {
+          unids = unids.filter(u => u.sigla === sigla);
+          acoes = acoes.filter(a => a.sigla_unidade === sigla || (a.unidades_parceiras || '').split(',').includes(sigla));
+        } else {
+          acoes = acoes.filter(a => a.unidades_parceiras || a.papel_unidade !== 'Líder');
+        }
+        titleEl.textContent = `4. Matriz de Responsabilidades e Dependências Intersetoriais — ${sigla || 'Todas as 41 Unidades'}`;
+        subEl.textContent = 'Papéis de Líder, Coexecutor e Articulador, parceiros acionados e demandas cruzadas entre unidades.';
+        bodyEl.innerHTML = `
+          <div class="space-y-5">
+            <div>
+              <h4 class="font-bold text-xs text-slate-800 uppercase mb-2">Quadro Sintético de Papéis e Demandas por Unidade</h4>
+              <table class="w-full text-left border-collapse text-xs">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="p-2.5 w-20">Sigla</th>
+                    <th class="p-2.5 w-64">Unidade</th>
+                    <th class="p-2.5 text-center w-20">Total</th>
+                    <th class="p-2.5 text-center w-20">Líder</th>
+                    <th class="p-2.5 text-center w-24">Coexecutor</th>
+                    <th class="p-2.5 text-center w-24">Articulador</th>
+                    <th class="p-2.5">Parceiros Acionados</th>
+                    <th class="p-2.5 text-center w-28">Demandas Recebidas</th>
+                    <th class="p-2.5">Unidades Demandantes</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  ${unids.map(u => `
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-extrabold text-blue-900">${u.sigla}</td>
+                      <td class="p-2.5 font-semibold text-slate-900">${u.nome}</td>
+                      <td class="p-2.5 text-center font-bold">${u.total_acoes}</td>
+                      <td class="p-2.5 text-center text-blue-800 font-bold">${u.qtd_lider}</td>
+                      <td class="p-2.5 text-center text-amber-800 font-bold">${u.qtd_coexecutor}</td>
+                      <td class="p-2.5 text-center text-purple-800 font-bold">${u.qtd_articulador}</td>
+                      <td class="p-2.5 text-[11px] text-slate-600">${u.parceiros_acionados.join(', ') || 'Nenhum'}</td>
+                      <td class="p-2.5 text-center font-extrabold text-indigo-800">${u.qtd_demandas_recebidas}</td>
+                      <td class="p-2.5 text-[11px] text-slate-600">${u.unidades_demandantes.join(', ') || 'Nenhuma'}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h4 class="font-bold text-xs text-slate-800 uppercase mb-2">Detalhamento das Ações Compartilhadas (${acoes.length} registros)</h4>
+              <table class="w-full text-left border-collapse text-xs">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="p-2.5 w-24">Unidade</th>
+                    <th class="p-2.5 w-28">Papel</th>
+                    <th class="p-2.5 w-44">Parceiros Citados</th>
+                    <th class="p-2.5 w-28">Meta (KR)</th>
+                    <th class="p-2.5">Ação (O QUÊ)</th>
+                    <th class="p-2.5 w-72">Governança / Responsáveis (QUEM)</th>
+                    <th class="p-2.5 w-28">Prazo</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  ${acoes.map(a => `
+                    <tr class="hover:bg-slate-50 align-top">
+                      <td class="p-2.5 font-bold text-blue-900">${a.sigla_unidade}</td>
+                      <td class="p-2.5 font-semibold">${a.papel_unidade}</td>
+                      <td class="p-2.5 text-[11px] font-semibold text-indigo-900">${(a.unidades_parceiras || '').split(',').filter(Boolean).join(', ') || 'Interna'}</td>
+                      <td class="p-2.5 font-mono font-bold">${a.kr_codigo}</td>
+                      <td class="p-2.5 font-semibold text-slate-900">${a.acao}</td>
+                      <td class="p-2.5 text-slate-700">${a.responsaveis}</td>
+                      <td class="p-2.5">${a.prazo}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      } else if (qual === 'cronograma') {
+        const hFiltro = document.getElementById('rep-horizonte-cron').value;
+        const sFiltro = document.getElementById('rep-sigla-cron').value;
+        let acoes = STATE.relatorios.acoes_enriquecidas || [];
+        if (sFiltro) acoes = acoes.filter(a => a.sigla_unidade === sFiltro);
+        if (hFiltro) acoes = acoes.filter(a => a.horizonte.toLowerCase().includes(hFiltro.toLowerCase()));
+
+        const ordem = {
+          'Curto Prazo (Imediato / Até 180 dias)': 1,
+          'Médio Prazo / Periódico (Ciclos Anuais/Semestrais)': 2,
+          'Contínuo / Ciclo Integral (2027–2030)': 3
+        };
+        acoes = [...acoes].sort((a, b) => (ordem[a.horizonte] || 9) - (ordem[b.horizonte] || 9));
+
+        const qtdCurto = acoes.filter(a => a.horizonte.startsWith('Curto')).length;
+        const qtdMedio = acoes.filter(a => a.horizonte.startsWith('Médio')).length;
+        const qtdCont = acoes.filter(a => a.horizonte.startsWith('Contínuo')).length;
+
+        titleEl.textContent = `5. Cronograma de Entregas por Horizonte Temporal (${acoes.length} ações)`;
+        subEl.textContent = `Curto Prazo: ${qtdCurto} | Médio Prazo / Periódico: ${qtdMedio} | Contínuo (2027–2030): ${qtdCont}`;
+        bodyEl.innerHTML = `
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-slate-800 text-white">
+              <tr>
+                <th class="p-2.5 w-56">Horizonte Temporal</th>
+                <th class="p-2.5 w-36">Prazo (QUANDO)</th>
+                <th class="p-2.5 w-24">Unidade</th>
+                <th class="p-2.5 w-28">Meta (KR)</th>
+                <th class="p-2.5 w-64">Ação (O QUÊ)</th>
+                <th class="p-2.5">Subação / Metodologia (COMO)</th>
+                <th class="p-2.5 w-60">Responsáveis (QUEM)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              ${acoes.map(a => `
+                <tr class="hover:bg-slate-50 align-top">
+                  <td class="p-2.5 font-bold ${a.horizonte.startsWith('Curto') ? 'text-rose-800' : a.horizonte.startsWith('Médio') ? 'text-amber-800' : 'text-emerald-800'}">${a.horizonte}</td>
+                  <td class="p-2.5 font-semibold text-slate-900">${a.prazo}</td>
+                  <td class="p-2.5 font-bold text-blue-900">${a.sigla_unidade}</td>
+                  <td class="p-2.5 font-mono font-bold">${a.kr_codigo}</td>
+                  <td class="p-2.5 font-semibold text-slate-900">${a.acao}</td>
+                  <td class="p-2.5 text-slate-700">${a.subacao}</td>
+                  <td class="p-2.5 text-slate-700">${a.responsaveis}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        `;
+      } else if (qual === 'gt') {
+        const gtCod = document.getElementById('rep-gt-codigo').value;
+        let gts = STATE.relatorios.gts || [];
+        if (gtCod) gts = gts.filter(g => g.codigo === gtCod);
+        const allAcoes = STATE.relatorios.acoes_enriquecidas || [];
+
+        titleEl.textContent = `6. Relatório de Grupos de Trabalho (GTs) e Projetos Estruturantes — ${gtCod || 'Todos os 10 GTs/Projetos'}`;
+        subEl.textContent = 'Escopo, liderança, unidades participantes, checklist de entregáveis e ações 5W2H vinculadas.';
+        bodyEl.innerHTML = `<div class="space-y-6">` + gts.map(g => {
+          const krsGt = g.krs_vinculados.split(',').map(s => s.trim()).filter(Boolean);
+          const unidsGt = g.unidades_participantes.split(',').map(s => s.trim()).filter(Boolean);
+          const acoesGt = allAcoes.filter(a => krsGt.includes(a.kr_codigo) && (unidsGt.includes(a.sigla_unidade) || g.unidades_participantes.includes('Todas')));
+          return `
+            <div class="rounded-xl border border-slate-300 bg-slate-50 p-5 space-y-4">
+              <div class="print-avoid-break space-y-3">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
+                  <div>
+                    <span class="px-2.5 py-0.5 bg-slate-900 text-white rounded text-xs font-extrabold mr-2">${g.codigo}</span>
+                    <span class="font-extrabold text-sm text-slate-900">${g.titulo}</span>
+                  </div>
+                  <div class="text-xs font-bold text-slate-700">
+                    ${g.tipo} • Status: <span class="text-emerald-800">${g.status}</span> • Prazo: ${g.prazo}
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-3 text-xs">
+                  <div class="bg-white p-3 rounded-lg border border-slate-200"><strong>Liderança:</strong> ${g.lider}</div>
+                  <div class="bg-white p-3 rounded-lg border border-slate-200"><strong>Unidades Participantes:</strong> ${g.unidades_participantes}</div>
+                  <div class="bg-white p-3 rounded-lg border border-slate-200"><strong>Metas (KRs):</strong> <span class="font-mono font-bold">${g.krs_vinculados}</span></div>
+                </div>
+                <div class="text-xs text-slate-800 bg-white p-3 rounded-lg border border-slate-200">
+                  <strong>Objetivo e Escopo:</strong> ${g.objetivo}
+                </div>
+                <div class="bg-white p-3 rounded-lg border border-slate-200 text-xs">
+                  <div class="font-bold text-slate-900 mb-2">Checklist de Entregáveis (${g.entregaveis.filter(e=>e.concluido).length}/${g.entregaveis.length} concluídos):</div>
+                  <ul class="space-y-1">
+                    ${g.entregaveis.map(e => `
+                      <li class="${e.concluido ? 'text-emerald-800 font-semibold' : 'text-slate-700'}">
+                        [${e.concluido ? 'Concluído' : 'Pendente'}] ${e.item}
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="font-bold text-xs text-slate-800 mb-2">Ações Setoriais Vinculadas ao ${g.codigo} (${acoesGt.length} ações):</div>
+                <table class="w-full text-left border-collapse text-xs bg-white">
+                  <thead class="bg-slate-800 text-white">
+                    <tr>
+                      <th class="p-2 w-20">Unidade</th>
+                      <th class="p-2 w-28">KR</th>
+                      <th class="p-2">Ação (O QUÊ)</th>
+                      <th class="p-2 w-64">Responsáveis (QUEM)</th>
+                      <th class="p-2 w-28">Prazo</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200">
+                    ${acoesGt.map(a => `
+                      <tr>
+                        <td class="p-2 font-bold text-blue-900">${a.sigla_unidade}</td>
+                        <td class="p-2 font-mono font-bold">${a.kr_codigo}</td>
+                        <td class="p-2 font-semibold text-slate-900">${a.acao}</td>
+                        <td class="p-2 text-slate-700">${a.responsaveis}</td>
+                        <td class="p-2">${a.prazo}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        }).join('') + `</div>`;
+      } else if (qual === 'ficha') {
+        const sig = document.getElementById('rep-sigla-ficha').value || 'PGAAE';
+        const uMeta = (STATE.relatorios.unidades_meta || []).find(u => u.sigla === sig) || {};
+        const uMat = (STATE.relatorios.matriz_unidades || []).find(u => u.sigla === sig) || {};
+        const acoesU = (STATE.relatorios.acoes_enriquecidas || []).filter(a => a.sigla_unidade === sig);
+        const krsU = [...new Set(acoesU.map(a => a.kr_codigo))].sort();
+        const resMin = await fetch(`/api/unidades/${sig}/minutas`);
+        const minutas = await resMin.json();
+
+        titleEl.textContent = `7. Ficha Individualizada de Pactuação Setorial — ${sig} (${uMeta.nome || ''})`;
+        subEl.textContent = `Chefia: ${uMeta.responsavel || ''} | Processo SEI: ${uMeta.processo_sei || ''} | Status: ${uMeta.status_reuniao || ''}`;
+        bodyEl.innerHTML = `
+          <div class="space-y-5 text-xs">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <div><div class="text-slate-500 font-semibold">Unidade</div><div class="font-extrabold text-slate-900 text-sm mt-0.5">${sig} — ${uMeta.nome}</div></div>
+              <div><div class="text-slate-500 font-semibold">Chefia / Interlocutor(a)</div><div class="font-bold text-slate-900 mt-0.5">${uMeta.responsavel}</div></div>
+              <div><div class="text-slate-500 font-semibold">Processo SEI e Status</div><div class="font-bold text-blue-900 mt-0.5">${uMeta.processo_sei} • ${uMeta.status_reuniao}</div></div>
+              <div><div class="text-slate-500 font-semibold">Resumo de Ações e Papéis</div><div class="font-bold text-slate-900 mt-0.5">${acoesU.length} ações (${krsU.length} KRs) | Líder: ${uMat.qtd_lider || 0} | Coexec: ${uMat.qtd_coexecutor || 0}</div></div>
+              <div class="md:col-span-4 pt-2 border-t border-slate-200">
+                <strong>Síntese da Pauta e Deliberações Setoriais:</strong> ${uMeta.pauta_reuniao}
+                ${uMeta.notas_reuniao ? `<div class="mt-1 text-amber-900"><strong>Registro de Ata / Notas:</strong> ${uMeta.notas_reuniao}</div>` : ''}
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-xs uppercase text-slate-800 mb-2">1. Plano de Ação Setorial Pactuado — ${sig} (${acoesU.length} ações)</h4>
+              <table class="w-full text-left border-collapse text-xs">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="p-2.5 w-10">#</th>
+                    <th class="p-2.5 w-28">Meta (KR)</th>
+                    <th class="p-2.5 w-36">Pilar 3 Ps</th>
+                    <th class="p-2.5 w-64">Ação (O QUÊ)</th>
+                    <th class="p-2.5">Subação / Metodologia (COMO)</th>
+                    <th class="p-2.5 w-60">Responsáveis (QUEM)</th>
+                    <th class="p-2.5 w-28">Prazo</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  ${acoesU.map((a, idx) => `
+                    <tr class="hover:bg-slate-50 align-top">
+                      <td class="p-2.5 font-bold text-slate-500">${idx + 1}</td>
+                      <td class="p-2.5 font-mono font-bold text-blue-900">${a.kr_codigo}</td>
+                      <td class="p-2.5 font-semibold">${a.pilar_3ps}</td>
+                      <td class="p-2.5 font-semibold text-slate-900">${a.acao}</td>
+                      <td class="p-2.5 text-slate-700">${a.subacao}</td>
+                      <td class="p-2.5 text-slate-700">${a.responsaveis}</td>
+                      <td class="p-2.5 font-medium">${a.prazo}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            ${(uMat.demandas_recebidas && uMat.demandas_recebidas.length > 0) ? `
+              <div>
+                <h4 class="font-bold text-xs uppercase text-slate-800 mb-2">2. Compromissos Cruzados — Ações de Outras Unidades que Demandam ${sig} (${uMat.demandas_recebidas.length} ações)</h4>
+                <table class="w-full text-left border-collapse text-xs">
+                  <thead class="bg-slate-800 text-white">
+                    <tr>
+                      <th class="p-2.5 w-24">Origem</th>
+                      <th class="p-2.5 w-28">Meta (KR)</th>
+                      <th class="p-2.5">Ação</th>
+                      <th class="p-2.5 w-72">Governança / Responsáveis</th>
+                      <th class="p-2.5 w-28">Prazo</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200">
+                    ${uMat.demandas_recebidas.map(d => `
+                      <tr class="hover:bg-slate-50">
+                        <td class="p-2.5 font-bold text-indigo-900">${d.origem}</td>
+                        <td class="p-2.5 font-mono font-bold">${d.kr_codigo}</td>
+                        <td class="p-2.5 font-semibold text-slate-900">${d.acao}</td>
+                        <td class="p-2.5 text-slate-700">${d.responsaveis}</td>
+                        <td class="p-2.5">${d.prazo}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            ` : ''}
+
+            <div class="print-avoid-break bg-blue-50 p-4 rounded-xl border border-blue-200">
+              <h4 class="font-bold text-xs uppercase text-blue-950 mb-1.5">3. Termo / Despacho Padrão de Homologação Setorial no SEI</h4>
+              <pre class="whitespace-pre-wrap font-mono text-[11px] text-slate-800 bg-white p-3 rounded border border-blue-200">${minutas.despacho_sei}</pre>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function imprimirRelatorioAtual() {
+      const titulo = document.getElementById('rep-preview-title')?.textContent || 'Relatório — Planejamento Estratégico PGE-MA';
+      const subtitulo = document.getElementById('rep-preview-sub')?.textContent || '';
+      const conteudoHtml = document.getElementById('rep-preview-body')?.innerHTML || '';
+      const dataHora = new Date().toLocaleString('pt-BR');
+
+      const win = window.open('', '_blank', 'width=1200,height=850');
+      if (!win) {
+        window.print();
+        return;
+      }
+
+      win.document.write(`<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>${titulo}</title>
+  <script src="https://cdn.tailwindcss.com"><\/script>
+  <style>
+    @page { size: A4 landscape; margin: 10mm; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: #0f172a;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      margin: 0;
+      padding: 0;
+    }
+    .print-avoid-break, tr {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+    thead {
+      display: table-header-group !important;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+    }
+  </style>
+</head>
+<body class="p-4">
+  <div class="border-b-2 border-slate-900 pb-3 mb-4 flex items-center justify-between">
+    <div>
+      <div class="text-[11px] font-bold uppercase tracking-wider text-blue-900">Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030</div>
+      <h1 class="text-base font-extrabold text-slate-900 mt-0.5">${titulo}</h1>
+      <p class="text-xs text-slate-600">${subtitulo}</p>
+    </div>
+    <div class="text-right text-[10px] text-slate-500">
+      <div>SGPE PGE-MA</div>
+      <div>Emitido em: ${dataHora}</div>
+    </div>
+  </div>
+  <div>${conteudoHtml}</div>
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        window.focus();
+        window.print();
+      }, 350);
+    };
+  <\/script>
+</body>
+</html>`);
+      win.document.close();
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await loadOverview();
+      await loadAcoes();
+    });
+  </script>
+</body>
+</html>
