@@ -2328,26 +2328,15 @@ def exportar_relatorio(
                         "objetivo_nome": m_info["objetivo_nome"] if m_info else a["objetivo"],
                         "kr_codigo": krc,
                         "kr_texto": m_info["kr_texto_completo"] if m_info else a["kr_texto_completo"],
-                        "pilar_3ps": a["pilar_3ps"],
-                        "papeis": set(),
-                        "acoes": [],
-                        "prazos": set(),
-                        "parceiros": set()
+                        "total_acoes": 0
                     }
-                krs_dict[krc]["papeis"].add(a["papel_unidade"])
-                krs_dict[krc]["acoes"].append(a["acao"])
-                krs_dict[krc]["prazos"].add(a["prazo"])
-                if a["unidades_parceiras"]:
-                    for p in a["unidades_parceiras"].split(","):
-                        if p.strip():
-                            krs_dict[krc]["parceiros"].add(p.strip())
+                krs_dict[krc]["total_acoes"] += 1
 
             krs_sorted = sorted(krs_dict.values(), key=lambda x: x["kr_codigo"])
 
             headers = [
                 "Eixo Estratégico", "Cód. Objetivo", "Objetivo Estratégico",
-                "Cód. KR", "Meta / Resultado-Chave (KR)", "Pilar 3 Ps",
-                "Papel da Unidade", "Total de Ações"
+                "Cód. KR", "Meta / Resultado-Chave (KR)", "Total de Ações"
             ]
             rows_data = [
                 [
@@ -2356,20 +2345,18 @@ def exportar_relatorio(
                     k["objetivo_nome"],
                     k["kr_codigo"],
                     k["kr_texto"],
-                    k["pilar_3ps"],
-                    ", ".join(sorted(k["papeis"])),
-                    len(k["acoes"])
+                    k["total_acoes"]
                 ]
                 for k in krs_sorted
             ]
             title_doc = f"Quadro de Eixos, Objetivos e Metas — {sigla} ({u_nome})"
-            sub_doc = f"Estrutura Estratégica Setorial: {len(krs_sorted)} Metas (KRs) e {len(acoes_u)} Ações Pactuadas"
+            sub_doc = f"Estrutura Estratégica: {len(krs_sorted)} Metas (KRs) Vinculadas"
             filename_base = f"Quadro_Eixos_Objetivos_Metas_{sigla}"
 
         else:
             headers = [
                 "Eixo Estratégico", "Cód. Objetivo", "Objetivo Estratégico",
-                "Cód. KR", "Meta / Resultado-Chave (KR)", "Pilar 3 Ps",
+                "Cód. KR", "Meta / Resultado-Chave (KR)",
                 "Total de Ações", "Unidades Vinculadas"
             ]
             rows_data = [
@@ -2379,7 +2366,6 @@ def exportar_relatorio(
                     m["objetivo_nome"],
                     m["kr_codigo"],
                     m["kr_texto_completo"],
-                    m["pilar_3ps"],
                     m["qtd_acoes"],
                     ", ".join(m["unidades"])
                 ]
@@ -2395,15 +2381,15 @@ def exportar_relatorio(
                 f"*{sub_doc}*\n"
             ]
             if sigla:
-                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Pilar 3 Ps | Papel | Total Ações |")
-                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :---: | :---: |")
+                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |")
+                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: |")
                 for r in rows_data:
-                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | **{r[6]}** | {r[7]} |")
+                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} |")
             else:
-                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta / Resultado-Chave (KR) | Pilar 3 Ps | Ações | Unidades Vinculadas |")
-                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :---: | :--- |")
+                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta / Resultado-Chave (KR) | Ações | Unidades Vinculadas |")
+                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :--- |")
                 for r in rows_data:
-                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | {r[6]} | {r[7]} |")
+                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | {r[6]} |")
             out_path = export_dir / f"{filename_base}.md"
             out_path.write_text("\n".join(lines), encoding="utf-8")
             return FileResponse(str(out_path), filename=out_path.name, media_type="text/markdown")
@@ -2412,7 +2398,7 @@ def exportar_relatorio(
             wb = openpyxl.Workbook()
             ws = wb.active
             ws.title = "Eixos, Objetivos e Metas"
-            col_widths = [28, 14, 38, 14, 52, 24, 18, 14] if sigla else [28, 14, 38, 14, 52, 24, 14, 46]
+            col_widths = [28, 14, 38, 14, 56, 14] if sigla else [28, 14, 38, 14, 56, 14, 46]
             style_xlsx_sheet(
                 ws,
                 title_doc.upper(),
@@ -2431,21 +2417,19 @@ def exportar_relatorio(
             doc.add_paragraph(sub_doc)
 
             if sigla:
-                table = doc.add_table(rows=1, cols=5)
+                table = doc.add_table(rows=1, cols=4)
                 table.style = "Table Grid"
                 hdr = table.rows[0].cells
                 hdr[0].text = "Eixo / Objetivo"
                 hdr[1].text = "Cód. KR"
                 hdr[2].text = "Meta / Resultado-Chave (KR)"
-                hdr[3].text = "Papel da Unidade"
-                hdr[4].text = "Total Ações"
+                hdr[3].text = "Total Ações"
                 for r in rows_data:
                     rc = table.add_row().cells
                     rc[0].text = f"{r[0]}\n({r[1]} - {r[2]})"
                     rc[1].text = str(r[3])
-                    rc[2].text = f"{r[4]}\n[Pilar: {r[5]}]"
-                    rc[3].text = str(r[6])
-                    rc[4].text = str(r[7])
+                    rc[2].text = str(r[4])
+                    rc[3].text = str(r[5])
             else:
                 table = doc.add_table(rows=1, cols=5)
                 table.style = "Table Grid"
@@ -2460,8 +2444,8 @@ def exportar_relatorio(
                     rc[0].text = str(r[0])
                     rc[1].text = f"{r[1]}\n{r[2]}"
                     rc[2].text = str(r[3])
-                    rc[3].text = f"{r[4]}\n[Pilar: {r[5]}]"
-                    rc[4].text = f"{r[7]} ({r[6]} ações)"
+                    rc[3].text = str(r[4])
+                    rc[4].text = f"{r[6]} ({r[5]} ações)"
 
             out_path = export_dir / f"{filename_base}.docx"
             doc.save(str(out_path))
