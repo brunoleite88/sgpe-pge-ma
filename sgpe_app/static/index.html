@@ -679,19 +679,9 @@
             <h3 id="rep-preview-title" class="font-bold text-sm">Visualização: Mapa Estratégico (Eixos e Objetivos)</h3>
             <p id="rep-preview-sub" class="text-xs text-slate-300">Estrutura consolidada em tempo real a partir da base de dados.</p>
           </div>
-          <div class="flex items-center gap-2.5 no-print">
-            <div class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1 text-xs">
-              <label class="font-medium text-slate-300">Orientação:</label>
-              <select id="rep-print-orientation" class="bg-transparent text-white font-bold focus:outline-none cursor-pointer">
-                <option value="auto" class="bg-slate-900 text-white">Automático (Permite Escolha no Diálogo)</option>
-                <option value="landscape" class="bg-slate-900 text-white" selected>Paisagem (Landscape)</option>
-                <option value="portrait" class="bg-slate-900 text-white">Retrato (Portrait)</option>
-              </select>
-            </div>
-            <button onclick="imprimirRelatorioAtual()" class="px-3.5 py-1.5 bg-white text-slate-900 hover:bg-slate-100 rounded-lg text-xs font-bold shadow flex items-center gap-1.5">
-              <span>Imprimir / Salvar PDF</span>
-            </button>
-          </div>
+          <button onclick="imprimirRelatorioAtual()" class="no-print px-3.5 py-1.5 bg-white text-slate-900 hover:bg-slate-100 rounded-lg text-xs font-bold shadow flex items-center gap-1.5">
+            <span>Imprimir / Salvar PDF</span>
+          </button>
         </div>
         <div id="rep-preview-body" class="p-5 overflow-x-auto max-h-[680px]"></div>
       </div>
@@ -2216,31 +2206,19 @@
             if (!krsDict[krc]) {
               const mInfo = metasMaster.find(m => m.kr_codigo === krc);
               krsDict[krc] = {
-                eixo_cod: krc.substring(0, 2),
+                eixo_cod: mInfo ? mInfo.eixo_cod : krc.substring(0, 2),
                 eixo_nome: mInfo ? mInfo.eixo_nome : a.eixo,
-                obj_cod: krc.substring(0, 5),
+                obj_cod: mInfo ? mInfo.obj_cod : krc.substring(0, 5),
                 objetivo_nome: mInfo ? mInfo.objetivo_nome : a.objetivo,
                 kr_codigo: krc,
                 kr_texto: mInfo ? mInfo.kr_texto_completo : a.kr_texto_completo,
                 pilar_3ps: a.pilar_3ps,
                 papeis: new Set(),
-                acoes_detalhadas: [],
-                prazos: new Set(),
-                parceiros: new Set()
+                total_acoes: 0
               };
             }
             krsDict[krc].papeis.add(a.papel_unidade);
-            krsDict[krc].acoes_detalhadas.push({
-              acao: a.acao,
-              como: a.como_fazer,
-              prazo: a.prazo,
-              parceiros: a.unidades_parceiras,
-              papel: a.papel_unidade
-            });
-            if (a.prazo) krsDict[krc].prazos.add(a.prazo);
-            if (a.unidades_parceiras) {
-              a.unidades_parceiras.split(',').forEach(p => { if (p.trim()) krsDict[krc].parceiros.add(p.trim()); });
-            }
+            krsDict[krc].total_acoes += 1;
           });
 
           const krsList = Object.values(krsDict).sort((a, b) => a.kr_codigo.localeCompare(b.kr_codigo));
@@ -2265,48 +2243,43 @@
           });
 
           titleEl.textContent = `8. Quadro de Eixos, Objetivos e Metas — ${sigla}`;
-          subEl.textContent = `Estrutura estratégica setorial: ${krsList.length} Metas (KRs) e ${acoesU.length} Ações Pactuadas`;
+          subEl.textContent = `Estrutura estratégica setorial: ${krsList.length} Metas (Resultados-Chave) Vinculadas`;
 
           bodyEl.innerHTML = `
             <div class="space-y-4 text-xs">
-              <!-- BARRA EXECUTIVA DA UNIDADE (Estilo Mapa Estratégico Compacto) -->
-              <div class="bg-slate-900 text-white p-3 rounded-lg flex flex-wrap items-center justify-between gap-3 shadow-xs">
-                <div class="flex items-center gap-2.5">
+              <!-- BARRA EXECUTIVA DA UNIDADE -->
+              <div class="bg-slate-900 text-white px-3.5 py-2.5 rounded-lg flex flex-wrap items-center justify-between gap-2 shadow-xs">
+                <div class="flex items-center gap-2">
                   <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${sigla}</span>
-                  <div>
-                    <span class="font-bold text-xs">${uInfo.nome || sigla}</span>
-                    <span class="text-[11px] text-slate-300 ml-2">&bull; Chefia: <strong class="text-white">${uInfo.responsavel || '-'}</strong> &bull; SEI: <strong class="text-blue-300 font-mono">${uInfo.processo_sei || '-'}</strong> (${uInfo.status_reuniao || 'Pendente'})</span>
-                  </div>
+                  <span class="font-bold text-xs">${uInfo.nome || sigla}</span>
+                  <span class="text-[11px] text-slate-300 ml-1">&bull; Chefia: <strong class="text-white">${uInfo.responsavel || '-'}</strong> &bull; SEI: <strong class="text-blue-300 font-mono">${uInfo.processo_sei || '-'}</strong> (${uInfo.status_reuniao || 'Pendente'})</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-[11px] text-slate-200 font-semibold">
                     ${Object.keys(eixosGroup).length} Eixo(s)
                   </span>
-                  <span class="px-2 py-0.5 bg-blue-900 border border-blue-700 text-[11px] text-white font-bold rounded">
-                    ${krsList.length} Meta(s)
-                  </span>
-                  <span class="px-2 py-0.5 bg-emerald-800 border border-emerald-600 text-[11px] text-white font-bold rounded">
-                    ${acoesU.length} Ação(ões)
+                  <span class="px-2.5 py-0.5 bg-blue-900 border border-blue-700 text-[11px] text-white font-bold rounded">
+                    ${krsList.length} Meta(s) Vinculada(s)
                   </span>
                 </div>
               </div>
 
               <!-- EIXOS ESTRATÉGICOS -->
               ${Object.values(eixosGroup).map(e => `
-                <div class="space-y-3 mb-5">
+                <div class="space-y-2 mb-4">
                   <!-- BANNER DO EIXO -->
-                  <div class="bg-slate-800 text-white px-3.5 py-2 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
+                  <div class="bg-slate-800 text-white px-3 py-1.5 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
                     <div class="flex items-center gap-2">
                       <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${e.eixo_cod}</span>
                       <span class="font-bold text-xs">${e.eixo_nome}</span>
                     </div>
                     <span class="text-[10px] text-slate-300 font-semibold bg-slate-900 px-2 py-0.5 rounded">
-                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.krs.length, 0)} Meta(s) &bull; ${Object.values(e.objetivos).reduce((acc, o) => acc + o.krs.reduce((a, k) => a + k.acoes_detalhadas.length, 0), 0)} Ação(ões)
+                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.krs.length, 0)} Meta(s) neste Eixo
                     </span>
                   </div>
 
-                  <!-- OBJETIVOS DO EIXO (Cards Estilo Mapa Estratégico) -->
-                  <div class="grid grid-cols-1 gap-3">
+                  <!-- OBJETIVOS DO EIXO -->
+                  <div class="grid grid-cols-1 gap-2.5">
                     ${Object.values(e.objetivos).map(o => `
                       <div class="rounded-lg border border-slate-300 bg-white overflow-hidden shadow-xs">
                         <div class="bg-slate-100 px-3 py-1.5 border-b border-slate-200 flex items-center justify-between">
@@ -2314,54 +2287,37 @@
                           <span class="text-[10px] font-bold text-slate-600">${o.krs.length} Meta(s)</span>
                         </div>
 
-                        <!-- METAS (KRs) -->
-                        <div class="p-3 space-y-3 bg-slate-50/40">
-                          ${o.krs.map(k => `
-                            <div class="print-avoid-break rounded-lg border border-slate-200 bg-white p-3 shadow-xs space-y-2">
-                              <!-- KR HEADER -->
-                              <div class="flex flex-wrap items-start justify-between gap-2 border-b border-slate-100 pb-2">
-                                <div class="flex-1 min-w-[260px]">
-                                  <div class="flex items-center gap-1.5 flex-wrap">
-                                    <span class="font-mono font-extrabold text-blue-900 bg-blue-50 border border-blue-200 px-1.5 py-0.5 rounded text-[11px]">${k.kr_codigo}</span>
-                                    <span class="font-bold text-slate-900 text-xs">${k.kr_texto}</span>
-                                  </div>
-                                </div>
-                                <div class="flex items-center gap-1.5 flex-wrap">
+                        <!-- TABELA SINTÉTICA DE METAS (KRs) -->
+                        <table class="w-full text-left border-collapse text-xs">
+                          <thead class="bg-slate-50 text-slate-700 border-b border-slate-200">
+                            <tr>
+                              <th class="p-2 w-24">Cód. KR</th>
+                              <th class="p-2">Meta / Resultado-Chave (KR)</th>
+                              <th class="p-2 w-36">Pilar 3 Ps</th>
+                              <th class="p-2 w-28 text-center">Papel da Unidade</th>
+                              <th class="p-2 w-20 text-center">Ações</th>
+                            </tr>
+                          </thead>
+                          <tbody class="divide-y divide-slate-200">
+                            ${o.krs.map(k => `
+                              <tr class="hover:bg-slate-50 align-top">
+                                <td class="p-2 font-mono font-bold text-blue-900">${k.kr_codigo}</td>
+                                <td class="p-2 font-semibold text-slate-900">${k.kr_texto}</td>
+                                <td class="p-2 text-[11px] text-slate-600">${k.pilar_3ps}</td>
+                                <td class="p-2 text-center">
                                   <span class="text-[10px] font-bold px-2 py-0.5 rounded ${
-                                    k.papeis.has('Líder') ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' :
-                                    k.papeis.has('Coexecutor') ? 'bg-indigo-100 text-indigo-800 border border-indigo-300' :
-                                    'bg-amber-100 text-amber-800 border border-amber-300'
+                                    k.papeis.has('Líder') ? 'bg-emerald-100 text-emerald-800' :
+                                    k.papeis.has('Coexecutor') ? 'bg-indigo-100 text-indigo-800' :
+                                    'bg-amber-100 text-amber-800'
                                   }">
-                                    Papel: ${Array.from(k.papeis).join(', ')}
+                                    ${Array.from(k.papeis).join(', ')}
                                   </span>
-                                  <span class="text-[10px] font-semibold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200">
-                                    Pilar: ${k.pilar_3ps || 'Geral'}
-                                  </span>
-                                  <span class="text-[10px] font-bold bg-blue-100 text-blue-900 px-2 py-0.5 rounded">
-                                    ${k.acoes_detalhadas.length} ação(ões)
-                                  </span>
-                                </div>
-                              </div>
-
-                              <!-- AÇÕES PACTUADAS -->
-                              <div class="pt-1">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Ações Pactuadas pela Unidade:</div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
-                                  ${k.acoes_detalhadas.map(ac => `
-                                    <div class="p-2 rounded bg-slate-50 border border-slate-200/80 flex flex-col justify-between">
-                                      <div class="font-semibold text-slate-800 text-[11px] leading-snug">&bull; ${ac.acao}</div>
-                                      ${ac.como ? `<div class="text-[10px] text-slate-500 mt-1 italic">${ac.como}</div>` : ''}
-                                      <div class="mt-2 pt-1.5 border-t border-slate-200/60 flex items-center justify-between text-[10px]">
-                                        <span class="font-bold text-slate-600">Prazo: <span class="text-blue-900 font-semibold">${ac.prazo || 'A definir'}</span></span>
-                                        ${ac.parceiros ? `<span class="text-slate-500">Parceiros: <span class="font-medium text-slate-700">${ac.parceiros}</span></span>` : ''}
-                                      </div>
-                                    </div>
-                                  `).join('')}
-                                </div>
-                              </div>
-                            </div>
-                          `).join('')}
-                        </div>
+                                </td>
+                                <td class="p-2 text-center font-bold text-slate-700">${k.total_acoes}</td>
+                              </tr>
+                            `).join('')}
+                          </tbody>
+                        </table>
                       </div>
                     `).join('')}
                   </div>
@@ -2395,18 +2351,18 @@
           bodyEl.innerHTML = `
             <div class="space-y-4 text-xs">
               ${Object.values(eixosGroup).map(e => `
-                <div class="space-y-3 mb-5">
-                  <div class="bg-slate-900 text-white px-3.5 py-2 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
+                <div class="space-y-2 mb-4">
+                  <div class="bg-slate-900 text-white px-3 py-1.5 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
                     <div class="flex items-center gap-2">
                       <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${e.eixo_cod}</span>
                       <span class="font-bold text-xs">${e.eixo_nome}</span>
                     </div>
                     <span class="text-[10px] text-slate-300 font-semibold bg-slate-800 px-2 py-0.5 rounded">
-                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.metas.length, 0)} Metas &bull; ${Object.values(e.objetivos).reduce((acc, o) => acc + o.metas.reduce((a, m) => a + m.qtd_acoes, 0), 0)} Ações Totais
+                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.metas.length, 0)} Metas neste Eixo
                     </span>
                   </div>
 
-                  <div class="grid grid-cols-1 gap-3">
+                  <div class="grid grid-cols-1 gap-2.5">
                     ${Object.values(e.objetivos).map(o => `
                       <div class="rounded-lg border border-slate-300 bg-white overflow-hidden shadow-xs">
                         <div class="bg-slate-100 px-3 py-1.5 border-b border-slate-200 flex items-center justify-between">
@@ -2414,26 +2370,28 @@
                           <span class="text-[10px] font-bold text-slate-600">${o.metas.length} Meta(s)</span>
                         </div>
 
-                        <div class="p-3 divide-y divide-slate-100 space-y-2 bg-slate-50/30">
-                          ${o.metas.map(m => `
-                            <div class="print-avoid-break pt-2 first:pt-0 flex flex-col md:flex-row md:items-start justify-between gap-3 text-xs">
-                              <div class="flex-1">
-                                <div class="flex items-center gap-1.5 flex-wrap">
-                                  <span class="font-mono font-bold text-blue-900 bg-blue-50 border border-blue-200 px-1.5 py-0.5 rounded text-[11px]">${m.kr_codigo}</span>
-                                  <span class="font-bold text-slate-800">${m.kr_texto_completo}</span>
-                                </div>
-                                <div class="mt-1 text-[11px] text-slate-600">
-                                  <span class="font-semibold text-slate-500">Unidades:</span>
-                                  <span class="font-medium text-slate-800">${m.unidades.join(', ')}</span>
-                                </div>
-                              </div>
-                              <div class="flex items-center gap-2 shrink-0 text-[11px]">
-                                <span class="px-2 py-0.5 bg-slate-100 rounded text-slate-600 font-medium border border-slate-200">${m.pilar_3ps}</span>
-                                <span class="px-2 py-0.5 bg-blue-50 text-blue-900 font-bold rounded border border-blue-200">${m.qtd_acoes} ação(ões)</span>
-                              </div>
-                            </div>
-                          `).join('')}
-                        </div>
+                        <table class="w-full text-left border-collapse text-xs">
+                          <thead class="bg-slate-50 text-slate-700 border-b border-slate-200">
+                            <tr>
+                              <th class="p-2 w-24">Cód. KR</th>
+                              <th class="p-2">Meta / Resultado-Chave (KR)</th>
+                              <th class="p-2 w-36">Pilar 3 Ps</th>
+                              <th class="p-2 w-20 text-center">Total Ações</th>
+                              <th class="p-2">Unidades Vinculadas</th>
+                            </tr>
+                          </thead>
+                          <tbody class="divide-y divide-slate-200">
+                            ${o.metas.map(m => `
+                              <tr class="hover:bg-slate-50 align-top">
+                                <td class="p-2 font-mono font-bold text-blue-900">${m.kr_codigo}</td>
+                                <td class="p-2 font-semibold text-slate-900">${m.kr_texto_completo}</td>
+                                <td class="p-2 text-[11px] text-slate-600">${m.pilar_3ps}</td>
+                                <td class="p-2 text-center font-bold text-slate-700">${m.qtd_acoes}</td>
+                                <td class="p-2 text-[11px] text-slate-700">${m.unidades.join(', ')}</td>
+                              </tr>
+                            `).join('')}
+                          </tbody>
+                        </table>
                       </div>
                     `).join('')}
                   </div>
@@ -2450,14 +2408,6 @@
       const subtitulo = document.getElementById('rep-preview-sub')?.textContent || '';
       const conteudoHtml = document.getElementById('rep-preview-body')?.innerHTML || '';
       const dataHora = new Date().toLocaleString('pt-BR');
-      const orientacao = document.getElementById('rep-print-orientation')?.value || 'auto';
-
-      let pageRule = '@page { margin: 8mm; }';
-      if (orientacao === 'landscape') {
-        pageRule = '@page { size: A4 landscape; margin: 8mm; }';
-      } else if (orientacao === 'portrait') {
-        pageRule = '@page { size: A4 portrait; margin: 8mm; }';
-      }
 
       const win = window.open('', '_blank', 'width=1200,height=850');
       if (!win) {
@@ -2472,7 +2422,7 @@
   <title>${titulo}</title>
   <script src="https://cdn.tailwindcss.com"><\/script>
   <style>
-    ${pageRule}
+    @page { margin: 8mm; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: #ffffff;
