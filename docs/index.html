@@ -2244,17 +2244,17 @@
 
           bodyEl.innerHTML = `
             <div class="space-y-4 text-xs">
-              <!-- BARRA DA UNIDADE (SEM CHEFIA / SEI) -->
-              <div class="bg-slate-900 text-white px-4 py-2.5 rounded-lg flex items-center justify-between shadow-xs">
+              <!-- BARRA DA UNIDADE (EM TOM CINZA SUAVE) -->
+              <div class="bg-slate-100 text-slate-800 border border-slate-300 px-4 py-2 rounded-lg flex items-center justify-between shadow-xs">
                 <div class="flex items-center gap-2.5">
-                  <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${sigla}</span>
-                  <span class="font-bold text-xs tracking-wide">${uInfo.nome || sigla}</span>
+                  <span class="px-2 py-0.5 bg-slate-600 text-white rounded font-bold text-xs">${sigla}</span>
+                  <span class="font-bold text-xs tracking-wide text-slate-900">${uInfo.nome || sigla}</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-[11px] text-slate-200 font-semibold">
+                  <span class="px-2 py-0.5 bg-white border border-slate-300 rounded text-[11px] text-slate-700 font-semibold">
                     ${Object.keys(eixosGroup).length} Eixo(s)
                   </span>
-                  <span class="px-2.5 py-0.5 bg-blue-900 border border-blue-700 text-[11px] text-white font-bold rounded">
+                  <span class="px-2.5 py-0.5 bg-white border border-slate-300 text-[11px] text-slate-800 font-bold rounded">
                     ${krsList.length} Meta(s)
                   </span>
                 </div>
@@ -2263,12 +2263,12 @@
               <!-- EIXOS ESTRATÉGICOS -->
               ${Object.values(eixosGroup).map(e => `
                 <div class="space-y-2 mb-4">
-                  <div class="bg-slate-800 text-white px-3 py-1.5 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
+                  <div class="bg-slate-200 text-slate-900 border border-slate-300 border-l-4 border-l-slate-600 px-3 py-1.5 rounded-lg flex items-center justify-between shadow-xs">
                     <div class="flex items-center gap-2">
-                      <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${e.eixo_cod}</span>
-                      <span class="font-bold text-xs">${e.eixo_nome}</span>
+                      <span class="px-2 py-0.5 bg-slate-700 text-white rounded font-bold text-xs">${e.eixo_cod}</span>
+                      <span class="font-bold text-xs text-slate-900">${e.eixo_nome}</span>
                     </div>
-                    <span class="text-[10px] text-slate-300 font-semibold bg-slate-900 px-2 py-0.5 rounded">
+                    <span class="text-[10px] text-slate-700 font-semibold bg-white border border-slate-300 px-2 py-0.5 rounded">
                       ${Object.values(e.objetivos).reduce((acc, o) => acc + o.krs.length, 0)} Meta(s) neste Eixo
                     </span>
                   </div>
@@ -2334,12 +2334,12 @@
             <div class="space-y-4 text-xs">
               ${Object.values(eixosGroup).map(e => `
                 <div class="space-y-2 mb-4">
-                  <div class="bg-slate-900 text-white px-3 py-1.5 rounded-lg flex items-center justify-between border-l-4 border-blue-500 shadow-xs">
+                  <div class="bg-slate-200 text-slate-900 border border-slate-300 border-l-4 border-l-slate-600 px-3 py-1.5 rounded-lg flex items-center justify-between shadow-xs">
                     <div class="flex items-center gap-2">
-                      <span class="px-2 py-0.5 bg-blue-600 rounded font-black text-xs">${e.eixo_cod}</span>
-                      <span class="font-bold text-xs">${e.eixo_nome}</span>
+                      <span class="px-2 py-0.5 bg-slate-700 text-white rounded font-bold text-xs">${e.eixo_cod}</span>
+                      <span class="font-bold text-xs text-slate-900">${e.eixo_nome}</span>
                     </div>
-                    <span class="text-[10px] text-slate-300 font-semibold bg-slate-800 px-2 py-0.5 rounded">
+                    <span class="text-[10px] text-slate-700 font-semibold bg-white border border-slate-300 px-2 py-0.5 rounded">
                       ${Object.values(e.objetivos).reduce((acc, o) => acc + o.metas.length, 0)} Metas neste Eixo
                     </span>
                   </div>
@@ -2429,7 +2429,7 @@
   </style>
 </head>
 <body class="p-3">
-  <div class="border-b-2 border-slate-900 pb-2 mb-3 flex items-center justify-between">
+  <div class="border-b-2 border-slate-400 pb-2 mb-3 flex items-center justify-between">
     <div>
       <div class="text-[10px] font-bold uppercase tracking-wider text-blue-900">Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030</div>
       <h1 class="text-sm font-extrabold text-slate-900 mt-0.5">${titulo}</h1>
