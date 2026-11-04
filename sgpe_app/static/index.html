@@ -28,17 +28,17 @@
 <body class="text-slate-800">
 
   <!-- TOP HEADER -->
-  <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-40">
+  <header class="bg-slate-700 text-white shadow sticky top-0 z-40">
     <div class="max-w-[1600px] mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <div class="w-9 h-9 rounded-lg bg-blue-700 flex items-center justify-center font-bold text-sm shadow">PGE</div>
         <div>
           <h1 class="text-base font-bold tracking-tight">Planejamento Estratégico PGE-MA (2027–2030)</h1>
-          <p class="text-xs text-slate-400">Gestão de Metas, Planos de Ação e Governança</p>
+          <p class="text-xs text-slate-300">Gestão de Metas, Planos de Ação e Governança</p>
         </div>
       </div>
       <div class="flex items-center gap-2">
-        <button onclick="reindexXlsx()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-xs font-medium rounded-md border border-slate-600 transition">
+        <button onclick="reindexXlsx()" class="px-3 py-1.5 bg-slate-600 hover:bg-slate-500 text-xs font-medium rounded-md border border-slate-500 transition">
           Atualizar Planilhas
         </button>
         <button onclick="regenerarRelatorios()" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold rounded-md shadow transition">
@@ -73,7 +73,7 @@
   </header>
 
   <!-- TOAST NOTIFICATION -->
-  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-lg shadow-xl bg-slate-900 text-white text-sm font-medium border border-slate-700"></div>
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-lg shadow-xl bg-slate-700 text-white text-sm font-medium border border-slate-700"></div>
 
   <!-- MAIN CONTAINER -->
   <main class="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
@@ -207,7 +207,7 @@
         </div>
         <div class="overflow-x-auto max-h-[680px]">
           <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-800 text-white sticky top-0 z-10">
+            <thead class="bg-slate-700 text-white sticky top-0 z-10">
               <tr>
                 <th class="p-3 w-24">Unidade</th>
                 <th class="p-3 w-48">Meta (KR)</th>
@@ -268,7 +268,7 @@
 
       <!-- MATRIZ DOS 3 Ps -->
       <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-        <div class="bg-slate-900 text-white px-5 py-3.5 flex items-center justify-between">
+        <div class="bg-slate-700 text-white px-5 py-3 flex items-center justify-between">
           <div>
             <h2 class="font-bold text-sm">Cobertura dos "3 Ps" nas Especializadas e Regionais</h2>
             <p class="text-xs text-slate-300">Clique em 1º P, 2º P ou 3º P para filtrar as ações da unidade.</p>
@@ -277,7 +277,7 @@
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-800 text-white">
+            <thead class="bg-slate-700 text-white">
               <tr>
                 <th class="p-3">Unidade</th>
                 <th class="p-3">Status</th>
@@ -333,7 +333,7 @@
         </div>
 
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-          <div class="bg-slate-800 text-white px-4 py-3">
+          <div class="bg-slate-700 text-white px-4 py-3">
             <h3 class="font-bold text-xs uppercase tracking-wider">
               Quem <span id="rel-out-title" class="underline">PGAAE</span> Aciona
             </h3>
@@ -674,7 +674,7 @@
 
       <!-- ÁREA DE VISUALIZAÇÃO INTERATIVA DO RELATÓRIO SELECIONADO -->
       <div id="rep-preview-container" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-        <div class="bg-slate-900 text-white px-5 py-3 flex items-center justify-between">
+        <div class="bg-slate-700 text-white px-5 py-3 flex items-center justify-between">
           <div>
             <h3 id="rep-preview-title" class="font-bold text-sm">Visualização: Mapa Estratégico (Eixos e Objetivos)</h3>
             <p id="rep-preview-sub" class="text-xs text-slate-300">Estrutura consolidada em tempo real a partir da base de dados.</p>
@@ -695,7 +695,7 @@
   <!-- =================================================================== -->
   <div id="modal-acao" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden border border-slate-200">
-      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+      <div class="bg-slate-700 text-white px-6 py-4 flex items-center justify-between">
         <h3 id="modal-acao-title" class="font-bold text-sm">Editar Ação 5W2H (Sincronização Automática com Planilha .xlsx)</h3>
         <button onclick="closeAcaoModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
       </div>
@@ -757,7 +757,7 @@
   <!-- =================================================================== -->
   <div id="modal-minutas" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden border border-slate-200">
-      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+      <div class="bg-slate-700 text-white px-6 py-4 flex items-center justify-between">
         <h3 id="modal-minutas-title" class="font-bold text-sm">Gestão de Reunião, Processo SEI e Minutas Automáticas</h3>
         <button onclick="closeMinutasModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
       </div>
@@ -829,7 +829,7 @@
   <!-- =================================================================== -->
   <div id="modal-gt" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden border border-slate-200">
-      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+      <div class="bg-slate-700 text-white px-6 py-4 flex items-center justify-between">
         <h3 id="modal-gt-title" class="font-bold text-sm">Grupo de Trabalho Compartilhado / Projeto Estruturante</h3>
         <button onclick="closeGTModal()" class="text-slate-400 hover:text-white text-lg font-bold">&times;</button>
       </div>
@@ -1545,7 +1545,7 @@
           <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between gap-2">
-                <span class="px-2.5 py-0.5 bg-slate-900 text-white rounded text-xs font-extrabold">${gt.codigo}</span>
+                <span class="px-2.5 py-0.5 bg-slate-700 text-white rounded text-xs font-extrabold">${gt.codigo}</span>
                 <span class="px-2.5 py-0.5 bg-blue-100 text-blue-900 rounded-full text-[11px] font-bold">${gt.tipo}</span>
                 <span class="ml-auto px-2.5 py-0.5 bg-emerald-100 text-emerald-900 rounded text-[11px] font-bold">${gt.status}</span>
               </div>
@@ -1846,7 +1846,7 @@
         subEl.textContent = eixoFiltro ? `Filtrado pelo Eixo ${eixoFiltro}` : 'Todos os 9 Eixos da Lista Mestre Canônica';
         bodyEl.innerHTML = `
           <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-800 text-white">
+            <thead class="bg-slate-700 text-white">
               <tr>
                 <th class="p-2.5 w-24">Cód. KR</th>
                 <th class="p-2.5 w-56">Eixo Estratégico</th>
@@ -1880,7 +1880,7 @@
         subEl.textContent = ' Metodologia 5W2H sincronizada com as planilhas .xlsx oficiais';
         bodyEl.innerHTML = `
           <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-800 text-white">
+            <thead class="bg-slate-700 text-white">
               <tr>
                 <th class="p-2.5 w-24">Unidade</th>
                 <th class="p-2.5 w-48">Meta (KR)</th>
@@ -1921,7 +1921,7 @@
             <div>
               <h4 class="font-bold text-xs text-slate-800 uppercase mb-2">Quadro Sintético de Papéis e Demandas por Unidade</h4>
               <table class="w-full text-left border-collapse text-xs">
-                <thead class="bg-slate-800 text-white">
+                <thead class="bg-slate-700 text-white">
                   <tr>
                     <th class="p-2.5 w-20">Sigla</th>
                     <th class="p-2.5 w-64">Unidade</th>
@@ -1954,7 +1954,7 @@
             <div>
               <h4 class="font-bold text-xs text-slate-800 uppercase mb-2">Detalhamento das Ações Compartilhadas (${acoes.length} registros)</h4>
               <table class="w-full text-left border-collapse text-xs">
-                <thead class="bg-slate-800 text-white">
+                <thead class="bg-slate-700 text-white">
                   <tr>
                     <th class="p-2.5 w-24">Unidade</th>
                     <th class="p-2.5 w-28">Papel</th>
@@ -2004,7 +2004,7 @@
         subEl.textContent = `Curto Prazo: ${qtdCurto} | Médio Prazo / Periódico: ${qtdMedio} | Contínuo (2027–2030): ${qtdCont}`;
         bodyEl.innerHTML = `
           <table class="w-full text-left border-collapse text-xs">
-            <thead class="bg-slate-800 text-white">
+            <thead class="bg-slate-700 text-white">
               <tr>
                 <th class="p-2.5 w-56">Horizonte Temporal</th>
                 <th class="p-2.5 w-36">Prazo (QUANDO)</th>
@@ -2047,7 +2047,7 @@
               <div class="print-avoid-break space-y-3">
                 <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
                   <div>
-                    <span class="px-2.5 py-0.5 bg-slate-900 text-white rounded text-xs font-extrabold mr-2">${g.codigo}</span>
+                    <span class="px-2.5 py-0.5 bg-slate-700 text-white rounded text-xs font-extrabold mr-2">${g.codigo}</span>
                     <span class="font-extrabold text-sm text-slate-900">${g.titulo}</span>
                   </div>
                   <div class="text-xs font-bold text-slate-700">
@@ -2076,7 +2076,7 @@
               <div>
                 <div class="font-bold text-xs text-slate-800 mb-2">Ações Setoriais Vinculadas ao ${g.codigo} (${acoesGt.length} ações):</div>
                 <table class="w-full text-left border-collapse text-xs bg-white">
-                  <thead class="bg-slate-800 text-white">
+                  <thead class="bg-slate-700 text-white">
                     <tr>
                       <th class="p-2 w-20">Unidade</th>
                       <th class="p-2 w-28">KR</th>
@@ -2128,7 +2128,7 @@
             <div>
               <h4 class="font-bold text-xs uppercase text-slate-800 mb-2">1. Plano de Ação Setorial Pactuado — ${sig} (${acoesU.length} ações)</h4>
               <table class="w-full text-left border-collapse text-xs">
-                <thead class="bg-slate-800 text-white">
+                <thead class="bg-slate-700 text-white">
                   <tr>
                     <th class="p-2.5 w-10">#</th>
                     <th class="p-2.5 w-28">Meta (KR)</th>
@@ -2159,7 +2159,7 @@
               <div>
                 <h4 class="font-bold text-xs uppercase text-slate-800 mb-2">2. Compromissos Cruzados — Ações de Outras Unidades que Demandam ${sig} (${uMat.demandas_recebidas.length} ações)</h4>
                 <table class="w-full text-left border-collapse text-xs">
-                  <thead class="bg-slate-800 text-white">
+                  <thead class="bg-slate-700 text-white">
                     <tr>
                       <th class="p-2.5 w-24">Origem</th>
                       <th class="p-2.5 w-28">Meta (KR)</th>
