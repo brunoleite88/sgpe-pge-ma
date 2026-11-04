@@ -64,6 +64,7 @@ def build_github_pages_bundle():
         "matriz-responsabilidades",
         "cronograma-entregas",
         "relatorio-gt",
+        "quadro-metas-unidade",
     ]
     for t in tipos_rel:
         for fmt in ("xlsx", "docx", "md"):
@@ -80,6 +81,16 @@ def build_github_pages_bundle():
             res = client.get(f"/api/export/ficha-pactuacao?fmt={fmt}&sigla={sig}")
             if res.status_code == 200:
                 (DOCS_FICHAS / f"Ficha_Pactuacao_Setorial_{sig}.{fmt}").write_bytes(res.content)
+
+    # Pré-gerar Quadro de Eixos, Objetivos e Metas para cada uma das 41 unidades
+    DOCS_QUADRO = DOCS_EXPORTS / "quadro_metas"
+    DOCS_QUADRO.mkdir(parents=True, exist_ok=True)
+    for u in overview["unidades"]:
+        sig = u["sigla"]
+        for fmt in ("xlsx", "docx", "md"):
+            res = client.get(f"/api/export/quadro-metas-unidade?fmt={fmt}&sigla={sig}")
+            if res.status_code == 200:
+                (DOCS_QUADRO / f"Quadro_Eixos_Objetivos_Metas_{sig}.{fmt}").write_bytes(res.content)
 
     # Copiar index.html atualizado para docs/index.html e criar .nojekyll
     shutil.copy2(APP_DIR / "static" / "index.html", DOCS_DIR / "index.html")

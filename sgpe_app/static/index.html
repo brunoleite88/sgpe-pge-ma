@@ -366,8 +366,8 @@
     <!-- =================================================================== -->
     <section id="tab-relatorios" class="hidden space-y-6">
 
-      <!-- 3 CARDS DE EXPORTAÇÃO DIRETA -->
-      <div id="rep-cards-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5 no-print">
+      <!-- CARDS DE EXPORTAÇÃO DIRETA -->
+      <div id="rep-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 no-print">
 
         <!-- CARD 1: MAPA ESTRATÉGICO -->
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
@@ -600,39 +600,73 @@
         </div>
 
         <!-- CARD 7: FICHA INDIVIDUALIZADA DE PACTUAÇÃO POR UNIDADE -->
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between md:col-span-3">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-            <div class="md:col-span-2">
-              <div class="flex items-center gap-3">
-                <span class="px-2.5 py-0.5 bg-rose-100 text-rose-900 rounded text-xs font-extrabold">Relatório 7</span>
-                <span class="text-xs text-slate-500 font-semibold">Termo de Compromisso Setorial • Pronto para Juntada no SEI</span>
-              </div>
-              <h3 class="text-base font-extrabold text-slate-900 mt-1.5">Ficha Individualizada de Pactuação por Unidade</h3>
-              <p class="text-xs text-slate-600 mt-1">
-                Documento completo da unidade selecionada: identificação da chefia e processo SEI, pauta e deliberações, resumo de metas e papéis intersetoriais, plano de ação 5W2H, demandas recebidas de outras pastas e minuta de despacho de homologação SEI.
-              </p>
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-rose-100 text-rose-900 rounded text-xs font-extrabold">Relatório 7</span>
+              <span class="text-xs text-slate-500 font-semibold">Termo de Compromisso SEI</span>
             </div>
-            <div class="space-y-2">
-              <div>
-                <label class="block text-[11px] font-bold text-slate-700 mb-1">Unidade da Ficha de Pactuação:</label>
-                <select id="rep-sigla-ficha" onchange="if(STATE.previewAtivo==='ficha') mostrarPreviewRelatorio('ficha')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-2 bg-slate-50 font-bold text-slate-900">
-                </select>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <button onclick="exportarRelatorio('ficha-pactuacao', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
-                  Excel (.xlsx)
-                </button>
-                <button onclick="exportarRelatorio('ficha-pactuacao', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
-                  Word (.docx)
-                </button>
-                <button onclick="exportarRelatorio('ficha-pactuacao', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
-                  .md
-                </button>
-              </div>
-              <button onclick="mostrarPreviewRelatorio('ficha')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
-                Visualizar na Tela / Imprimir Ficha
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Ficha de Pactuação por Unidade</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Documento completo da unidade: chefia, processo SEI, matriz 5W2H, compromissos cruzados e despacho de validação SEI.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Selecionar Unidade:</label>
+              <select id="rep-sigla-ficha" onchange="if(STATE.previewAtivo==='ficha') mostrarPreviewRelatorio('ficha')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white font-semibold">
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('ficha-pactuacao', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('ficha-pactuacao', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('ficha-pactuacao', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
               </button>
             </div>
+            <button onclick="mostrarPreviewRelatorio('ficha')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 8: QUADRO ESTRUTURADO DE EIXOS, OBJETIVOS E METAS (POR UNIDADE OU GERAL) -->
+        <div class="bg-white rounded-xl shadow-sm border-2 border-teal-500/70 p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 bg-teal-100 text-teal-900 rounded text-xs font-extrabold">Relatório 8</span>
+              <span class="text-xs text-slate-500 font-semibold">Hierarquia Setorial</span>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 mt-2">Eixos, Objetivos e Metas por Unidade</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Estrutura hierárquica (Eixo > Objetivo > KR) vinculada à unidade selecionada ou visão geral das 41 unidades.
+            </p>
+            <div class="mt-3">
+              <label class="block text-[11px] font-bold text-slate-600 mb-1">Selecionar Unidade:</label>
+              <select id="rep-sigla-quadro" onchange="if(STATE.previewAtivo==='quadro') mostrarPreviewRelatorio('quadro')" class="w-full text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white font-semibold">
+                <option value="">Todas as 41 Unidades (Consolidado Geral)</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarRelatorio('quadro-metas-unidade', 'xlsx')" class="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow text-center">
+                Excel (.xlsx)
+              </button>
+              <button onclick="exportarRelatorio('quadro-metas-unidade', 'docx')" class="flex-1 px-3 py-2 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                Word (.docx)
+              </button>
+              <button onclick="exportarRelatorio('quadro-metas-unidade', 'md')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold shadow text-center">
+                .md
+              </button>
+            </div>
+            <button onclick="mostrarPreviewRelatorio('quadro')" class="w-full py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold">
+              Visualizar na Tela / Imprimir
+            </button>
           </div>
         </div>
 
@@ -1686,7 +1720,7 @@
         const unitOptsAll = `<option value="">Todas as 41 Unidades (Consolidado Geral)</option>` +
           STATE.overview.unidades.map(u => `<option value="${u.sigla}">${u.sigla} — ${u.nome} (${u.total_acoes} ações)</option>`).join('');
 
-        ['rep-sigla-planos', 'rep-sigla-resp', 'rep-sigla-cron'].forEach(id => {
+        ['rep-sigla-planos', 'rep-sigla-resp', 'rep-sigla-cron', 'rep-sigla-quadro'].forEach(id => {
           const el = document.getElementById(id);
           if (el) {
             const curr = el.value;
@@ -1740,6 +1774,9 @@
       } else if (tipo === 'ficha-pactuacao') {
         const sigla = document.getElementById('rep-sigla-ficha').value || 'PGAAE';
         params.set('sigla', sigla);
+      } else if (tipo === 'quadro-metas-unidade') {
+        const sigla = document.getElementById('rep-sigla-quadro').value;
+        if (sigla) params.set('sigla', sigla);
       }
       if (STATE.isStaticMode) {
         if (tipo === 'planos-acao' && fmt === 'xlsx' && params.get('sigla')) {
@@ -1747,6 +1784,13 @@
         } else if (tipo === 'ficha-pactuacao') {
           const sig = params.get('sigla') || 'PGAAE';
           window.location.href = `exports/fichas/Ficha_Pactuacao_Setorial_${sig}.${fmt}`;
+        } else if (tipo === 'quadro-metas-unidade') {
+          const sig = params.get('sigla');
+          if (sig) {
+            window.location.href = `exports/quadro_metas/Quadro_Eixos_Objetivos_Metas_${sig}.${fmt}`;
+          } else {
+            window.location.href = `exports/quadro-metas-unidade.${fmt}`;
+          }
         } else {
           window.location.href = `exports/${tipo}.${fmt}`;
         }
@@ -2145,6 +2189,206 @@
             </div>
           </div>
         `;
+      } else if (qual === 'quadro') {
+        const sigla = document.getElementById('rep-sigla-quadro').value;
+        const allAcoes = STATE.relatorios.acoes_enriquecidas || [];
+        const metasMaster = STATE.relatorios.objetivos_metas || [];
+        const unidsMeta = STATE.relatorios.unidades_meta || [];
+
+        if (sigla) {
+          const uInfo = unidsMeta.find(u => u.sigla === sigla) || {};
+          const acoesU = allAcoes.filter(a => a.sigla_unidade === sigla);
+
+          const krsDict = {};
+          acoesU.forEach(a => {
+            const krc = a.kr_codigo;
+            if (!krc || krc === 'SEM_CODIGO') return;
+            if (!krsDict[krc]) {
+              const mInfo = metasMaster.find(m => m.kr_codigo === krc);
+              krsDict[krc] = {
+                eixo_cod: krc.substring(0, 2),
+                eixo_nome: mInfo ? mInfo.eixo_nome : a.eixo,
+                obj_cod: krc.substring(0, 5),
+                objetivo_nome: mInfo ? mInfo.objetivo_nome : a.objetivo,
+                kr_codigo: krc,
+                kr_texto: mInfo ? mInfo.kr_texto_completo : a.kr_texto_completo,
+                pilar_3ps: a.pilar_3ps,
+                papeis: new Set(),
+                acoes: [],
+                prazos: new Set(),
+                parceiros: new Set()
+              };
+            }
+            krsDict[krc].papeis.add(a.papel_unidade);
+            krsDict[krc].acoes.push(a.acao);
+            krsDict[krc].prazos.add(a.prazo);
+            if (a.unidades_parceiras) {
+              a.unidades_parceiras.split(',').forEach(p => { if (p.trim()) krsDict[krc].parceiros.add(p.trim()); });
+            }
+          });
+
+          const krsList = Object.values(krsDict).sort((a, b) => a.kr_codigo.localeCompare(b.kr_codigo));
+
+          const eixosGroup = {};
+          krsList.forEach(k => {
+            if (!eixosGroup[k.eixo_cod]) {
+              eixosGroup[k.eixo_cod] = {
+                eixo_cod: k.eixo_cod,
+                eixo_nome: k.eixo_nome,
+                objetivos: {}
+              };
+            }
+            if (!eixosGroup[k.eixo_cod].objetivos[k.obj_cod]) {
+              eixosGroup[k.eixo_cod].objetivos[k.obj_cod] = {
+                obj_cod: k.obj_cod,
+                objetivo_nome: k.objetivo_nome,
+                krs: []
+              };
+            }
+            eixosGroup[k.eixo_cod].objetivos[k.obj_cod].krs.push(k);
+          });
+
+          titleEl.textContent = `8. Quadro de Eixos, Objetivos e Metas — ${sigla} (${uInfo.nome || ''})`;
+          subEl.textContent = `Estrutura estratégica setorial: ${krsList.length} Metas (KRs) e ${acoesU.length} Ações Pactuadas`;
+
+          bodyEl.innerHTML = `
+            <div class="space-y-6 text-xs">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                <div><div class="text-slate-500 font-semibold">Unidade</div><div class="font-extrabold text-slate-900 text-sm mt-0.5">${sigla} — ${uInfo.nome || ''}</div></div>
+                <div><div class="text-slate-500 font-semibold">Chefia / Interlocutor(a)</div><div class="font-bold text-slate-900 mt-0.5">${uInfo.responsavel || '-'}</div></div>
+                <div><div class="text-slate-500 font-semibold">Processo SEI / Status</div><div class="font-bold text-blue-900 mt-0.5">${uInfo.processo_sei || '-'} • ${uInfo.status_reuniao || '-'}</div></div>
+                <div><div class="text-slate-500 font-semibold">Total de KRs / Ações</div><div class="font-bold text-emerald-800 mt-0.5">${krsList.length} Metas (KRs) • ${acoesU.length} Ações</div></div>
+              </div>
+
+              ${Object.values(eixosGroup).map(e => `
+                <div class="print-avoid-break rounded-xl border border-slate-300 bg-white overflow-hidden shadow-sm">
+                  <div class="bg-slate-900 text-white px-4 py-2.5 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 bg-blue-600 rounded font-bold text-xs">${e.eixo_cod}</span>
+                      <span class="font-bold text-xs">${e.eixo_nome}</span>
+                    </div>
+                    <span class="text-[11px] text-slate-300 font-medium">
+                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.krs.length, 0)} Meta(s) neste Eixo
+                    </span>
+                  </div>
+                  <div class="p-4 space-y-4">
+                    ${Object.values(e.objetivos).map(o => `
+                      <div class="border border-slate-200 rounded-lg overflow-hidden">
+                        <div class="bg-slate-100 px-3 py-2 border-b border-slate-200 flex items-center justify-between">
+                          <span class="font-bold text-slate-900"><span class="font-mono text-blue-800 mr-1.5">${o.obj_cod}</span> ${o.objetivo_nome}</span>
+                          <span class="text-[10px] font-bold text-slate-600">${o.krs.length} Meta(s)</span>
+                        </div>
+                        <table class="w-full text-left border-collapse text-xs">
+                          <thead class="bg-slate-50 text-slate-700 border-b border-slate-200">
+                            <tr>
+                              <th class="p-2.5 w-24">Cód. KR</th>
+                              <th class="p-2.5">Meta / Resultado-Chave (KR)</th>
+                              <th class="p-2.5 w-32">Pilar 3 Ps</th>
+                              <th class="p-2.5 w-24 text-center">Papel</th>
+                              <th class="p-2.5 w-16 text-center">Ações</th>
+                              <th class="p-2.5 w-60">Ações Pactuadas (O QUÊ)</th>
+                              <th class="p-2.5 w-32">Prazos</th>
+                            </tr>
+                          </thead>
+                          <tbody class="divide-y divide-slate-200">
+                            ${o.krs.map(k => `
+                              <tr class="hover:bg-slate-50 align-top">
+                                <td class="p-2.5 font-mono font-bold text-blue-900">${k.kr_codigo}</td>
+                                <td class="p-2.5 font-semibold text-slate-900">${k.kr_texto}</td>
+                                <td class="p-2.5 text-[11px] font-medium text-slate-600">${k.pilar_3ps}</td>
+                                <td class="p-2.5 text-center font-bold text-indigo-900">${Array.from(k.papeis).join(', ')}</td>
+                                <td class="p-2.5 text-center font-bold">${k.acoes.length}</td>
+                                <td class="p-2.5 text-slate-700">
+                                  <ul class="list-disc list-inside space-y-1">
+                                    ${k.acoes.map(ac => `<li>${ac}</li>`).join('')}
+                                  </ul>
+                                </td>
+                                <td class="p-2.5 text-[11px] text-slate-600">${Array.from(k.prazos).join(', ')}</td>
+                              </tr>
+                            `).join('')}
+                          </tbody>
+                        </table>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          `;
+        } else {
+          titleEl.textContent = '8. Quadro de Eixos, Objetivos e Metas — PGE-MA (Consolidado Geral)';
+          subEl.textContent = `Visão completa dos 9 Eixos Estratégicos, Objetivos e ${metasMaster.length} Resultados-Chave (KRs)`;
+
+          const eixosGroup = {};
+          metasMaster.forEach(m => {
+            if (!eixosGroup[m.eixo_cod]) {
+              eixosGroup[m.eixo_cod] = {
+                eixo_cod: m.eixo_cod,
+                eixo_nome: m.eixo_nome,
+                objetivos: {}
+              };
+            }
+            if (!eixosGroup[m.eixo_cod].objetivos[m.obj_cod]) {
+              eixosGroup[m.eixo_cod].objetivos[m.obj_cod] = {
+                obj_cod: m.obj_cod,
+                objetivo_nome: m.objetivo_nome,
+                metas: []
+              };
+            }
+            eixosGroup[m.eixo_cod].objetivos[m.obj_cod].metas.push(m);
+          });
+
+          bodyEl.innerHTML = `
+            <div class="space-y-6 text-xs">
+              ${Object.values(eixosGroup).map(e => `
+                <div class="print-avoid-break rounded-xl border border-slate-300 bg-white overflow-hidden shadow-sm">
+                  <div class="bg-slate-900 text-white px-4 py-2.5 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 bg-blue-600 rounded font-bold text-xs">${e.eixo_cod}</span>
+                      <span class="font-bold text-xs">${e.eixo_nome}</span>
+                    </div>
+                    <span class="text-[11px] text-slate-300 font-medium">
+                      ${Object.values(e.objetivos).reduce((acc, o) => acc + o.metas.length, 0)} Metas (KRs)
+                    </span>
+                  </div>
+                  <div class="p-4 space-y-4">
+                    ${Object.values(e.objetivos).map(o => `
+                      <div class="border border-slate-200 rounded-lg overflow-hidden">
+                        <div class="bg-slate-100 px-3 py-2 border-b border-slate-200 flex items-center justify-between">
+                          <span class="font-bold text-slate-900"><span class="font-mono text-blue-800 mr-1.5">${o.obj_cod}</span> ${o.objetivo_nome}</span>
+                          <span class="text-[10px] font-bold text-slate-600">${o.metas.length} Meta(s)</span>
+                        </div>
+                        <table class="w-full text-left border-collapse text-xs">
+                          <thead class="bg-slate-50 text-slate-700 border-b border-slate-200">
+                            <tr>
+                              <th class="p-2.5 w-24">Cód. KR</th>
+                              <th class="p-2.5">Meta / Resultado-Chave (KR)</th>
+                              <th class="p-2.5 w-36">Pilar 3 Ps</th>
+                              <th class="p-2.5 w-20 text-center">Total Ações</th>
+                              <th class="p-2.5 w-72">Unidades Vinculadas</th>
+                            </tr>
+                          </thead>
+                          <tbody class="divide-y divide-slate-200">
+                            ${o.metas.map(m => `
+                              <tr class="hover:bg-slate-50 align-top">
+                                <td class="p-2.5 font-mono font-bold text-blue-900">${m.kr_codigo}</td>
+                                <td class="p-2.5 font-semibold text-slate-900">${m.kr_texto_completo}</td>
+                                <td class="p-2.5 text-[11px] font-medium text-slate-600">${m.pilar_3ps}</td>
+                                <td class="p-2.5 text-center font-bold">${m.qtd_acoes}</td>
+                                <td class="p-2.5 text-[11px] text-slate-700">${m.unidades.join(', ')}</td>
+                              </tr>
+                            `).join('')}
+                          </tbody>
+                        </table>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          `;
+        }
+      }
       }
     }
 

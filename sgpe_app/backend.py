@@ -2300,6 +2300,178 @@ def exportar_relatorio(
             doc.save(str(out_path))
             return FileResponse(str(out_path), filename=out_path.name)
 
+    # -------------------------------------------------------------------------
+    # RELATÓRIO 8: QUADRO DE EIXOS, OBJETIVOS E METAS (POR UNIDADE OU GERAL)
+    # -------------------------------------------------------------------------
+    elif tipo == "quadro-metas-unidade":
+        conn.close()
+        all_acoes = dados["acoes_enriquecidas"]
+        metas_master = dados["objetivos_metas"]
+        unidades_meta = dados["unidades_meta"]
+
+        if sigla:
+            u_info = next((u for u in unidades_meta if u["sigla"] == sigla), None)
+            u_nome = u_info["nome"] if u_info else sigla
+            acoes_u = [a for a in all_acoes if a["sigla_unidade"] == sigla]
+
+            krs_dict = {}
+            for a in acoes_u:
+                krc = a["kr_codigo"]
+                if krc == "SEM_CODIGO":
+                    continue
+                if krc not in krs_dict:
+                    m_info = next((m for m in metas_master if m["kr_codigo"] == krc), None)
+                    krs_dict[krc] = {
+                        "eixo_cod": a["kr_codigo"][:2],
+                        "eixo_nome": m_info["eixo_nome"] if m_info else a["eixo"],
+                        "obj_cod": a["kr_codigo"][:5],
+                        "objetivo_nome": m_info["objetivo_nome"] if m_info else a["objetivo"],
+                        "kr_codigo": krc,
+                        "kr_texto": m_info["kr_texto_completo"] if m_info else a["kr_texto_completo"],
+                        "pilar_3ps": a["pilar_3ps"],
+                        "papeis": set(),
+                        "acoes": [],
+                        "prazos": set(),
+                        "parceiros": set()
+                    }
+                krs_dict[krc]["papeis"].add(a["papel_unidade"])
+                krs_dict[krc]["acoes"].append(a["acao"])
+                krs_dict[krc]["prazos"].add(a["prazo"])
+                if a["unidades_parceiras"]:
+                    for p in a["unidades_parceiras"].split(","):
+                        if p.strip():
+                            krs_dict[krc]["parceiros"].add(p.strip())
+
+            krs_sorted = sorted(krs_dict.values(), key=lambda x: x["kr_codigo"])
+
+            headers = [
+                "Eixo Estratégico", "Cód. Objetivo", "Objetivo Estratégico",
+                "Cód. KR", "Meta / Resultado-Chave (KR)", "Pilar 3 Ps",
+                "Papel da Unidade", "Nº de Ações", "Ações da Unidade (O QUÊ)", "Prazos", "Parceiros Acionados"
+            ]
+            rows_data = [
+                [
+                    f"{k['eixo_cod']} – {k['eixo_nome']}",
+                    k["obj_cod"],
+                    k["objetivo_nome"],
+                    k["kr_codigo"],
+                    k["kr_texto"],
+                    k["pilar_3ps"],
+                    ", ".join(sorted(k["papeis"])),
+                    len(k["acoes"]),
+                    ";\n".join([f"• {ac}" for ac in k["acoes"]]),
+                    ", ".join(sorted(k["prazos"])),
+                    ", ".join(sorted(k["parceiros"])) or "Execução direta"
+                ]
+                for k in krs_sorted
+            ]
+            title_doc = f"Quadro de Eixos, Objetivos e Metas — {sigla} ({u_nome})"
+            sub_doc = f"Estrutura Estratégica Setorial: {len(krs_sorted)} Metas (KRs) e {len(acoes_u)} Ações Pactuadas"
+            filename_base = f"Quadro_Eixos_Objetivos_Metas_{sigla}"
+
+        else:
+            headers = [
+                "Eixo Estratégico", "Cód. Objetivo", "Objetivo Estratégico",
+                "Cód. KR", "Meta / Resultado-Chave (KR)", "Pilar 3 Ps",
+                "Total de Ações", "Unidades Vinculadas"
+            ]
+            rows_data = [
+                [
+                    f"{m['eixo_cod']} – {m['eixo_nome']}",
+                    m["obj_cod"],
+                    m["objetivo_nome"],
+                    m["kr_codigo"],
+                    m["kr_texto_completo"],
+                    m["pilar_3ps"],
+                    m["qtd_acoes"],
+                    ", ".join(m["unidades"])
+                ]
+                for m in metas_master
+            ]
+            title_doc = "Quadro de Eixos, Objetivos e Metas — PGE-MA 2027–2030 (Consolidado Geral)"
+            sub_doc = f"Visão Estruturada dos 9 Eixos, Objetivos e {len(metas_master)} Resultados-Chave (KRs) nas 41 Unidades"
+            filename_base = "Quadro_Eixos_Objetivos_Metas_Consolidado_Geral"
+
+        if fmt == "md":
+            lines = [
+                f"# {title_doc}\n",
+                f"*{sub_doc}*\n"
+            ]
+            if sigla:
+                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Pilar 3 Ps | Papel | Ações | Prazos | Parceiros |")
+                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :---: | :---: | :--- | :--- |")
+                for r in rows_data:
+                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | **{r[6]}** | {r[7]} | {r[9]} | {r[10]} |")
+            else:
+                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta / Resultado-Chave (KR) | Pilar 3 Ps | Ações | Unidades Vinculadas |")
+                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :---: | :--- |")
+                for r in rows_data:
+                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | {r[6]} | {r[7]} |")
+            out_path = export_dir / f"{filename_base}.md"
+            out_path.write_text("\n".join(lines), encoding="utf-8")
+            return FileResponse(str(out_path), filename=out_path.name, media_type="text/markdown")
+
+        elif fmt == "xlsx":
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.title = "Eixos, Objetivos e Metas"
+            col_widths = [26, 14, 34, 14, 46, 22, 18, 12, 48, 22, 28] if sigla else [28, 14, 38, 14, 52, 24, 14, 46]
+            style_xlsx_sheet(
+                ws,
+                title_doc.upper(),
+                sub_doc,
+                headers,
+                rows_data,
+                col_widths
+            )
+            out_path = export_dir / f"{filename_base}.xlsx"
+            wb.save(str(out_path))
+            return FileResponse(str(out_path), filename=out_path.name)
+
+        elif fmt == "docx":
+            doc = docx.Document()
+            doc.add_heading(title_doc, level=1)
+            doc.add_paragraph(sub_doc)
+
+            if sigla:
+                table = doc.add_table(rows=1, cols=6)
+                table.style = "Table Grid"
+                hdr = table.rows[0].cells
+                hdr[0].text = "Eixo / Objetivo"
+                hdr[1].text = "Cód. KR"
+                hdr[2].text = "Meta (KR)"
+                hdr[3].text = "Papel / Ações"
+                hdr[4].text = "Ações Pactuadas"
+                hdr[5].text = "Prazos / Parceiros"
+                for r in rows_data:
+                    rc = table.add_row().cells
+                    rc[0].text = f"{r[0]}\n({r[1]} - {r[2]})"
+                    rc[1].text = str(r[3])
+                    rc[2].text = str(r[4])
+                    rc[3].text = f"{r[6]}\n({r[7]} ações)"
+                    rc[4].text = str(r[8])
+                    rc[5].text = f"Prazo: {r[9]}\nParceiros: {r[10]}"
+            else:
+                table = doc.add_table(rows=1, cols=5)
+                table.style = "Table Grid"
+                hdr = table.rows[0].cells
+                hdr[0].text = "Eixo Estratégico"
+                hdr[1].text = "Objetivo"
+                hdr[2].text = "Cód. KR"
+                hdr[3].text = "Meta (Resultado-Chave)"
+                hdr[4].text = "Unidades (Ações)"
+                for r in rows_data:
+                    rc = table.add_row().cells
+                    rc[0].text = str(r[0])
+                    rc[1].text = f"{r[1]}\n{r[2]}"
+                    rc[2].text = str(r[3])
+                    rc[3].text = f"{r[4]}\n[Pilar: {r[5]}]"
+                    rc[4].text = f"{r[7]} ({r[6]} ações)"
+
+            out_path = export_dir / f"{filename_base}.docx"
+            doc.save(str(out_path))
+            return FileResponse(str(out_path), filename=out_path.name)
+
     conn.close()
     raise HTTPException(status_code=400, detail="Tipo de relatório inválido")
 
