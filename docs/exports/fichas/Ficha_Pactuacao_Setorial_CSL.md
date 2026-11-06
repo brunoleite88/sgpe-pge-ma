@@ -28,7 +28,7 @@
 
 | Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
-| **ASJUR** | `E5.O5.KR2` | Consolidar repositório de minutas-padrão de editais, contratos, convênios e pareceres referenciais no SEI/SPA | Líder: Assessoria Jurídica / Consultoria-Geral; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação (CSL) | 180 dias / Contínuo até 2029 |
+| **ASJUR** | `E7.O1.KR1` | Consolidar repositório de minutas-padrão de editais, contratos, convênios e pareceres referenciais no SEI/SPA | Líder: Assessoria Jurídica / Consultoria-Geral; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação (CSL) | 180 dias / Contínuo até 2029 |
 | **PA** | `E5.O3.KR1` | Criar normas e orientações internas de conformidade e compliance para licitações e contratações diretas | Líder: Procuradoria Administrativa; Coexecutores: PGAAE, CSL | 180 dias |
 | **PJ** | `E7.O3.KR2` | Implantar a ferramenta 'Minuta IA' para demandas repetitivas do Grupo 2 | Líder: Procuradoria Judicial; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação | 180 dias |
 | **PT** | `E4.O1.KR1` | Adequar fluxos e rotinas de resposta rápida a consultas das secretarias sobre terceirização e regime trabalhista | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, CSL, SEGEP | 60 dias |

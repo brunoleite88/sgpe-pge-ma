@@ -45,10 +45,11 @@ UNIT_META = {
         "nome": "Procuradoria-Geral Adjunta para Assuntos Administrativos",
         "tipo": "Cúpula / Coordenação",
         "bloco_3ps": "Cúpula Coordenadora",
-        "status_reuniao": "Reunião Pendente (Prioritária)",
+        "status_reuniao": "Reunião Realizada",
         "processo_sei": "Verificar SEI",
-        "responsavel": "Procurador(a)-Geral Adjunto(a) para Assuntos Administrativos",
-        "pauta_reuniao": "Coordenação executiva da eficiência administrativa (Eixo 2), execução orçamentária/FUNPGE e captação externa com articulação da PGARI (Eixo 3), sustentabilidade (Eixo 8) e obras/reformas (Eixo 9)."
+        "responsavel": "Dra. Socorro (Procuradora-Geral Adjunta para Assuntos Administrativos)",
+        "pauta_reuniao": "Coordenação executiva da eficiência administrativa (Eixo 2), execução orçamentária/FUNPGE e captação externa com articulação da PGARI (Eixo 3), sustentabilidade (Eixo 8) e obras/reformas (Eixo 9).",
+        "notas_reuniao": "Reunião presencial de alinhamento realizada em 06/11/2026 (Dra. Socorro, Dr. Marcus, Bruno, Hellisandra). Metas saneadas: E2.O1.KR1 ajustado para 2027 (foco em eficiência/economicidade); E2.O2.KR2 ajustado para inconformidades contratuais; E5.O5.KR1 postergado para 2029; PGA homologada como coexecutora orçamentária/financeira em E3.O1.KR1; KRs indevidos expurgados (consultoria externa, recursos de tribunais superiores e equidade); unificação das KRs de minutas/peças em E7.O1.KR1 e desmobilização/TI em E2.O1.KR2."
     },
     "PERJP": {
         "nome": "Procuradoria de Execuções e Requisições Judiciais de Pagamento",
@@ -192,7 +193,7 @@ UNIT_META = {
         "status_reuniao": "Respondido no SEI",
         "processo_sei": "2025.11103.05165 / 2026.11103.07181",
         "responsavel": "Dr. Victor Paiva (Memorando nº 38/2026)",
-        "pauta_reuniao": "Tempestividade consultiva qualificada por complexidade (E4.O1.KR1), análise técnico-jurídica formal de PLs e minutas de decretos (E5.O4.KR1/KR2) e repositório de minutas-padrão (E5.O5.KR2)."
+        "pauta_reuniao": "Tempestividade consultiva qualificada por complexidade (E4.O1.KR1), análise técnico-jurídica formal de PLs e minutas de decretos (E5.O4.KR1/KR2) e repositório de minutas-padrão (E7.O1.KR1)."
     },
     "PGAAJ": {
         "nome": "Procuradoria-Geral Adjunta para Assuntos Jurídicos",
@@ -264,7 +265,7 @@ UNIT_META = {
         "status_reuniao": "Reunião Realizada",
         "processo_sei": "Verificar SEI",
         "responsavel": "Marcio Roberto / Alice",
-        "pauta_reuniao": "Liderança estrita em infraestrutura física, redes, servidores, backup Veeam/Nutanix (E7.O2.KR1/KR2 e E7.O3.KR3), PDTIC (E7.O4.KR1) e artefatos de TIC do BID (E3.O1.KR3), transferindo sistemas/BI/IA para Assessoria em TIC da PGAAE / INOVA."
+        "pauta_reuniao": "Liderança estrita em infraestrutura física, redes, servidores, backup Veeam/Nutanix (E2.O1.KR2, E7.O2.KR2 e E7.O3.KR3), PDTIC (E7.O4.KR1) e artefatos de TIC do BID (E3.O1.KR3), transferindo sistemas/BI/IA para Assessoria em TIC da PGAAE / INOVA."
     },
     "INOVA": {
         "nome": "Laboratório de Inovação (INOVA)",
@@ -418,7 +419,7 @@ INITIAL_GTS = [
         "codigo": "GT-01",
         "titulo": "Força-Tarefa Profisco III / BID (10 Artefatos Estruturantes)",
         "tipo": "Projeto Estruturante",
-        "krs_vinculados": "E3.O1.KR3, E7.O1.KR1, E7.O2.KR1",
+        "krs_vinculados": "E2.O1.KR2, E3.O1.KR3, E7.O1.KR1",
         "lider": "PGAAE / PGA",
         "unidades_participantes": "PGAAE, PGA, INOVA, UGC, CSL, SI, USF, SEO, SCCF",
         "status": "Em Execução Prioritária",
@@ -468,7 +469,7 @@ INITIAL_GTS = [
         "codigo": "GT-04",
         "titulo": "GT de Estabilidade do SPA, Integração PJe-SPA (Delay Zero) e Automação/IA (MINUTIA)",
         "tipo": "Projeto Estruturante",
-        "krs_vinculados": "E5.O5.KR1, E5.O5.KR2, E5.O6.KR1, E7.O1.KR1, E7.O2.KR1",
+        "krs_vinculados": "E2.O1.KR2, E5.O5.KR1, E5.O6.KR1, E7.O1.KR1",
         "lider": "PGAAE (Assessoria em TIC) / INOVA",
         "unidades_participantes": "PGAAE, INOVA, SI, SDD, PJEFP, PB, PSAU, PJ, CG",
         "status": "Em Execução Prioritária",
@@ -592,7 +593,7 @@ def classify_3ps(kr_code: str) -> str:
         return "1º P: Prazo"
     if kr_code in ("E5.O1.KR1", "E5.O1.KR2", "E5.O1.KR3", "E5.O2.KR2"):
         return "2º P: Presença nos Tribunais"
-    if kr_code in ("E5.O5.KR1", "E5.O5.KR2", "E5.O3.KR1", "E5.O3.KR2", "E5.O2.KR1"):
+    if kr_code in ("E5.O5.KR1", "E5.O5.KR2", "E5.O3.KR1", "E5.O3.KR2", "E5.O2.KR1", "E7.O1.KR1"):
         return "3º P: Padronização e Prevenção"
     return "Outros Eixos / Governança"
 

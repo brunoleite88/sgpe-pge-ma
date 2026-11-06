@@ -4,7 +4,7 @@
 - **Tipo:** Projeto Estruturante | **Status:** Em Execução Prioritária | **Prazo:** 2026–2028 (Cronograma BID)
 - **Liderança:** PGAAE / PGA
 - **Unidades Participantes:** PGAAE, PGA, INOVA, UGC, CSL, SI, USF, SEO, SCCF
-- **Metas (KRs) Vinculadas:** `E3.O1.KR3, E7.O1.KR1, E7.O2.KR1`
+- **Metas (KRs) Vinculadas:** `E2.O1.KR2, E3.O1.KR3, E7.O1.KR1`
 - **Objetivo e Escopo:** Garantir a elaboração de TRs, licitação, contratação e entrega dos 10 artefatos tecnológicos e consultivos financiados pelo BID no Profisco III, delimitando a USF/SEO/SCCF à liquidação e conformidade financeira.
 
 ### Checklist de Entregáveis do GT/Projeto
@@ -13,9 +13,13 @@
 - **[Pendente]** Cronograma de licitações prioritárias junto à UGC e CSL
 - **[Pendente]** Fluxo de conformidade contábil e desembolso junto à USF/SEO/SCCF
 
-### Ações Setoriais Vinculadas ao GT-01 (52 ações)
+### Ações Setoriais Vinculadas ao GT-01 (66 ações)
 | Unidade | KR | Ação (O QUÊ) | Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
+| **PGA** | `E2.O1.KR2` | Realizar inventário patrimonial integral e classificação de uso | Líder: Procurador-Geral Adjunto | 180 dias |
+| **PGA** | `E2.O1.KR2` | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Líder: Procurador-Geral Adjunto | 240 dias |
+| **PGA** | `E2.O1.KR2` | Priorizar reaproveitamento interno antes de novas aquisições | Líder: Procurador-Geral Adjunto | 120 dias |
+| **PGA** | `E2.O1.KR2` | Integrar renovação tecnológica com descarte racional de bens obsoletos | Líder: Procurador-Geral Adjunto | Conforme cronograma das contratações estruturantes |
 | **PGA** | `E3.O1.KR3` | Criar governança própria da carteira PROFISCO III no âmbito da PGE-MA | Coexecutores: Procuradoria-Geral Adjunta de Relacionamento Institucional; Procuradoria de Brasília; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 30 dias |
 | **PGA** | `E3.O1.KR3` | Consolidar cronograma físico-financeiro de todos os projetos PROFISCO III | Coexecutores: Procuradoria-Geral Adjunta de Relacionamento Institucional; Procuradoria de Brasília; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 60 dias |
 | **PGA** | `E3.O1.KR3` | Monitorar maturidade dos artefatos exigidos pelo BID | Coexecutores: Procuradoria-Geral Adjunta de Relacionamento Institucional; Procuradoria de Brasília; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Contínuo, com relatório bimestral |
@@ -30,12 +34,17 @@
 | **PGA** | `E7.O1.KR1` | Capacitar os usuários das novas ferramentas antes e durante a implantação | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | A partir do início dos pilotos; continuidade semestral |
 | **PGA** | `E7.O1.KR1` | Selecionar ferramenta inteligente de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 90 dias |
 | **PGA** | `E7.O1.KR1` | Implantar piloto da ferramenta de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Até o 2º semestre de 2026 |
-| **PGA** | `E7.O2.KR1` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
-| **PGA** | `E7.O2.KR1` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
-| **PGA** | `E7.O2.KR1` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
-| **PGA** | `E7.O2.KR1` | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
-| **PGA** | `E7.O2.KR1` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunto; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
-| **PGA** | `E7.O2.KR1` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
+| **PGA** | `E2.O1.KR2` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| **PGA** | `E2.O1.KR2` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
+| **PGA** | `E2.O1.KR2` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
+| **PGA** | `E2.O1.KR2` | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
+| **PGA** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunto; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
+| **PGA** | `E2.O1.KR2` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
+| **PGA** | `E7.O1.KR1` | Criar trilha prioritária para automação de documentos e minutas | Líder: Procurador-Geral Adjunto | 180 dias |
+| **PGA** | `E7.O1.KR1` | Implantar ambiente de automação assistida para elaboração documental | Líder: Procurador-Geral Adjunto | Conforme cronograma PROFISCO III, com piloto em 12 meses |
+| **PGA** | `E7.O1.KR1` | Vincular a consultoria de transformação digital ao redesenho dos fluxos documentais | Líder: Procurador-Geral Adjunto | Conforme cronograma contratual PROFISCO |
+| **PGA** | `E7.O1.KR1` | Melhorar os fluxos de acordos trabalhistas com padronização de entendimentos | Líder: Procurador-Geral Adjunto | 150 dias |
+| **PGA** | `E7.O1.KR1` | Criar painel institucional de produtividade e automação | Líder: Procurador-Geral Adjunto | 180 dias |
 | **PGA** | `E7.O1.KR1` | Criar biblioteca institucional de pareceres padronizados automatizáveis | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 120 dias |
 | **PGA** | `E7.O1.KR1` | Implantar modelo assistido de elaboração de pareceres | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 180 dias após definição da biblioteca |
 | **PGA** | `E7.O1.KR1` | Medir tempo, qualidade e taxa de reaproveitamento dos pareceres assistidos | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Semestral, após implantação |
@@ -47,15 +56,6 @@
 | **PGAAE** | `E3.O1.KR3` | Prestar contas internamente da evolução do PROFISCO III | Coexecutores: Procuradoria-Geral Adjunta de Relacionamento Institucional; Procuradoria de Brasília; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Trimestral |
 | **PGAAE** | `E7.O1.KR1` | Instituir programa de implantação de IA aplicada à atuação jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 60 dias |
 | **PGAAE** | `E7.O1.KR1` | Selecionar os 2 casos de uso prioritários de IA | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 90 dias |
-| **PGAAE** | `E7.O1.KR1` | Contratar e implantar plataforma local de IA prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Conforme cronograma PROFISCO III, com piloto em até 12 meses após contratação |
-| **PGAAE** | `E7.O1.KR1` | Estabelecer protocolo de uso responsável da IA | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 120 dias |
-| **PGAAE** | `E7.O1.KR1` | Integrar ferramentas novas às soluções já existentes em 2025 | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 240 dias |
-| **PGAAE** | `E7.O1.KR1` | Capacitar os usuários das novas ferramentas antes e durante a implantação | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | A partir do início dos pilotos; continuidade semestral |
-| **PGAAE** | `E7.O1.KR1` | Selecionar ferramenta inteligente de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 90 dias |
-| **PGAAE** | `E7.O1.KR1` | Implantar piloto da ferramenta de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Até o 2º semestre de 2026 |
-| **PGAAE** | `E7.O2.KR1` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
-| **PGAAE** | `E7.O2.KR1` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
-| **PGAAE** | `E7.O2.KR1` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
 
 ---
 
@@ -180,7 +180,7 @@
 - **Tipo:** Projeto Estruturante | **Status:** Em Execução Prioritária | **Prazo:** Imediato / Contínuo 2027–2030
 - **Liderança:** PGAAE (Assessoria em TIC) / INOVA
 - **Unidades Participantes:** PGAAE, INOVA, SI, SDD, PJEFP, PB, PSAU, PJ, CG
-- **Metas (KRs) Vinculadas:** `E5.O5.KR1, E5.O5.KR2, E5.O6.KR1, E7.O1.KR1, E7.O2.KR1`
+- **Metas (KRs) Vinculadas:** `E2.O1.KR2, E5.O5.KR1, E5.O6.KR1, E7.O1.KR1`
 - **Objetivo e Escopo:** Eliminar o delay de 5 a 7 dias na captura de intimações entre PJe/Portais e SPA, assegurar estabilidade noturna do SPA, governar mudanças de layout com aviso prévio (demanda PJEFP/PSAU/PB) e expandir o uso do MINUTIA e robôs de triagem.
 
 ### Checklist de Entregáveis do GT/Projeto
@@ -196,7 +196,7 @@
 | **CG** | `E5.O6.KR1` | Sanear regras do Dashboard da Corregedoria para eliminação de falsos positivos de perda de prazo | Líder: Corregedoria-Geral; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), Subprocuradoria-Geral Adjunta (SGA), NCIA | 60 dias |
 | **PB** | `E5.O5.KR1` | Implantar robôs institucionais (RPA) para triagem automatizada de demandas sindicais e repetitivas no SPA | Líder: Procuradoria de Brasília; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), Subprocuradoria-Geral Adjunta | Até 2028 |
 | **PB** | `E5.O6.KR1` | Manter rigoroso controle diário de prazos processuais e expedição de notas de dispensa tempestivas | Líder Executivo: Procuradoria de Brasília (Cumprimento indelegável); Triagem e Etiquetas SPA: Serviço de Distribuição | Diário / Contínuo até 2030 |
-| **PB** | `E5.O5.KR2` | Estruturar repositório padronizado de minutas de agravos internos, memoriais, cotas de dispensa e contrarrazões nos Tribunais Superiores | Líder: Procuradoria de Brasília (PB); Coexecutores: Assessoria em TIC da PGAAE / INOVA, Subprocuradoria-Geral Adjunta (SGA) | 180 dias / Contínuo até 2029 |
+| **PB** | `E7.O1.KR1` | Estruturar repositório padronizado de minutas de agravos internos, memoriais, cotas de dispensa e contrarrazões nos Tribunais Superiores | Líder: Procuradoria de Brasília (PB); Coexecutores: Assessoria em TIC da PGAAE / INOVA, Subprocuradoria-Geral Adjunta (SGA) | 180 dias / Contínuo até 2029 |
 | **PGAAE** | `E7.O1.KR1` | Instituir programa de implantação de IA aplicada à atuação jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 60 dias |
 | **PGAAE** | `E7.O1.KR1` | Selecionar os 2 casos de uso prioritários de IA | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 90 dias |
 | **PGAAE** | `E7.O1.KR1` | Contratar e implantar plataforma local de IA prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Conforme cronograma PROFISCO III, com piloto em até 12 meses após contratação |
@@ -205,20 +205,20 @@
 | **PGAAE** | `E7.O1.KR1` | Capacitar os usuários das novas ferramentas antes e durante a implantação | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | A partir do início dos pilotos; continuidade semestral |
 | **PGAAE** | `E7.O1.KR1` | Selecionar ferramenta inteligente de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 90 dias |
 | **PGAAE** | `E7.O1.KR1` | Implantar piloto da ferramenta de pesquisa jurídica | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Até o 2º semestre de 2026 |
-| **PGAAE** | `E7.O2.KR1` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
-| **PGAAE** | `E7.O2.KR1` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
-| **PGAAE** | `E7.O2.KR1` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
-| **PGAAE** | `E7.O2.KR1` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
-| **PGAAE** | `E7.O2.KR1` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
+| **PGAAE** | `E2.O1.KR2` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| **PGAAE** | `E2.O1.KR2` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
+| **PGAAE** | `E2.O1.KR2` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
+| **PGAAE** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
+| **PGAAE** | `E2.O1.KR2` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
 | **PGAAE** | `E5.O5.KR1` | Instituir Programa de Automação Institucional da PGE-MA | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
 | **PGAAE** | `E5.O5.KR1` | Mapear os 20 fluxos mais repetitivos da instituição | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 90 dias |
 | **PGAAE** | `E5.O5.KR1` | Implantar metodologia de gestão visual de trabalho | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
 | **PGAAE** | `E5.O5.KR1` | Integrar e escalar as automações já concluídas em 2025 | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
-| **PGAAE** | `E5.O5.KR2` | Criar trilha prioritária para automação de documentos e minutas | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
-| **PGAAE** | `E5.O5.KR2` | Implantar ambiente de automação assistida para elaboração documental | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III, com piloto em 12 meses |
-| **PGAAE** | `E5.O5.KR2` | Vincular a consultoria de transformação digital ao redesenho dos fluxos documentais | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma contratual PROFISCO |
-| **PGAAE** | `E5.O5.KR2` | Melhorar os fluxos de acordos trabalhistas com padronização de entendimentos | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 150 dias |
-| **PGAAE** | `E5.O5.KR2` | Criar painel institucional de produtividade e automação | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
+| **PGAAE** | `E7.O1.KR1` | Criar trilha prioritária para automação de documentos e minutas | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
+| **PGAAE** | `E7.O1.KR1` | Implantar ambiente de automação assistida para elaboração documental | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III, com piloto em 12 meses |
+| **PGAAE** | `E7.O1.KR1` | Vincular a consultoria de transformação digital ao redesenho dos fluxos documentais | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma contratual PROFISCO |
+| **PGAAE** | `E7.O1.KR1` | Melhorar os fluxos de acordos trabalhistas com padronização de entendimentos | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 150 dias |
+| **PGAAE** | `E7.O1.KR1` | Criar painel institucional de produtividade e automação | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
 | **PGAAE** | `E5.O6.KR1` | Instituir programa “Prazo Zero Perdido” | Líder Executivo: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) (Cumprimento indelegável); Triagem e Etiquetas SPA: Serviço de Distribuição | 45 dias |
 | **PGAAE** | `E5.O6.KR1` | Levantar a linha de base real de prazos perdidos e falhas de captura de expediente | Líder Executivo: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) (Cumprimento indelegável); Triagem e Etiquetas SPA: Serviço de Distribuição | 60 dias |
 | **PGAAE** | `E5.O6.KR1` | Mapear integralmente a jornada do expediente desde o recebimento até a baixa | Líder Executivo: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) (Cumprimento indelegável); Triagem e Etiquetas SPA: Serviço de Distribuição | 90 dias |
@@ -347,7 +347,7 @@
 
 ### Checklist de Entregáveis do GT/Projeto
 - **[Concluído]** Obrigação recíproca de envio quinzenal (E6.O1.KR2) inserida nas planilhas das Especializadas e Regionais
-- **[Pendente]** Ação de aproveitamento de vídeos do YouTube inserida na ASCOM e SGA (Memorando Intersetorial nº 02)
+- **[Concluído]** Ação de aproveitamento de vídeos do YouTube inserida na ASCOM e SGA (Memorando Intersetorial nº 02)
 - **[Pendente]** Edição de Portaria do Gabinete regulamentando o fluxo de envio de êxitos à ASCOM
 
 ### Ações Setoriais Vinculadas ao GT-07 (26 ações)
@@ -392,7 +392,7 @@
 ### Checklist de Entregáveis do GT/Projeto
 - **[Concluído]** Supressão formal de E4.O1.KR2 por impossibilidade material das plataformas e-OUV/e-SIC (Nota Técnica SEI nº 02)
 - **[Concluído]** Inclusão das 2 ações anuais contra assédio (Dec. 39.054/2024) e protocolo LGPD/SEI na Ouvidoria
-- **[Pendente]** Inclusão da oficina de Escuta Ativa e Comunicação Não Violenta (CNV) na ESAP
+- **[Concluído]** Inclusão da oficina de Escuta Ativa e Comunicação Não Violenta (CNV) na ESAP
 - **[Pendente]** Aprovação da matriz da Escala de Transparência Interna Adaptada e do Manual de Boas Práticas
 
 ### Ações Setoriais Vinculadas ao GT-08 (42 ações)
@@ -453,9 +453,14 @@
 - **[Concluído]** Espelhamento do Painel Compartilhado de Visibilidade Intersetorial nas planilhas da CSL, SCC e SMP
 - **[Pendente]** Habilitação operacional do acesso à Extranet e grupo oficial de avisos no Fórum José Sarney
 
-### Ações Setoriais Vinculadas ao GT-09 (30 ações)
+### Ações Setoriais Vinculadas ao GT-09 (38 ações)
 | Unidade | KR | Ação (O QUÊ) | Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
+| **PGAAE** | `E2.O1.KR2` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| **PGAAE** | `E2.O1.KR2` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
+| **PGAAE** | `E2.O1.KR2` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
+| **PGAAE** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
+| **PGAAE** | `E2.O1.KR2` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
 | **PGAAE** | `E5.O5.KR1` | Instituir Programa de Automação Institucional da PGE-MA | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
 | **PGAAE** | `E5.O5.KR1` | Mapear os 20 fluxos mais repetitivos da instituição | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 90 dias |
 | **PGAAE** | `E5.O5.KR1` | Implantar metodologia de gestão visual de trabalho | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
@@ -481,11 +486,14 @@
 | **SGRH** | `E9.O1.KR1` | Instituir Ciclo Bienal de Pesquisa de Clima Organizacional e Plano de Intervenção Funcional | Líder: Serviço de Gestão de Recursos Humanos (SGRH); Coexecutores: Subprocuradoria-Geral Adjunta, ESAP | 1º Ciclo em até 180 dias; aplicação bienal contínua |
 | **SGRH** | `E9.O1.KR1` | Instituir canal direto de avisos funcionais para servidores lotados em unidades descentralizadas (Fórum José Sarney e Regionais) | Líder: Serviço de Gestão de Recursos Humanos (SGRH); Coexecutores: PJEFP, Procuradorias Regionais (PRI/PRT), ASCOM, ESAP | 60 dias / Contínuo |
 | **SI** | `E5.O5.KR1` | Prover infraestrutura de servidores e ambiente de hospedagem para execução de robôs de automação (RPA) | Líder de Desenvolvimento/Evolução: Assessoria em TIC da PGAAE / INOVA; Suporte de Infraestrutura Física: Supervisão de Informática (SI) | Contínuo até 2029 |
+| **SI** | `E2.O1.KR2` | Executar o plano plurianual de modernização e renovação do parque tecnológico da PGE-MA | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2027 (fases anuais) |
 | **SI** | `E7.O3.KR2` | Dar suporte técnico à ESAP e EGMA na oferta de trilhas continuadas de capacitação digital | Coexecutores: ESAP, Assessoria em TIC da PGAAE / INOVA, Subprocuradoria-Geral Adjunta | Semestral até 2027 |
 | **SMP** | `E2.O1.KR2` | Realizar inventário patrimonial integral e classificação de uso | Líder: Procurador-Geral Adjunto | 180 dias |
 | **SMP** | `E2.O1.KR2` | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Líder: Procurador-Geral Adjunto | 240 dias |
 | **SMP** | `E2.O1.KR2` | Priorizar reaproveitamento interno antes de novas aquisições | Líder: Procurador-Geral Adjunto | 120 dias |
 | **SMP** | `E2.O1.KR2` | Integrar renovação tecnológica com descarte racional de bens obsoletos | Líder: Procurador-Geral Adjunto | Conforme cronograma das contratações estruturantes |
+| **SMP** | `E2.O1.KR2` | Consolidar inventário tecnológico com classificação de obsolescência | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| **SMP** | `E2.O1.KR2` | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
 
 ---
 

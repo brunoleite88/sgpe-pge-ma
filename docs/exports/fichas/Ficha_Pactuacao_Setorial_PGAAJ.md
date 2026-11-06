@@ -84,7 +84,7 @@
 | **PCF** | `E5.O1.KR2` | Elaborar memoriais executivos com cálculo do impacto financeiro para distribuição aos gabinetes de julgadores | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGAAJ, SEFAZ | Contínuo até 2030 |
 | **PCF** | `E5.O3.KR1` | Instituir matriz de riscos tributários para identificação prévia de passivos fiscais do Estado | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGAAJ, SEFAZ | Até 2027 |
 | **PCF** | `E5.O3.KR1` | Emitir notas de conformidade jurídica prévia para projetos de incentivos e benefícios fiscais estaduais | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: SEFAZ, PGAAJ | Contínuo até 2030 |
-| **PCF** | `E5.O5.KR2` | Estruturar banco de peças tributárias inteligentes para demandas fiscais de massa | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), PGAAJ | Até 2028 |
+| **PCF** | `E7.O1.KR1` | Estruturar banco de peças tributárias inteligentes para demandas fiscais de massa | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), PGAAJ | Até 2028 |
 | **PDA** | `E5.O1.KR3` | Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções | Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ | 120 dias e contínuo |
 | **PDA** | `E5.O1.KR2` | Priorizar atuação qualificada presencial, memoriais e sustentações perante Varas da Fazenda e Câmaras do TJMA | Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAJ | Contínuo |
 | **PDA** | `E4.O1.KR1` | Garantir resposta tempestiva a ao menos 90% das consultas e expedientes da SEFAZ e órgãos estaduais sobre inscrição e cobrança da Dívida Ativa | Líder: Procuradoria da Dívida Ativa (PDA); Coexecutores: SEFAZ, PGAAJ | Contínuo (2027–2030) |
@@ -153,10 +153,10 @@
 | **PT** | `E5.O2.KR1` | Disseminar pareceres referenciais em matéria de contratos temporários e contratações celetistas | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, SEGEP | Até 2028 |
 | **PT** | `E5.O3.KR1` | Mapear a matriz de riscos trabalhistas das contratações terceirizadas de grande porte | Líder: Procuradoria Trabalhista; Coexecutores: CSL, PGAAJ, SEGEP | Até 2027 |
 | **PT** | `E5.O3.KR1` | Acompanhar previamente inquéritos civis e negociações de TACs perante o Ministério Público do Trabalho | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, MPT | Contínuo até 2030 |
-| **PT** | `E5.O5.KR2` | Estruturar banco de peças no Assistente de Petição para defesas em terceirização (Tema 246/STF) | Líder: Procuradoria Trabalhista; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), PGAAJ | Até 2028 |
-| **PT** | `E5.O5.KR2` | Desenvolver modelos automatizados para Recursos Ordinários e Agravos de Petição perante o TRT16 | Líder: Procuradoria Trabalhista; Coexecutores: Assessoria em TIC da PGAAE / INOVA/PGA, PGAAJ | Até 2029 |
+| **PT** | `E7.O1.KR1` | Estruturar banco de peças no Assistente de Petição para defesas em terceirização (Tema 246/STF) | Líder: Procuradoria Trabalhista; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), PGAAJ | Até 2028 |
+| **PT** | `E7.O1.KR1` | Desenvolver modelos automatizados para Recursos Ordinários e Agravos de Petição perante o TRT16 | Líder: Procuradoria Trabalhista; Coexecutores: Assessoria em TIC da PGAAE / INOVA/PGA, PGAAJ | Até 2029 |
 | **SGA** | `E5.O1.KR2` | Articular atuação coordenada em pautas de 2º Grau, revezamento virtual de sustentações com Brasília e difusão no YouTube junto à ASCOM | Líder: Subprocuradoria-Geral Adjunta (SGA); Coexecutores: Procuradorias Especializadas, Procuradoria de Brasília (PB), PGAAJ, Assessoria de Comunicação (ASCOM) | Contínuo até 2030 |
-| **SGA** | `E5.O5.KR2` | Supervisionar a padronização e unificação dos bancos de peças, teses e enunciados das Procuradorias Especializadas | Líder: Subprocuradoria-Geral Adjunta (SGA); Coexecutores: PGAAJ, Procuradorias Especializadas, Assessoria em TIC da PGAAE / INOVA | Semestral até 2029 |
+| **SGA** | `E7.O1.KR1` | Supervisionar a padronização e unificação dos bancos de peças, teses e enunciados das Procuradorias Especializadas | Líder: Subprocuradoria-Geral Adjunta (SGA); Coexecutores: PGAAJ, Procuradorias Especializadas, Assessoria em TIC da PGAAE / INOVA | Semestral até 2029 |
 
 ## 4. Termo / Despacho Padrão de Homologação no SEI
 

@@ -1239,6 +1239,8 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 ### KR2: Reduzir em 50% o tempo de elaboração de peças e documentos jurídicos padronizados até 2029
 - **Código na Lista Mestre:** `E5.O5.KR2`
+> [!NOTE]
+> **UNIFICAÇÃO PACTUADA EM 06/11/2026 (REUNIÃO PGA/PGAAE):** Esta meta foi unificada formalmente com a KR `E7.O1.KR1` (*Automatizar e padronizar a elaboração de pareceres e peças processuais com inteligência artificial e ferramentas digitais até 2028*), centralizando a padronização e automação assistida por IA/software nas 18 unidades pactuadas.
 - **Unidades Oficiais Previstas na Lista Mestre:** Todas as Especializadas, Supervisão de Informática, Subprocuradoria-Geral Adjunta
 - **Unidades com Ações Mapeadas (14):** Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE), Procurador-Geral Adjunto, Procuradoria Administrativa, Procuradoria Regional de Imperatriz, Procuradoria Regional de Timon, Procuradoria Trabalhista, Procuradoria da Dívida Ativa, Procuradoria da Educação, Procuradoria da Saúde, Procuradoria da Segurança Pública, Procuradoria de Execuções e Requisições Judiciais de Pagamento, Procuradoria do Contencioso Fiscal, Procuradoria do Patrimônio Imobiliário e Meio Ambiente, Procuradoria dos Juizados Especiais da Fazenda Pública
 - **Volume de Ações Setoriais:** 34 iniciativas
@@ -1654,6 +1656,8 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 ### KR1: Substituir 100% dos equipamentos de TI obsoletos até 2027
 - **Código na Lista Mestre:** `E7.O2.KR1`
+> [!NOTE]
+> **UNIFICAÇÃO PACTUADA EM 06/11/2026 (REUNIÃO PGA/PGAAE):** Esta meta foi unificada formalmente com a KR `E2.O1.KR2` (*Desmobilizar 100% dos bens e ativos móveis inservíveis, subutilizados e equipamentos de TI obsoletos até 2028*), consolidando a desmobilização patrimonial e a renovação de TI em uma única linha estratégica de eficiência.
 - **Unidades Oficiais Previstas na Lista Mestre:** Supervisão de Informática, Subprocuradoria-Geral Adjunta (UGAM e USF)
 - **Unidades com Ações Mapeadas (1):** Supervisão de Informática
 - **Volume de Ações Setoriais:** 1 iniciativas

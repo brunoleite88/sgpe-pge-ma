@@ -5,7 +5,7 @@
 - **Unidade:** SMP — Serviço de Material e Patrimônio
 - **Chefia / Interlocutor(a):** Soraya Maranhão (Despacho nº 057/2026)
 - **Processo SEI:** `2026.11103.07208` | **Status de Pactuação:** **Respondido no SEI**
-- **Total de Ações Pactuadas:** 19 ações distribuídas em 6 Metas (`E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E7.O2.KR1, E8.O1.KR1, E9.O2.KR1`)
+- **Total de Ações Pactuadas:** 19 ações distribuídas em 5 Metas (`E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E8.O1.KR1, E9.O2.KR1`)
 - **Atuação Intersetorial:** Líder em 19 ações | Coexecutor em 0 | Articulador em 0 | Demandada externamente em 10 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Controle de almoxarifado e patrimônio (Eixo 2), logística reversa e sustentabilidade (Eixo 8) e alimentação do Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI).
 
@@ -24,8 +24,8 @@
 | 9 | `E2.O1.KR2` | Outros Eixos / Governança | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Definir quais bens serão realocados, recuperados, descartados ou encaminhados à SEGEP | Líder: Procurador-Geral Adjunto | 240 dias |
 | 10 | `E2.O1.KR2` | Outros Eixos / Governança | Priorizar reaproveitamento interno antes de novas aquisições | Inserir checagem obrigatória de disponibilidade patrimonial em processos de compra de equipamentos e materiais permanentes | Líder: Procurador-Geral Adjunto | 120 dias |
 | 11 | `E2.O1.KR2` | Outros Eixos / Governança | Integrar renovação tecnológica com descarte racional de bens obsoletos | Vincular o cronograma de renovação do parque tecnológico às rotinas de tombamento, remanejamento e baixa dos equipamentos substituídos | Líder: Procurador-Geral Adjunto | Conforme cronograma das contratações estruturantes |
-| 12 | `E7.O2.KR1` | Outros Eixos / Governança | Consolidar inventário tecnológico com classificação de obsolescência | Levantar parque atual, identificar equipamentos defasados, criticidade por unidade e prioridade de substituição | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
-| 13 | `E7.O2.KR1` | Outros Eixos / Governança | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Integrar renovação do parque à governança de tombamento, realocação e descarte dos equipamentos substituídos | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
+| 12 | `E2.O1.KR2` | Outros Eixos / Governança | Consolidar inventário tecnológico com classificação de obsolescência | Levantar parque atual, identificar equipamentos defasados, criticidade por unidade e prioridade de substituição | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 60 dias |
+| 13 | `E2.O1.KR2` | Outros Eixos / Governança | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Integrar renovação do parque à governança de tombamento, realocação e descarte dos equipamentos substituídos | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
 | 14 | `E8.O1.KR1` | Outros Eixos / Governança | Instituir Programa de Sustentabilidade e Inclusão da PGE-MA | Editar ato interno criando programa com dois módulos integrados: sustentabilidade operacional e equidade/diversidade/inclusão | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 60 dias |
 | 15 | `E8.O1.KR1` | Outros Eixos / Governança | Coletar linha de base do manejo de resíduos nas unidades da PGE | Levantar volume atual de resíduos gerados, fração reciclável, forma de destinação, contratos de coleta e pontos de descarte existentes | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 90 dias |
 | 16 | `E8.O1.KR1` | Outros Eixos / Governança | Mapear infraestrutura mínima de coleta seletiva por unidade | Identificar necessidade de lixeiras específicas, sinalização, ponto de armazenamento e rotina de retirada | Coexecutores: Conselho Superior; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP); Comitê de Equidade | 120 dias |
@@ -53,7 +53,7 @@
 ```text
 À Chefia da Serviço de Material e Patrimônio (SMP),
 
-No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: 2026.11103.07208), e em conformidade com o alinhamento técnico realizado com a unidade (Soraya Maranhão (Despacho nº 057/2026)), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_SMP.xlsx, contemplando 19 ações estratégicas vinculadas aos resultados-chave E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E7.O2.KR1, E8.O1.KR1, E9.O2.KR1).
+No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: 2026.11103.07208), e em conformidade com o alinhamento técnico realizado com a unidade (Soraya Maranhão (Despacho nº 057/2026)), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_SMP.xlsx, contemplando 19 ações estratégicas vinculadas aos resultados-chave E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E8.O1.KR1, E9.O2.KR1).
 
 Destaques técnicos consolidados: Controle de almoxarifado e patrimônio (Eixo 2), logística reversa e sustentabilidade (Eixo 8) e alimentação do Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI).
 
