@@ -950,7 +950,7 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 ## O2: Assegurar a defesa jurídica do Estado e a conformidade legal
 
-### KR1: Reduzir em 20% o ajuizamento de novas ações judiciais contra o Estado até 2030
+### KR1: Reduzir em 15% o ajuizamento de novas ações judiciais contra o Estado até 2030
 - **Código na Lista Mestre:** `E5.O2.KR1`
 - **Unidades Oficiais Previstas na Lista Mestre:** Procuradorias Contenciosas (Judicial, Trabalhista, Saúde, Educação, Segurança Pública), Procuradoria Administrativa, CPARI, Subprocuradoria-Geral Adjunta
 - **Unidades com Ações Mapeadas (12):** Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE), Procurador-Geral Adjunto, Procurador-Geral Adjunto para Assuntos Jurídicos (PGAAJ), Procuradoria Administrativa, Procuradoria Judicial, Procuradoria Regional de Imperatriz, Procuradoria Regional de Timon, Procuradoria Trabalhista, Procuradoria da Educação, Procuradoria da Segurança Pública, Procuradoria do Contencioso Fiscal, Procuradoria do Patrimônio Imobiliário e Meio Ambiente
@@ -1004,7 +1004,7 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 ----------------------------------------
 
-### KR2: Aumentar em 20% a taxa de conhecimento de recursos da PGE nos Tribunais Superiores até 2028
+### KR2: Aumentar em 15% a taxa de conhecimento de recursos da PGE nos Tribunais Superiores até 2028
 - **Código na Lista Mestre:** `E5.O2.KR2`
 - **Unidades Oficiais Previstas na Lista Mestre:** Procuradoria de Brasília, Especializadas Contenciosas, Subprocuradoria-Geral Adjunta
 - **Unidades com Ações Mapeadas (8):** Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE), Procurador-Geral Adjunto, Procurador-Geral Adjunto para Assuntos Jurídicos (PGAAJ), Procuradoria Regional de Imperatriz, Procuradoria Regional de Timon, Procuradoria da Educação, Procuradoria da Saúde, Procuradoria de Brasília
@@ -1627,7 +1627,7 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 ## O1: Adotar ferramentas de Inteligência Artificial e automação
 
-### KR1: Automatizar 30% da elaboração de pareceres padronizados com inteligência artificial até 2028
+### KR1: Automatizar em 30% a elaboração de pareceres e peças processuais padronizados com inteligência artificial e ferramentas digitais até 2028
 - **Código na Lista Mestre:** `E7.O1.KR1`
 - **Unidades Oficiais Previstas na Lista Mestre:** Supervisão de Informática, Procuradoria Administrativa, Especializadas Consultivas, Subprocuradoria-Geral Adjunta
 - **Unidades com Ações Mapeadas (4):** Escola Superior da Advocacia Pública (ESAP), Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE), Procurador-Geral Adjunto, Supervisão de Informática
