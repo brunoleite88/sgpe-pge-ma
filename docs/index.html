@@ -2197,7 +2197,11 @@
 
         if (sigla) {
           const uInfo = unidsMeta.find(u => u.sigla === sigla) || {};
-          const acoesU = allAcoes.filter(a => a.sigla_unidade === sigla);
+          // Metodologia Saneada: Exibir no Quadro de Metas apenas KRs de Liderança Direta da unidade
+          let acoesU = allAcoes.filter(a => a.sigla_unidade === sigla && a.papel_unidade === 'Líder');
+          if (acoesU.length === 0) {
+            acoesU = allAcoes.filter(a => a.sigla_unidade === sigla);
+          }
 
           const krsDict = {};
           acoesU.forEach(a => {

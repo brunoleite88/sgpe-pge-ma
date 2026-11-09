@@ -1,6 +1,6 @@
 # Quadro de Eixos, Objetivos e Metas — PGAAJ (Procuradoria-Geral Adjunta para Assuntos Jurídicos)
 
-*Estrutura Estratégica: 10 Metas (KRs) Vinculadas*
+*Estrutura Estratégica: 8 Metas (KRs) Vinculadas*
 
 | Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |
 | :--- | :---: | :--- | :---: | :--- | :---: |
@@ -12,5 +12,3 @@
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O2` | O2: Assegurar a defesa jurídica do Estado e a conformidade legal | `E5.O2.KR2` | [E5.O2.KR2] KR2: Aumentar em 15% a taxa de conhecimento de recursos da PGE nos Tribunais Superiores até 2028 | 3 |
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O6` | O6: Garantir o tratamento tempestivo das demandas | `E5.O6.KR1` | [E5.O6.KR1] KR1: Manter em zero a perda de prazos processuais peremptórios em todas as unidades da PGE até 2030 | 4 |
 | E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR2` | [E7.O3.KR2] KR2: Capacitar 25% do corpo funcional em Direito Digital e Inteligência Artificial até 2027 | 1 |
-| E8 – Eixo Estratégico 8 – Fomentar a sustentabilidade, a integridade e a responsabilidade social | `E8.O2` | O2: Fortalecer a Governança e a Integridade Institucional | `E8.O2.KR3` | [E8.O2.KR3] KR3: Reduzir em 40% a reincidência de não conformidades apontadas em correições ordinárias até 2030 | 1 |
-| E9 – Eixo Estratégico 9 – Valorizar, integrar e qualificar servidores e procuradores | `E9.O2` | O2: Capacitar continuamente os servidores e procuradores | `E9.O2.KR1` | [E9.O2.KR1] KR1: Garantir a participação de ao menos 40% do corpo funcional em cursos de capacitação até 2029 | 1 |

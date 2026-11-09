@@ -1,6 +1,6 @@
 # Quadro de Eixos, Objetivos e Metas — GAB (Gabinete do Procurador-Geral do Estado)
 
-*Estrutura Estratégica: 9 Metas (KRs) Vinculadas*
+*Estrutura Estratégica: 7 Metas (KRs) Vinculadas*
 
 | Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |
 | :--- | :---: | :--- | :---: | :--- | :---: |
@@ -10,6 +10,4 @@
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O7` | O7: Reestruturar o quadro de pessoal | `E5.O7.KR2` | [E5.O7.KR2] KR2: Nomear pelo menos 10 procuradores até 2028 | 1 |
 | E6 – Eixo Estratégico 6 – Fortalecer a imagem institucional e a comunicação com a sociedade | `E6.O1` | O1: Fortalecer a imagem e reputação institucional | `E6.O1.KR1` | [E6.O1.KR1] KR1: Aumentar em 20% a taxa de engajamento da PGE nas mídias institucionais até 2029 | 1 |
 | E6 – Eixo Estratégico 6 – Fortalecer a imagem institucional e a comunicação com a sociedade | `E6.O2` | O2: Ampliar o impacto institucional e a cooperação interinstitucional | `E6.O2.KR1` | [E6.O2.KR1] KR1: Desenvolver 10 projetos interinstitucionais com universidades, órgãos públicos e Procuradorias até 2030 | 2 |
-| E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR1` | [E7.O3.KR1] KR1: Implementar 5 projetos estratégicos de inovação e modernização voltados a desafios prioritários da PGE até 2030 | 1 |
 | E8 – Eixo Estratégico 8 – Fomentar a sustentabilidade, a integridade e a responsabilidade social | `E8.O1` | O1: Promover a sustentabilidade ambiental, a equidade e a inclusão | `E8.O1.KR2` | [E8.O1.KR2] KR2: Atingir 30% de participação de grupos sub-representados em cargos de liderança até 2028 | 1 |
-| E9 – Eixo Estratégico 9 – Valorizar, integrar e qualificar servidores e procuradores | `E9.O2` | O2: Capacitar continuamente os servidores e procuradores | `E9.O2.KR1` | [E9.O2.KR1] KR1: Garantir a participação de ao menos 40% do corpo funcional em cursos de capacitação até 2029 | 1 |

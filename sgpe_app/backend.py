@@ -32,6 +32,43 @@ from saneamento_ascom_e_ti import UNIT_FOLDERS, load_rows, write_sheet_to_all_ta
 
 # Metadados institucionais das 41 unidades (Tipo, Status Reunião, Processo SEI, Interlocutor/Chefe)
 UNIT_META = {
+    "CS": {
+        "nome": "Conselho Superior da PGE",
+        "tipo": "Órgão Deliberativo Superior",
+        "bloco_3ps": "Governança Superior",
+        "status_reuniao": "Reunião Realizada",
+        "processo_sei": "Verificar SEI",
+        "responsavel": "Presidente e Membros do Conselho Superior",
+        "pauta_reuniao": "Deliberação e regulamentação da arrecadação e destinação de honorários sucumbenciais (E9.O3.KR1 - liderança exclusiva), apreciação de normas de equidade e promoção na carreira (E8.O1.KR2/KR3), pauta 100% eletrônica e sustentabilidade (E8.O1.KR1)."
+    },
+    "UGAM": {
+        "nome": "Unidade Gestora de Atividade Meio",
+        "tipo": "Unidade Administrativa",
+        "bloco_3ps": "Gestão Administrativa",
+        "status_reuniao": "Respondido no SEI",
+        "processo_sei": "2026.11103.07211",
+        "responsavel": "Chefia da UGAM",
+        "pauta_reuniao": "Coordenação executiva dos serviços administrativos de apoio, almoxarifado, patrimônio e compras (Eixo 2), apoio ao dimensionamento funcional para concursos (E5.O7.KR1) e sustentabilidade predial (Eixo 8)."
+    },
+    "NC": {
+        "nome": "Núcleo de Cálculos",
+        "tipo": "Núcleo Técnico Contábil",
+        "bloco_3ps": "Cálculos e Perícias",
+        "status_reuniao": "Reunião Realizada",
+        "processo_sei": "Verificar SEI",
+        "responsavel": "Chefia do Núcleo de Cálculos",
+        "pauta_reuniao": "Liderança técnica na redução de 90% em bloqueios e duplicidades de RPVs (E1.O1.KR2), pareceres de liquidação e expurgo de excesso de execução (E5.O5.KR3 e E1.O1.KR1) e automação com SPA/IA."
+    },
+    "CEQUIDADE": {
+        "nome": "Comitê de Diversidade e Equidade",
+        "tipo": "Órgão Colegiado",
+        "bloco_3ps": "Equidade e Direitos Humanos",
+        "status_reuniao": "Reunião Realizada",
+        "processo_sei": "Verificar SEI",
+        "responsavel": "Coordenação do Comitê de Equidade",
+        "pauta_reuniao": "Políticas de inclusão, equidade de gênero e raça (E8.O1.KR2/KR3), coexecução das ações anuais de prevenção ao assédio (c/ Ouvidoria) e campanhas de sustentabilidade (E8.O1.KR1)."
+    },
+
     "PGAAE": {
         "nome": "Procuradoria-Geral Adjunta para Assuntos Estratégicos",
         "tipo": "Cúpula / Coordenação",
@@ -598,75 +635,106 @@ def classify_3ps(kr_code: str) -> str:
     return "Outros Eixos / Governança"
 
 
+UNIT_ALIASES = {
+    "ASCOM": ["ASCOM", "Assessoria de Comunicação", "Comunicação"],
+    "ASJUR": ["ASJUR", "Assessoria Jurídica", "Consultoria Geral", "Consultoria-Geral", "Assessoria Especial"],
+    "CEQUIDADE": ["CEQUIDADE", "CDE", "Comitê de Equidade", "Equidade"],
+    "CG": ["CG", "Corregedoria-Geral", "Corregedoria"],
+    "CS": ["CS", "Conselho Superior da PGE", "Conselho Superior", "Conselho"],
+    "CSL": ["CSL", "Comissão Setorial de Licitação", "Licitação"],
+    "ESAP": ["ESAP", "Escola Superior da Advocacia Pública", "Escola Superior"],
+    "GAB": ["GAB", "Gabinete do Procurador-Geral", "Gabinete"],
+    "NC": ["NC", "NCALC", "Núcleo de Cálculos", "Cálculos"],
+    "NCIA": ["NCIA", "Núcleo de Combate à Improbidade Administrativa", "Improbidade Administrativa"],
+    "NIRF": ["NIRF", "Núcleo de Inteligência e Recuperação Fiscal", "Recuperação Fiscal"],
+    "OUV": ["OUV", "Ouvidoria-Geral", "Ouvidoria"],
+    "PA": ["PA", "Procuradoria Administrativa", "Administrativa"],
+    "PB": ["PB", "Procuradoria de Brasília", "Brasília", "Brasilia"],
+    "PCF": ["PCF", "Procuradoria do Contencioso Fiscal", "Contencioso Fiscal"],
+    "PDA": ["PDA", "Procuradoria da Dívida Ativa", "Dívida Ativa"],
+    "PEDU": ["PEDU", "Procuradoria da Educação", "Educação"],
+    "PERJP": ["PERJP", "Procuradoria de Execuções", "Requisições Judiciais de Pagamento", "Execuções"],
+    "PGA": ["PGA", "Procurador-Geral Adjunto", "Assuntos Administrativos"],
+    "PGAAE": ["PGAAE", "Assuntos Estratégicos", "Assessoria em TIC da PGAAE", "INOVA"],
+    "PGAAJ": ["PGAAJ", "Assuntos Jurídicos"],
+    "PGARI": ["PGARI", "Relacionamento Institucional"],
+    "PJ": ["PJ", "Procuradoria Judicial", "Judicial"],
+    "PJEFP": ["PJEFP", "Juizados Especiais", "Turmas Recursais"],
+    "PPIMA": ["PPIMA", "Patrimônio Imobiliário", "Meio Ambiente"],
+    "PRI": ["PRI", "Regional de Imperatriz", "Imperatriz"],
+    "PRT": ["PRT", "Regional de Timon", "Timon"],
+    "PSAU": ["PSAU", "Procuradoria da Saúde", "Saúde"],
+    "PSP": ["PSP", "Segurança Pública", "Segurança"],
+    "PT": ["PT", "Procuradoria Trabalhista", "Trabalhista"],
+    "SCC": ["SCC", "Controle de Contratos", "Contratos e Convênios"],
+    "SCCF": ["SCCF", "Controle Contábil-Financeiro", "Controle Financeiro"],
+    "SDD": ["SDD", "Digitalização e Distribuição"],
+    "SEO": ["SEO", "Execução Orçamentária"],
+    "SGA": ["SGA", "Subprocuradoria-Geral Adjunta"],
+    "SGRH": ["SGRH", "Recursos Humanos"],
+    "SGT": ["SGT", "Serviços Gerais e Transportes"],
+    "SI": ["SI", "Supervisão de Informática", "Suporte de Infraestrutura: SI"],
+    "SMP": ["SMP", "Material e Patrimônio"],
+    "UGAM": ["UGAM", "Atividade Meio", "Unidade Gestora"],
+    "USF": ["USF", "Unidade Setorial de Finanças", "Finanças"]
+}
+
+
 def extract_relations(sigla_origem: str, resp_text: str):
     """
     Analisa o campo 'Responsáveis (QUEM - Governança Saneada)' e extrai:
-    - papel_unidade ('Líder', 'Articulador', 'Coexecutor')
-    - lista de siglas relacionadas e o tipo de vínculo.
+    - papel_unidade ('Líder', 'Articulador', 'Coexecutor', 'Fornecedor de Insumo / Apoio', 'Apoio / Usuário Piloto', 'Apoio Operacional')
+    - lista de siglas relacionadas (unidades parceiras).
     """
     t = str(resp_text or "")
-    papel = "Líder"
+    aliases_origem = UNIT_ALIASES.get(sigla_origem, [sigla_origem])
+
+    # 1. Articulador (ex: PGARI)
     if re.search(r"Articulador[a]?:\s*.*" + re.escape(sigla_origem), t, re.I) or (sigla_origem == "PGARI" and "Articulador" in t):
         papel = "Articulador"
-    elif "Líder:" in t:
-        lider_part = t.split(";")[0]
-        if sigla_origem not in lider_part and UNIT_META.get(sigla_origem, {}).get("nome", "___") not in lider_part:
-            if "Coexecutor" in t or "Coordenação" in t:
+    else:
+        # Procurar menção a Líder
+        m_lider = re.search(r"L[íi]der(?:es)?(?:\s+da\s+Meta)?:\s*([^;|\n]+)", t, re.IGNORECASE)
+        if m_lider:
+            lider_part = m_lider.group(1)
+            # Verificar se a unidade de origem é quem lidera
+            is_lider = any(
+                re.search(rf"\b{re.escape(alias)}\b", lider_part, re.IGNORECASE) or (len(alias) > 4 and alias.lower() in lider_part.lower())
+                for alias in aliases_origem
+            )
+            if is_lider:
+                papel = "Líder"
+            else:
+                # Não é o líder principal: classificar papel secundário
+                if any(k in t.lower() for k in ["fornecedor de insumo", "fornecedor de resposta", "insumo", "apoio operacional"]):
+                    papel = "Fornecedor de Insumo / Apoio"
+                elif any(k in t.lower() for k in ["usuário piloto", "usuario piloto", "demandante", "triagem na origem", "levantamento"]):
+                    papel = "Apoio / Usuário Piloto"
+                elif any(k in t.lower() for k in ["coexecutor", "coordenação", "coexecutores"]):
+                    papel = "Coexecutor"
+                else:
+                    papel = "Apoio Operacional"
+        else:
+            # Sem campo Líder formal
+            if any(k in t.lower() for k in ["coexecutores:", "coexecutor:"]):
                 papel = "Coexecutor"
+            elif any(k in t.lower() for k in ["fornecedor"]):
+                papel = "Fornecedor de Insumo / Apoio"
+            elif any(k in t.lower() for k in ["apoio"]):
+                papel = "Apoio Operacional"
+            else:
+                papel = "Líder"
 
-    # Mapear menções a outras unidades no texto de responsáveis
-    alias_map = {
-        "PGAAE": ["PGAAE", "Assuntos Estratégicos", "Assessoria em TIC da PGAAE"],
-        "PGA": ["PGA ", "PGA;", "PGA,", "PGAA", "Assuntos Administrativos"],
-        "PGAAJ": ["PGAAJ", "Assuntos Jurídicos"],
-        "PGARI": ["PGARI", "Relacionamento Institucional"],
-        "SGA": ["SGA", "Subprocuradoria-Geral Adjunta"],
-        "GAB": ["Gabinete do Procurador-Geral", "Gabinete"],
-        "CG": ["Corregedoria-Geral", "Corregedoria"],
-        "OUV": ["Ouvidoria-Geral", "Ouvidoria"],
-        "ASCOM": ["ASCOM", "Assessoria de Comunicação"],
-        "ESAP": ["ESAP", "Escola Superior"],
-        "SI": ["Supervisão de Informática", "Suporte de Infraestrutura: SI", "(SI)"],
-        "INOVA": ["INOVA", "Laboratório de Inovação"],
-        "SGRH": ["SGRH", "Recursos Humanos"],
-        "SMP": ["SMP", "Material e Patrimônio"],
-        "SGT": ["SGT", "Serviços Gerais e Transportes"],
-        "CSL": ["CSL", "Comissão Setorial de Licitação"],
-        "SCC": ["SCC;", "SCC,", "Contratos e Convênios"],
-        "UGC": ["UGC", "Unidade Gestora de Contratações"],
-        "USF": ["USF", "Unidade Setorial de Finanças"],
-        "SEO": ["SEO", "Execução Orçamentária"],
-        "SCCF": ["SCCF", "Controle Financeiro"],
-        "SDD": ["SDD", "Digitalização e Distribuição"],
-        "NCALC": ["Núcleo de Cálculos"],
-        "SOE": ["SOE", "Obras e Engenharia"],
-        "CDE": ["CDE", "Comitê de Equidade", "Comitê de Diversidade"],
-        "ASJUR": ["ASJUR", "Assessoria Jurídica", "Consultoria Geral", "Consultoria-Geral"],
-        "NIRF": ["NIRF", "Recuperação Fiscal"],
-        "NCIA": ["NCIA", "Improbidade Administrativa"],
-        "PJ": ["Procuradoria Judicial", "(PJ)"],
-        "PEDU": ["PEDU", "Procuradoria da Educação"],
-        "PSP": ["PSP", "Segurança Pública"],
-        "PPIMA": ["PPIMA", "Patrimônio Imobiliário"],
-        "PJEFP": ["PJEFP", "Juizados Especiais"],
-        "PB": ["Procuradoria de Brasília", "(PB)"],
-        "PSAU": ["PSAU", "Procuradoria da Saúde"],
-        "PT": ["Procuradoria Trabalhista", "(PT)"],
-        "PA": ["Procuradoria Administrativa", "(PA)"],
-        "PDA": ["Procuradoria da Dívida Ativa", "(PDA)", "Dívida Ativa"],
-        "PCF": ["Procuradoria do Contencioso Fiscal", "(PCF)", "Contencioso Fiscal"],
-        "PERJP": ["PERJP", "Procuradoria de Execuções", "Requisições Judiciais de Pagamento"],
-        "PRI": ["PRI", "Regional de Imperatriz"],
-        "PRT": ["PRT", "Regional de Timon"],
-    }
+    # Mapear parceiros citados
     parceiros = []
-    for sig, patterns in alias_map.items():
+    for sig, aliases in UNIT_ALIASES.items():
         if sig == sigla_origem:
             continue
-        for pat in patterns:
-            if pat in t:
+        for al in aliases:
+            if re.search(rf"\b{re.escape(al)}\b", t, re.IGNORECASE) or (len(al) > 4 and al.lower() in t.lower()):
                 parceiros.append(sig)
                 break
+
     return papel, sorted(set(parceiros))
 
 
@@ -1423,6 +1491,8 @@ def get_relatorios_dados():
             MAX(kr_texto_completo) as kr_texto_completo,
             MAX(pilar_3ps) as pilar_3ps,
             COUNT(*) as qtd_acoes,
+            GROUP_CONCAT(DISTINCT CASE WHEN papel_unidade = 'Líder' THEN sigla_unidade END) as unidades_lideres,
+            GROUP_CONCAT(DISTINCT CASE WHEN papel_unidade != 'Líder' THEN sigla_unidade END) as unidades_apoio,
             GROUP_CONCAT(DISTINCT sigla_unidade) as unidades
         FROM acoes
         WHERE kr_codigo != 'SEM_CODIGO'
@@ -1433,6 +1503,8 @@ def get_relatorios_dados():
     objetivos_metas = []
     for r in metas_raw:
         unids = sorted(set((r["unidades"] or "").split(","))) if r["unidades"] else []
+        lids = sorted(set((r["unidades_lideres"] or "").split(","))) if r["unidades_lideres"] else []
+        apos = sorted(set((r["unidades_apoio"] or "").split(","))) if r["unidades_apoio"] else []
         objetivos_metas.append({
             "eixo_cod": r["eixo_cod"],
             "obj_cod": r["obj_cod"],
@@ -1442,7 +1514,9 @@ def get_relatorios_dados():
             "kr_texto_completo": r["kr_texto_completo"],
             "pilar_3ps": r["pilar_3ps"],
             "qtd_acoes": r["qtd_acoes"],
-            "unidades": unids
+            "unidades": unids,
+            "unidades_lideres": lids,
+            "unidades_apoio": apos
         })
 
     # 3. Ações enriquecidas com horizonte temporal
@@ -2313,7 +2387,10 @@ def exportar_relatorio(
         if sigla:
             u_info = next((u for u in unidades_meta if u["sigla"] == sigla), None)
             u_nome = u_info["nome"] if u_info else sigla
-            acoes_u = [a for a in all_acoes if a["sigla_unidade"] == sigla]
+            # Metodologia Saneada: Relatório 8 exibe exclusivamente Metas (KRs) com Liderança Direta da unidade
+            acoes_u = [a for a in all_acoes if a["sigla_unidade"] == sigla and a["papel_unidade"] == "Líder"]
+            if not acoes_u:
+                acoes_u = [a for a in all_acoes if a["sigla_unidade"] == sigla]
 
             krs_dict = {}
             for a in acoes_u:
@@ -2358,7 +2435,7 @@ def exportar_relatorio(
             headers = [
                 "Eixo Estratégico", "Cód. Objetivo", "Objetivo Estratégico",
                 "Cód. KR", "Meta / Resultado-Chave (KR)",
-                "Total de Ações", "Unidades Vinculadas"
+                "Total de Ações", "Unidade(s) Líder(es)", "Unidades de Apoio / Coexecução"
             ]
             rows_data = [
                 [
@@ -2368,7 +2445,8 @@ def exportar_relatorio(
                     m["kr_codigo"],
                     m["kr_texto_completo"],
                     m["qtd_acoes"],
-                    ", ".join(m["unidades"])
+                    ", ".join(m.get("unidades_lideres", [])) or ", ".join(m["unidades"]),
+                    ", ".join(m.get("unidades_apoio", [])) or "Nenhuma (Execução Direta)"
                 ]
                 for m in metas_master
             ]
@@ -2387,10 +2465,10 @@ def exportar_relatorio(
                 for r in rows_data:
                     lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} |")
             else:
-                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta / Resultado-Chave (KR) | Ações | Unidades Vinculadas |")
-                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :--- |")
+                lines.append("| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta / Resultado-Chave (KR) | Ações | Unidade(s) Líder(es) | Unidades Apoio/Coexecução |")
+                lines.append("| :--- | :---: | :--- | :---: | :--- | :---: | :--- | :--- |")
                 for r in rows_data:
-                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | {r[6]} |")
+                    lines.append(f"| {r[0]} | `{r[1]}` | {r[2]} | `{r[3]}` | {r[4]} | {r[5]} | {r[6]} | {r[7]} |")
             out_path = export_dir / f"{filename_base}.md"
             out_path.write_text("\n".join(lines), encoding="utf-8")
             return FileResponse(str(out_path), filename=out_path.name, media_type="text/markdown")
@@ -2399,7 +2477,7 @@ def exportar_relatorio(
             wb = openpyxl.Workbook()
             ws = wb.active
             ws.title = "Eixos, Objetivos e Metas"
-            col_widths = [28, 14, 38, 14, 56, 14] if sigla else [28, 14, 38, 14, 56, 14, 46]
+            col_widths = [28, 14, 38, 14, 56, 14] if sigla else [28, 14, 38, 14, 56, 14, 36, 46]
             style_xlsx_sheet(
                 ws,
                 title_doc.upper(),
@@ -2432,21 +2510,23 @@ def exportar_relatorio(
                     rc[2].text = str(r[4])
                     rc[3].text = str(r[5])
             else:
-                table = doc.add_table(rows=1, cols=5)
+                table = doc.add_table(rows=1, cols=6)
                 table.style = "Table Grid"
                 hdr = table.rows[0].cells
                 hdr[0].text = "Eixo Estratégico"
                 hdr[1].text = "Objetivo"
                 hdr[2].text = "Cód. KR"
                 hdr[3].text = "Meta (Resultado-Chave)"
-                hdr[4].text = "Unidades (Ações)"
+                hdr[4].text = "Unidade(s) Líder(es)"
+                hdr[5].text = "Unidades Apoio/Coexecução"
                 for r in rows_data:
                     rc = table.add_row().cells
                     rc[0].text = str(r[0])
-                    rc[1].text = f"{r[1]}\n{r[2]}"
+                    rc[1].text = f"{r[1]} - {r[2]}"
                     rc[2].text = str(r[3])
                     rc[3].text = str(r[4])
                     rc[4].text = f"{r[6]} ({r[5]} ações)"
+                    rc[5].text = str(r[7])
 
             out_path = export_dir / f"{filename_base}.docx"
             doc.save(str(out_path))

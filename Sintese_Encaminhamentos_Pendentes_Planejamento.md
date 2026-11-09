@@ -24,6 +24,19 @@ A análise sistemática dos arquivos `.md` das unidades administrativas e procur
 
 ---
 
+
+### 1.1. Saneamento Transversal de Metodologia e Governança (Concluído em 09/11/2026 às 11:59)
+Em atendimento à deliberação da Alta Gestão (Dr. Marcus Bacellar / Dra. Socorro) e visando sanear o **Relatório 8 (Quadro de Eixos, Objetivos e Metas)** para expurgar duplicidades e conflitos de papéis entre unidades, foi implementada a nova metodologia transversal:
+1. **Liderança Substantiva no Quadro Executivo (Relatório 8):** O Quadro de Metas de cada unidade passa a exibir **exclusivamente os Resultados-Chave (KRs)** sobre os quais o setor detém liderança técnica ou finalística primária (`papel_unidade == 'Líder'`). Metas onde o setor atua como mero fornecedor de insumos, coexecutor operacional ou demandante consultivo foram preservadas integralmente nas planilhas 5W2H (Relatório 2) e na Matriz de Interdependências (Relatório 3), mas expurgadas da visão executiva do setor, conferindo clareza e fidelidade de governança.
+2. **Honorários Sucumbenciais (`E9.O3.KR1`):** Centralizado sob **liderança e titularidade exclusiva do Conselho Superior (`CS`)**. As 14 unidades operacionais que requerem ou recolhem sucumbência (`NIRF, PA, PCF, PDA, PEDU, PERJP, PGA, PGAAE, PJ, PPIMA, PRI, PRT, PSP, PT`) mantêm suas ações setoriais nas planilhas sob a governança `Líder da Meta: Conselho Superior da PGE (CS); Fornecedor de Insumo / Apoio Operacional: [Unidade]`.
+3. **Projetos Estratégicos (`E7.O3.KR1`):** Liderança centralizada na **`PGAAE`**. As 16 unidades participantes atuam formalmente como `Apoio / Usuário Piloto`.
+4. **Comunicação e Redes Sociais (`E6.O1.KR2`):** Liderança centralizada na **`ASCOM`**, com as 15 especializadas contenciosas fornecendo insumos de êxitos processuais e decisões favoráveis (`Fornecedor de Insumo`).
+5. **Recursos aos Tribunais Superiores (`E5.O2.KR2`):** Centralizado sob governança da **`PGAAJ`** e da **`Procuradoria de Brasília (PB)`**, com as 13 especializadas de origem realizando a triagem na origem (`Apoio Operacional / Triagem na Origem`).
+6. **Concursos Públicos (`E5.O7.KR1/KR2`):** Centralizado no **`Gabinete (GAB)`**, **`PGA`** e **`SGRH`**, reclassificando a `UGAM` para `Apoio de Levantamento`.
+7. **Infraestrutura TIC / Data Center (`SI`):** Ação de soberania do Data Center Nutanix da Supervisão de Informática reclassificada de `E5.O1.KR1` para **`E7.O2.KR2`** (Disponibilidade e Continuidade de TIC).
+8. **Capacitação Corporativa / PAC (`E9.O2.KR1`):** Liderança da **`ESAP`** e **`SGRH`**, atuando as demais unidades como `Demandantes Setoriais` no mapeamento anual.
+9. **Manifestações SEI da ASCOM (Doc 018469339) e Ouvidoria (Doc 018468827):** Incorporação integral das propostas formais saneadas, fixando os condicionamentos à linha de base diagnóstica, desdobramentos de media training, canal contra assédio e escala de transparência.
+
 ## 2. Quadro Consolidado de Encaminhamentos por Setor
 
 | Setor / Unidade | Natureza da Pendência | Encaminhamento Específico da Assessoria de Planejamento | Status / Artefato Gerado | Documento de Origem |

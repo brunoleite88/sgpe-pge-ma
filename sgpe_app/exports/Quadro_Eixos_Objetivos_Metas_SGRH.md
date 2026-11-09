@@ -1,6 +1,6 @@
 # Quadro de Eixos, Objetivos e Metas — SGRH (Serviço de Gestão de Recursos Humanos)
 
-*Estrutura Estratégica: 14 Metas (KRs) Vinculadas*
+*Estrutura Estratégica: 13 Metas (KRs) Vinculadas*
 
 | Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |
 | :--- | :---: | :--- | :---: | :--- | :---: |
@@ -8,7 +8,6 @@
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O5` | O5: Otimizar e automatizar rotinas e processos | `E5.O5.KR3` | [E5.O5.KR3] KR3: Aumentar em 25% a produtividade processual das equipes setoriais até 2030 | 3 |
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O7` | O7: Reestruturar o quadro de pessoal | `E5.O7.KR1` | [E5.O7.KR1] KR1: Nomear 25 servidores aprovados em concurso até 2028 | 11 |
 | E5 – Eixo Estratégico 5 – Alcançar maior eficiência e resolutividade nos processos internos e externos | `E5.O7` | O7: Reestruturar o quadro de pessoal | `E5.O7.KR2` | [E5.O7.KR2] KR2: Nomear pelo menos 10 procuradores até 2028 | 1 |
-| E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR1` | [E7.O3.KR1] KR1: Implementar 5 projetos estratégicos de inovação e modernização voltados a desafios prioritários da PGE até 2030 | 1 |
 | E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR2` | [E7.O3.KR2] KR2: Capacitar 25% do corpo funcional em Direito Digital e Inteligência Artificial até 2027 | 1 |
 | E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR3` | [E7.O3.KR3] KR3: Certificar 25% dos servidores da área de tecnologia nas principais competências digitais até 2029 | 2 |
 | E8 – Eixo Estratégico 8 – Fomentar a sustentabilidade, a integridade e a responsabilidade social | `E8.O1` | O1: Promover a sustentabilidade ambiental, a equidade e a inclusão | `E8.O1.KR2` | [E8.O1.KR2] KR2: Atingir 30% de participação de grupos sub-representados em cargos de liderança até 2028 | 5 |

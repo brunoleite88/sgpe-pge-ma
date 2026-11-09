@@ -1,6 +1,6 @@
 # Quadro de Eixos, Objetivos e Metas — NIRF (Núcleo de Inteligência e Recuperação Fiscal)
 
-*Estrutura Estratégica: 13 Metas (KRs) Vinculadas*
+*Estrutura Estratégica: 10 Metas (KRs) Vinculadas*
 
 | Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |
 | :--- | :---: | :--- | :---: | :--- | :---: |
@@ -13,7 +13,4 @@
 | E1 – Eixo Estratégico 1 – Incrementar a arrecadação e otimizar a cobrança da dívida ativa | `E1.O5` | O5: Ampliar a utilização de ferramentas de inteligência fiscal | `E1.O5.KR1` | [E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030 | 4 |
 | E1 – Eixo Estratégico 1 – Incrementar a recuperação de créditos e a defesa do erário | `E1.O5` | O5: Fortalecer a cobrança administrativa e a execução fiscal estratégica | `E1.O5.KR2` | [E1.O5.KR2] KR2: Aumentar em 70% o montante de bens bloqueados ou arrolados de grandes devedores até 2027 | 4 |
 | E1 – Eixo Estratégico 1 – Incrementar a arrecadação e otimizar a cobrança da dívida ativa | `E1.O5` | O5: Ampliar a utilização de ferramentas de inteligência fiscal | `E1.O5.KR3` | [E1.O5.KR3] KR3: Reduzir em 70% o tempo de consultas processuais e cadastrais em execuções fiscais até 2028 | 1 |
-| E6 – Eixo Estratégico 6 – Fortalecer a imagem institucional e a comunicação com a sociedade | `E6.O1` | O1: Fortalecer a imagem e reputação institucional | `E6.O1.KR2` | [E6.O1.KR2] KR2: Alcançar crescimento contínuo do alcance médio mensal nas redes sociais da PGE até 2029 | 1 |
 | E7 – Eixo Estratégico 7 – Promover a transformação digital e a inovação tecnológica | `E7.O3` | O3: Fomentar uma cultura de inovação institucional | `E7.O3.KR2` | [E7.O3.KR2] KR2: Capacitar 25% do corpo funcional em Direito Digital e Inteligência Artificial até 2027 | 1 |
-| E9 – Eixo Estratégico 9 – Valorizar, integrar e qualificar servidores e procuradores | `E9.O2` | O2: Capacitar continuamente os servidores e procuradores | `E9.O2.KR1` | [E9.O2.KR1] KR1: Garantir a participação de ao menos 40% do corpo funcional em cursos de capacitação até 2029 | 1 |
-| E9 – Eixo Estratégico 9 – Valorizar, integrar e qualificar servidores e procuradores | `E9.O3` | O3: Ampliar a arrecadação de honorários sucumbenciais | `E9.O3.KR1` | [E9.O3.KR1] KR1: Aumentar em 15% a arrecadação de honorários sucumbenciais até 2029 | 1 |
