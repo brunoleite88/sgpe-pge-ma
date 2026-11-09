@@ -34,7 +34,7 @@
         <div class="w-9 h-9 rounded-lg bg-blue-700 flex items-center justify-center font-bold text-sm shadow">PGE</div>
         <div>
           <h1 class="text-base font-bold tracking-tight">Planejamento Estratégico PGE-MA (2027–2030)</h1>
-          <p class="text-xs text-slate-300">Gestão de Metas, Planos de Ação e Governança</p>
+          <p class="text-xs text-slate-300 flex items-center gap-2"><span>Gestão de Metas, Planos de Ação e Governança</span> <span class="px-1.5 py-0.5 rounded bg-emerald-800 text-emerald-200 text-[10px] font-semibold border border-emerald-500">v2.1 Saneado</span></p>
         </div>
       </div>
       <div class="flex items-center gap-2">
@@ -910,23 +910,43 @@
     // ADAPTADOR HÍBRIDO: MODO SERVIDOR LOCAL (FastAPI) + MODO WEB (GitHub Pages)
     // =========================================================================
     const _nativeFetch = window.fetch.bind(window);
-    async function ensureStaticBundle() {
-      if (STATE.staticBundle) return STATE.staticBundle;
-      const saved = localStorage.getItem('SGPE_STATIC_BUNDLE_V1');
+
+    // Limpeza forçada de cache antigo da versão V1
+    try { localStorage.removeItem('SGPE_STATIC_BUNDLE_V1'); } catch (e) {}
+
+    async function ensureStaticBundle(forceRefresh = false) {
+      if (!forceRefresh && STATE.staticBundle) return STATE.staticBundle;
+
+      try {
+        const bust = '?v=' + Date.now();
+        const res = await _nativeFetch('dados_sgpe.json' + bust, { cache: 'no-store' });
+        if (res.ok) {
+          STATE.staticBundle = await res.json();
+          try {
+            sessionStorage.setItem('SGPE_STATIC_BUNDLE_V2', JSON.stringify(STATE.staticBundle));
+          } catch (e) {}
+          return STATE.staticBundle;
+        }
+      } catch (err) {
+        console.warn('Modo offline ou falha ao baixar dados_sgpe.json:', err);
+      }
+
+      const saved = sessionStorage.getItem('SGPE_STATIC_BUNDLE_V2') || localStorage.getItem('SGPE_STATIC_BUNDLE_V2');
       if (saved) {
         try {
           STATE.staticBundle = JSON.parse(saved);
           return STATE.staticBundle;
         } catch (e) {}
       }
-      const res = await _nativeFetch('dados_sgpe.json');
-      STATE.staticBundle = await res.json();
       return STATE.staticBundle;
     }
 
     function saveStaticBundle() {
       if (STATE.staticBundle) {
-        try { localStorage.setItem('SGPE_STATIC_BUNDLE_V1', JSON.stringify(STATE.staticBundle)); } catch (e) {}
+        try {
+          sessionStorage.setItem('SGPE_STATIC_BUNDLE_V2', JSON.stringify(STATE.staticBundle));
+          localStorage.setItem('SGPE_STATIC_BUNDLE_V2', JSON.stringify(STATE.staticBundle));
+        } catch (e) {}
       }
     }
 
@@ -1014,10 +1034,14 @@
       }
 
       if (path === '/api/reindex-xlsx' || path === '/api/regenerar-relatorios') {
-        localStorage.removeItem('SGPE_STATIC_BUNDLE_V1');
+        try {
+          localStorage.removeItem('SGPE_STATIC_BUNDLE_V1');
+          localStorage.removeItem('SGPE_STATIC_BUNDLE_V2');
+          sessionStorage.removeItem('SGPE_STATIC_BUNDLE_V2');
+        } catch (e) {}
         STATE.staticBundle = null;
-        await ensureStaticBundle();
-        return mockJsonResponse({ status: 'ok', message: 'Base de dados web recarregada com sucesso.' });
+        await ensureStaticBundle(true);
+        return mockJsonResponse({ status: 'ok', message: 'Dados recarregados com sucesso do servidor GitHub.' });
       }
 
       return mockJsonResponse({ status: 'ok' });
