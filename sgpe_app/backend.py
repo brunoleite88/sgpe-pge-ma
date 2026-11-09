@@ -293,7 +293,7 @@ UNIT_META = {
         "status_reuniao": "Reunião Realizada",
         "processo_sei": "Verificar SEI",
         "responsavel": "Direção da ESAP",
-        "pauta_reuniao": "Coordenação do Plano Anual de Capacitação (PAC - E9.O2.KR1), incluindo oficinas práticas de Oratória Forense e Simulação de Tribuna (demanda PJ/PB), Escuta Ativa e CNV (demanda OUV), Media Training (demanda ASCOM) e Direito Digital/IA (E7.O3.KR2)."
+        "pauta_reuniao": "Coordenação do Plano Anual de Capacitação (PAC - E9.O2.KR1), incluindo oficinas práticas de Oratória Forense e Simulação de Tribuna (demanda PJ/PB), Escuta Ativa e CNV (demanda OUV), Media Training (demanda ASCOM) e Trilha Estratégica Prioritária de Direito Digital/IA (E9.O2.KR1)."
     },
     "SI": {
         "nome": "Supervisão de Informática",
@@ -588,7 +588,7 @@ INITIAL_GTS = [
         "codigo": "GT-09",
         "titulo": "GT de Integração Digital Descentralizada (Fórum José Sarney) e Painel Compartilhado (CSL/SCC/SMP/TI)",
         "tipo": "Grupo de Trabalho Compartilhado",
-        "krs_vinculados": "E2.O1.KR2, E5.O5.KR1, E7.O3.KR2, E9.O1.KR1",
+        "krs_vinculados": "E2.O1.KR2, E5.O5.KR1, E9.O2.KR1, E9.O1.KR1",
         "lider": "PGAAE (TIC) / PGA / SGRH",
         "unidades_participantes": "PGAAE, SGRH, PJEFP, CSL, SCC, SMP, SI, ASCOM",
         "status": "Em Implantação",
@@ -604,7 +604,7 @@ INITIAL_GTS = [
         "codigo": "GT-10",
         "titulo": "Comitê Gestor do Plano Anual de Capacitação (PAC / ESAP — 41 Unidades)",
         "tipo": "Programa Transversal Permanente",
-        "krs_vinculados": "E9.O2.KR1, E7.O3.KR2",
+        "krs_vinculados": "E9.O2.KR1",
         "lider": "ESAP / SGRH",
         "unidades_participantes": "ESAP, SGRH, PGAAE, PGA, Todas as 41 Unidades",
         "status": "100% Espelhado nas 41 Planilhas",
@@ -694,7 +694,7 @@ def extract_relations(sigla_origem: str, resp_text: str):
         papel = "Articulador"
     else:
         # Procurar menção a Líder
-        m_lider = re.search(r"L[íi]der(?:es)?(?:\s+da\s+Meta)?:\s*([^;|\n]+)", t, re.IGNORECASE)
+        m_lider = re.search(r"L[íi]der(?:es)?(?:\s+[^:;]+)?:\s*([^;|\n]+)", t, re.IGNORECASE)
         if m_lider:
             lider_part = m_lider.group(1)
             # Verificar se a unidade de origem é quem lidera

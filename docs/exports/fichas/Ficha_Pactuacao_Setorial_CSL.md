@@ -6,7 +6,7 @@
 - **Chefia / Interlocutor(a):** Presidência da CSL
 - **Processo SEI:** `Verificar SEI` | **Status de Pactuação:** **Reunião Realizada**
 - **Total de Ações Pactuadas:** 10 ações distribuídas em 2 Metas (`E2.O2.KR1, E9.O2.KR1`)
-- **Atuação Intersetorial:** Líder em 1 ações | Coexecutor em 5 | Articulador em 0 | Demandada externamente em 15 ações
+- **Atuação Intersetorial:** Líder em 1 ações | Coexecutor em 5 | Articulador em 0 | Demandada externamente em 14 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Padronização de artefatos da Lei 14.133/2021, licitações do Profisco III/BID (E3.O1.KR3), compras sustentáveis (E8.O1.KR2) e Painel Compartilhado de Visibilidade Intersetorial (CSL, SCC, SMP e TI).
 
 ## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
@@ -30,7 +30,6 @@
 | :---: | :---: | :--- | :--- | :--- |
 | **ASJUR** | `E7.O1.KR1` | Consolidar repositório de minutas-padrão de editais, contratos, convênios e pareceres referenciais no SEI/SPA | Líder: Assessoria Jurídica / Consultoria-Geral; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação (CSL) | 180 dias / Contínuo até 2029 |
 | **PA** | `E5.O3.KR1` | Criar normas e orientações internas de conformidade e compliance para licitações e contratações diretas | Líder: Procuradoria Administrativa; Coexecutores: PGAAE, CSL | 180 dias |
-| **PJ** | `E7.O3.KR2` | Implantar a ferramenta 'Minuta IA' para demandas repetitivas do Grupo 2 | Líder: Procuradoria Judicial; Coexecutores: Assessoria em TIC da PGAAE / INOVA, Comissão Setorial de Licitação | 180 dias |
 | **PT** | `E4.O1.KR1` | Adequar fluxos e rotinas de resposta rápida a consultas das secretarias sobre terceirização e regime trabalhista | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, CSL, SEGEP | 60 dias |
 | **PT** | `E4.O1.KR1` | Elaborar minutas padronizadas e pareceres referenciais sobre fiscalização contratual trabalhista | Líder: Procuradoria Trabalhista; Coexecutores: PGAAJ, CSL | 90 dias |
 | **PT** | `E5.O2.KR1` | Elaborar cartilha de fiscalização de contratos terceirizados para os órgãos estaduais | Líder: Procuradoria Trabalhista; Coexecutores: CSL, ESAP, SEGEP | Até 2026 |
