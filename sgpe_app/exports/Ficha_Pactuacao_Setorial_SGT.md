@@ -6,7 +6,7 @@
 - **Chefia / Interlocutor(a):** Silvia Madeira Dias (Despacho nº 56/2026)
 - **Processo SEI:** `2026.11103.07209` | **Status de Pactuação:** **Respondido no SEI**
 - **Total de Ações Pactuadas:** 15 ações distribuídas em 4 Metas (`E2.O1.KR1, E8.O1.KR1, E9.O1.KR3, E9.O2.KR1`)
-- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 10 | Articulador em 0 | Demandada externamente em 7 ações
+- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 10 | Articulador em 0 | Demandada externamente em 4 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Eficiência na gestão de frota, manutenção predial, redução de consumo de água/energia (E2.O1.KR1) e práticas sustentáveis (Eixo 8).
 
 ## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
@@ -33,13 +33,10 @@
 
 | Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
-| **CEQUIDADE** | `E8.O1.KR1` | Executar campanha permanente de conscientização ambiental | Líder: Comitê de Equidade; Coexecutores: Conselho Superior, PGA, SGT, SMP, ESAP | Início em 120 dias; manutenção contínua |
 | **UGAM** | `E2.O1.KR1` | Instituir programa permanente de eficiência de gastos da PGE-MA | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 45 dias |
 | **UGAM** | `E2.O1.KR1` | Consolidar linha de base de custos operacionais 2025/2026 | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
 | **UGAM** | `E2.O1.KR2` | Realizar inventário patrimonial integral e classificação de uso | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 180 dias |
 | **UGAM** | `E2.O1.KR2` | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 240 dias |
-| **UGAM** | `E8.O1.KR1` | Instituir Programa de Sustentabilidade e Inclusão da PGE-MA | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
-| **UGAM** | `E8.O1.KR1` | Coletar linha de base do manejo de resíduos nas unidades da PGE | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 90 dias |
 
 ## 4. Termo / Despacho Padrão de Homologação no SEI
 

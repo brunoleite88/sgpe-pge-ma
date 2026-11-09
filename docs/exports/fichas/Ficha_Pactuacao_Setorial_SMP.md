@@ -6,7 +6,7 @@
 - **Chefia / Interlocutor(a):** Soraya Maranhão (Despacho nº 057/2026)
 - **Processo SEI:** `2026.11103.07208` | **Status de Pactuação:** **Respondido no SEI**
 - **Total de Ações Pactuadas:** 19 ações distribuídas em 5 Metas (`E2.O1.KR1, E2.O1.KR2, E2.O2.KR1, E8.O1.KR1, E9.O2.KR1`)
-- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 6 | Articulador em 0 | Demandada externamente em 10 ações
+- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 6 | Articulador em 0 | Demandada externamente em 7 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Controle de almoxarifado e patrimônio (Eixo 2), logística reversa e sustentabilidade (Eixo 8) e alimentação do Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI).
 
 ## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
@@ -37,7 +37,6 @@
 
 | Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
-| **CEQUIDADE** | `E8.O1.KR1` | Executar campanha permanente de conscientização ambiental | Líder: Comitê de Equidade; Coexecutores: Conselho Superior, PGA, SGT, SMP, ESAP | Início em 120 dias; manutenção contínua |
 | **CSL** | `E2.O2.KR1` | Implantação de Painel Compartilhado de Visibilidade e Transparência Intersetorial de Demandas | Liderança: CSL, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Apoio: Serviço de Controle de Contratos, Serviço de Material e Patrimônio | 90 dias |
 | **SCC** | `E2.O1.KR1` | Instituir programa setorial de revisão e eficiência de contratos fixos | Líder: Serviço de Controle de Contratos; Coexecutores: Procurador-Geral Adjunto; Unidade Gestora de Atividade Meio (UGAM); Serviço de Material e Patrimônio | 45 dias |
 | **SCC** | `E2.O2.KR1` | Integrar e alimentar o Painel Compartilhado de Visibilidade Intersetorial (CSL, Contratos, Patrimônio e TI) | Líder: Serviço de Controle de Contratos (SCC); Coexecutores: Comissão Setorial de Licitação (CSL), Serviço de Material e Patrimônio (SMP), Assessoria em TIC da PGAAE / INOVA | 90 dias / Contínuo |
@@ -45,8 +44,6 @@
 | **UGAM** | `E2.O1.KR1` | Consolidar linha de base de custos operacionais 2025/2026 | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
 | **UGAM** | `E2.O1.KR2` | Realizar inventário patrimonial integral e classificação de uso | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 180 dias |
 | **UGAM** | `E2.O1.KR2` | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 240 dias |
-| **UGAM** | `E8.O1.KR1` | Instituir Programa de Sustentabilidade e Inclusão da PGE-MA | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
-| **UGAM** | `E8.O1.KR1` | Coletar linha de base do manejo de resíduos nas unidades da PGE | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 90 dias |
 
 ## 4. Termo / Despacho Padrão de Homologação no SEI
 

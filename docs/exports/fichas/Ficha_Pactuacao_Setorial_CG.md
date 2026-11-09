@@ -6,7 +6,7 @@
 - **Chefia / Interlocutor(a):** Dr. Gustavo Saboia (Corregedor-Geral)
 - **Processo SEI:** `Verificar SEI` | **Status de Pactuação:** **Reunião Realizada**
 - **Total de Ações Pactuadas:** 13 ações distribuídas em 5 Metas (`E5.O6.KR1, E8.O1.KR3, E8.O2.KR1, E8.O2.KR3, E9.O2.KR1`)
-- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 9 | Articulador em 0 | Demandada externamente em 15 ações
+- **Atuação Intersetorial:** Líder em 3 ações | Coexecutor em 9 | Articulador em 0 | Demandada externamente em 18 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Regimento Interno Único (E5.O5.KR1), saneamento de falsos positivos de perda de prazo no Dashboard do SPA em processos armazenados (E5.O6.KR1) e apuração tempestiva com sigilo/LGPD (E8.O2.KR1).
 
 ## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
@@ -34,7 +34,6 @@
 | **CEQUIDADE** | `E8.O2.KR2` | Integrar Ouvidoria, Corregedoria, UGI/CPRI e CEDI em circuito preventivo de integridade | Coexecutores: Corregedoria-Geral; Ouvidoria | Bimestral |
 | **CEQUIDADE** | `E8.O2.KR3` | Integrar Ouvidoria, Corregedoria, UGI/CPRI e CEDI em circuito preventivo de integridade | Coexecutores: Corregedoria-Geral; Ouvidoria | Bimestral |
 | **CEQUIDADE** | `E8.O2.KR1` | Coexecutar no mínimo 2 ações institucionais anuais de conscientização e enfrentamento ao assédio moral, sexual e à discriminação | Líder: Ouvidoria-Geral e Comitê de Equidade; Coexecutores: Corregedoria-Geral, SGRH, ESAP, ASCOM | Anual (mínimo de 2 ações/ano) |
-| **ESAP** | `E8.O2.KR1` | Ofertar suporte pedagógico e certificar as 2 ações institucionais anuais de letramento e prevenção ao assédio moral e sexual | Líder Pedagógico: Escola Superior da Advocacia Pública (ESAP); Coexecutores: Ouvidoria-Geral, Corregedoria-Geral, Comitê de Equidade, SGRH | Anual (mínimo de 2 ações/ano) |
 | **OUV** | `E8.O2.KR1` | Assegurar o tratamento e o encaminhamento tempestivo de denúncias para apuração competente | Líder (triagem, acolhimento e encaminhamento): Ouvidoria; Coexecutores: Corregedoria-Geral (condução e conclusão da apuração, em atribuição privativa), Subprocuradoria-Geral Adjunta | Fluxo permanente / Imediato |
 | **OUV** | `E8.O2.KR1` | Contribuir para a elaboração do Manual de Boas Práticas e Integridade da PGE-MA | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Comitê de Equidade, ESAP, Gabinete do Procurador-Geral | 180 dias |
 | **OUV** | `E8.O2.KR1` | Aperfeiçoar fluxo da Ouvidoria Especializada e realizar 2 ações institucionais anuais de conscientização contra assédio moral e sexual | Líder: Ouvidoria; Coexecutores: Comitê de Equidade, SGRH, Corregedoria-Geral, ASCOM, ESAP | 90 dias para aperfeiçoamento de fluxo / Campanhas anuais |
@@ -43,6 +42,10 @@
 | **OUV** | `E8.O2.KR2` | Realizar avaliação integral anual de transparência e monitoramento semestral de pendências | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Subprocuradoria-Geral Adjunta | Avaliação anual com acompanhamento semestral |
 | **PERJP** | `E1.O1.KR2` | Instituir auditoria mensal de inconsistências | Líder: Procuradoria de Execuções e Requisições Judiciais de Pagamento; Coexecutores: Corregedoria-Geral, USF | Rotina mensal |
 | **PGAAJ** | `E8.O2.KR3` | Supervisionar a implementação dos planos corretivos pós-correição nas unidades jurídicas e consultivas vinculadas | Líder: Corregedoria-Geral; Coexecutores: Procurador-Geral Adjunto para Assuntos Jurídicos (PGAAJ), Unidades Correcionadas | Semestral (90 dias pós-correição) |
+| **PRI** | `E5.O6.KR1` | Levantar a linha de base real de prazos perdidos e falhas de captura de expediente | Líder: Corregedoria-Geral (CG); Coexecutores: Procuradoria Regional de Imperatriz (PRI) | 60 dias |
+| **PRI** | `E5.O6.KR1` | Mapear integralmente a jornada do expediente desde o recebimento até a baixa | Líder: Corregedoria-Geral / SGA; Coexecutores: Procuradoria Regional de Imperatriz (PRI) | 90 dias |
+| **PRT** | `E5.O6.KR1` | Levantar a linha de base real de prazos perdidos e falhas de captura de expediente | Líder: Corregedoria-Geral (CG); Coexecutores: Procuradoria Regional de Timon (PRT) | 60 dias |
+| **PRT** | `E5.O6.KR1` | Mapear integralmente a jornada do expediente desde o recebimento até a baixa | Líder: Corregedoria-Geral / SGA; Coexecutores: Procuradoria Regional de Timon (PRT) | 90 dias |
 | **SGA** | `E5.O1.KR1` | Supervisionar diretamente os núcleos temáticos subordinados (Núcleo de Cálculos e NCIA) | Líder: Subprocuradoria-Geral Adjunta (SGA); Coexecutores: Núcleo de Cálculos, NCIA, Corregedoria-Geral | Bimestral até 2030 |
 | **SGA** | `E8.O2.KR3` | Acompanhar e cobrar o saneamento das recomendações correcionais nas Procuradorias Especializadas em até 90 dias | Líder: Corregedoria-Geral; Coexecutores: Subprocuradoria-Geral Adjunta (SGA), Chefias das Especializadas | Semestral (90 dias pós-correição) |
 | **SGRH** | `E8.O2.KR1` | Atualizar o Código de Ética e instituir canal seguro de combate ao assédio e discriminação (Eixo V - Despacho SEI 018120848) | Líder: SGRH; Coexecutores: Ouvidoria, Corregedoria-Geral, UGAM | 180 dias / Contínuo |

@@ -6,7 +6,7 @@
 - **Chefia / Interlocutor(a):** Márcia Fernanda Bastos (Chefe de Gabinete)
 - **Processo SEI:** `2026.11103.07184` | **Status de Pactuação:** **Reunião Realizada**
 - **Total de Ações Pactuadas:** 11 ações distribuídas em 9 Metas (`E5.O5.KR1, E5.O5.KR3, E5.O7.KR1, E5.O7.KR2, E6.O1.KR1, E6.O2.KR1, E7.O3.KR1, E8.O1.KR2, E9.O2.KR1`)
-- **Atuação Intersetorial:** Líder em 9 ações | Coexecutor em 0 | Articulador em 0 | Demandada externamente em 17 ações
+- **Atuação Intersetorial:** Líder em 9 ações | Coexecutor em 0 | Articulador em 0 | Demandada externamente em 30 ações
 - **Síntese da Pauta e Deliberações Setoriais:** Coordenação institucional superior, edição de portarias normativas (prazos consultivos, fluxo ASCOM, governança de dados) e articulação estratégica de alto nível.
 
 ## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
@@ -32,11 +32,24 @@
 | **ASCOM** | `E6.O1.KR1` | Propor ato normativo disciplinando o fluxo de captação tempestiva de êxitos processuais | Líder: Assessoria de Comunicação (ASCOM); Coexecutores: Gabinete do Procurador-Geral, Chefias das Procuradorias Especializadas, Subprocuradoria-Geral Adjunta para Assuntos Judiciais (PGAAJ), Subprocuradoria-Geral Adjunta (SGA) | 60 dias para a minuta da Portaria |
 | **ASCOM** | `E6.O1.KR1` | Planejar e executar a comunicação e a cobertura jornalística dos eventos estratégicos da PGE-MA | Líder: Assessoria de Comunicação (ASCOM - Comunicação e Cobertura); Coexecutores: Escola Superior da Advocacia Pública (ESAP - Coordenação Geral), Gabinete do Procurador-Geral, Comissões Organizadoras | Anualmente, durante a vigência do Planejamento (2027–2030) |
 | **ASCOM** | `E6.O1.KR1` | Instituir fluxo institucional para solicitação de apoio e cobertura de comunicação | Líder: Assessoria de Comunicação (ASCOM); Coexecutores: Gabinete do Procurador-Geral, Chefias de todas as Unidades, ESAP | 90 dias |
+| **CS** | `E8.O1.KR2` | Garantir critérios de equidade, diversidade e representatividade nas comissões, bancas e deliberações do Conselho | Líder: Gabinete do Procurador-Geral e Comitê de Equidade; Coexecutores: Conselho Superior (CS) | Até 2028 |
+| **CS** | `E9.O3.KR1` | Deliberar sobre diretrizes institucionais e regulamentação da arrecadação e destinação de honorários sucumbenciais | Líder: Conselho Superior da PGE-MA (Deliberação e Regulamentação Colegiada); Coexecutores: Especializadas Contenciosas, PROFI, Gabinete | Ciclo Anual até 2029 |
 | **OUV** | `E4.O1.KR3` | Propor fluxo interno institucionalmente validado para encaminhamento e prazos setoriais | Líder: Ouvidoria; Coexecutores: Gabinete do Procurador-Geral, Chefias de todas as Unidades | 60 dias |
 | **OUV** | `E8.O2.KR1` | Contribuir para a elaboração do Manual de Boas Práticas e Integridade da PGE-MA | Líder: Ouvidoria; Coexecutores: Corregedoria-Geral, Comitê de Equidade, ESAP, Gabinete do Procurador-Geral | 180 dias |
 | **PB** | `E6.O2.KR1` | Integrar fóruns de cooperação técnica e benchmarking com Procuradorias dos Estados em Brasília | Líder: Procuradoria de Brasília; Coexecutores: Gabinete do Procurador-Geral, ESAP | Contínuo até 2030 |
 | **PCF** | `E5.O1.KR2` | Realizar audiências e despachos qualificados com magistrados em causas tributárias de grande impacto | Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGAAJ, Gabinete PGE | Contínuo até 2030 |
 | **PEDU** | `E5.O2.KR1` | Propor via de solução consensual para teses pacificadas contra o Estado | Líder: Procurador-Chefe (interlocução com PGAAE e Gabinete). Coexecutores: assessores | Proposta até 30/09/2027 |
+| **PGA** | `E5.O7.KR1` | Consolidar nota técnica de dimensionamento do quadro da PGE-MA | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 90 dias |
+| **PGA** | `E5.O7.KR1` | Estruturar plano de nomeação escalonada dos servidores | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 180 dias |
+| **PGA** | `E5.O7.KR1` | Avaliar necessidade de contratação ou recomposição de apoio técnico especializado | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 150 dias |
+| **PGA** | `E5.O7.KR1` | Rever formalmente os quantitativos das metas de nomeação | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 60 dias |
+| **PGA** | `E5.O7.KR1` | Planejar juridicamente o concurso e as nomeações com blindagem contra judicialização | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 180 dias |
+| **PGA** | `E5.O7.KR1` | Elaborar plano de lotação inicial e redistribuição funcional | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 210 dias |
+| **PGA** | `E5.O7.KR1` | Criar programa de integração e onboarding para novos ingressos | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 240 dias ou antes da posse |
+| **PGA** | `E5.O7.KR1` | Mapear impactos da reestruturação sobre carreira e retenção | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 210 dias |
+| **PGA** | `E5.O7.KR1` | Monitorar mensalmente a execução do cronograma de concurso e nomeação | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | Mensal |
+| **PGA** | `E5.O7.KR1` | Integrar nomeações ao redesenho de processos e à transformação digital | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | Contínuo, a partir do plano de lotação |
+| **PGA** | `E5.O7.KR2` | Adotar providências institucionais para viabilizar nomeação dos procuradores | Líder: Gabinete do Procurador-Geral e SGRH; Coexecutores: Procuradoria-Geral Adjunta (PGA), PGAAE | 180 dias e monitoramento contínuo |
 | **PGARI** | `E3.O1.KR1` | Articular a instituição de Programa Permanente de Captação de Recursos Externos | Articulador: PGARI; Coexecutores: PGAAE, Procuradoria de Brasília, Gabinete | 120 dias |
 | **PGARI** | `E3.O1.KR1` | Prospectar parcerias estratégicas junto a organismos multilaterais e instituições de fomento | Articulador: PGARI; Coexecutores: PGAAE, ESAP, Gabinete | Contínuo |
 | **PGARI** | `E3.O1.KR1` | Articular diretrizes institucionais para captação de emendas parlamentares | Articulador: PGARI; Coexecutores: Gabinete, PGAAE, PGA | 180 dias |

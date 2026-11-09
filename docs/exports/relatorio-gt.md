@@ -38,13 +38,13 @@
 | **PGA** | `E2.O1.KR2` | Elaborar plano plurianual de renovação do parque tecnológico | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
 | **PGA** | `E2.O1.KR2` | Executar contratação de renovação tecnológica prevista no PROFISCO III | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme cronograma PROFISCO III |
 | **PGA** | `E2.O1.KR2` | Vincular substituição tecnológica à baixa ou reaproveitamento patrimonial | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Conforme fases da renovação |
-| **PGA** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunto; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
+| **PGA** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Supervisão de Informática (SI) e TIC/PGAAE; Apoio: Procuradoria-Geral Adjunta (PGA) | 150 dias |
 | **PGA** | `E2.O1.KR2` | Integrar segurança da informação à modernização do parque | Coexecutores: Procurador-Geral Adjunto; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 180 dias |
-| **PGA** | `E7.O1.KR1` | Criar trilha prioritária para automação de documentos e minutas | Líder: Procurador-Geral Adjunto | 180 dias |
-| **PGA** | `E7.O1.KR1` | Implantar ambiente de automação assistida para elaboração documental | Líder: Procurador-Geral Adjunto | Conforme cronograma PROFISCO III, com piloto em 12 meses |
-| **PGA** | `E7.O1.KR1` | Vincular a consultoria de transformação digital ao redesenho dos fluxos documentais | Líder: Procurador-Geral Adjunto | Conforme cronograma contratual PROFISCO |
-| **PGA** | `E7.O1.KR1` | Melhorar os fluxos de acordos trabalhistas com padronização de entendimentos | Líder: Procurador-Geral Adjunto | 150 dias |
-| **PGA** | `E7.O1.KR1` | Criar painel institucional de produtividade e automação | Líder: Procurador-Geral Adjunto | 180 dias |
+| **PGA** | `E7.O1.KR1` | Criar trilha prioritária para automação de documentos e minutas | Líder: PGAAE / Laboratório INOVA; Apoio Superior: Procuradoria-Geral Adjunta (PGA) | 180 dias |
+| **PGA** | `E7.O1.KR1` | Implantar ambiente de automação assistida para elaboração documental | Líder: PGAAE / Laboratório INOVA; Apoio Superior: Procuradoria-Geral Adjunta (PGA) | Conforme cronograma PROFISCO III, com piloto em 12 meses |
+| **PGA** | `E7.O1.KR1` | Vincular a consultoria de transformação digital ao redesenho dos fluxos documentais | Líder: PGAAE / Laboratório INOVA; Apoio Superior: Procuradoria-Geral Adjunta (PGA) | Conforme cronograma contratual PROFISCO |
+| **PGA** | `E7.O1.KR1` | Melhorar os fluxos de acordos trabalhistas com padronização de entendimentos | Líder: PGAAE / Laboratório INOVA; Apoio Superior: Procuradoria-Geral Adjunta (PGA) | 150 dias |
+| **PGA** | `E7.O1.KR1` | Criar painel institucional de produtividade e automação | Líder: PGAAE / Laboratório INOVA; Apoio Superior: Procuradoria-Geral Adjunta (PGA) | 180 dias |
 | **PGA** | `E7.O1.KR1` | Criar biblioteca institucional de pareceres padronizados automatizáveis | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 120 dias |
 | **PGA** | `E7.O1.KR1` | Implantar modelo assistido de elaboração de pareceres | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | 180 dias após definição da biblioteca |
 | **PGA** | `E7.O1.KR1` | Medir tempo, qualidade e taxa de reaproveitamento dos pareceres assistidos | Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Assessoria Jurídica; Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP) | Semestral, após implantação |
@@ -395,7 +395,7 @@
 - **[Concluído]** Inclusão da oficina de Escuta Ativa e Comunicação Não Violenta (CNV) na ESAP
 - **[Pendente]** Aprovação da matriz da Escala de Transparência Interna Adaptada e do Manual de Boas Práticas
 
-### Ações Setoriais Vinculadas ao GT-08 (43 ações)
+### Ações Setoriais Vinculadas ao GT-08 (42 ações)
 | Unidade | KR | Ação (O QUÊ) | Responsáveis | Prazo |
 | :---: | :---: | :--- | :--- | :--- |
 | **ASCOM** | `E9.O2.KR1` | Levantar necessidades anuais de capacitação da unidade e indicar trilhas técnicas ao Plano Anual de Capacitação (PAC) | Líder da Meta Institucional: Escola Superior da Advocacia Pública (ESAP) e SGRH; Demandante Setorial no PAC: ASCOM | Ciclo Anual até 2029 |
@@ -420,7 +420,6 @@
 | **ESAP** | `E9.O2.KR1` | Avaliar impacto das capacitações sobre a atividade institucional | Líder: Escola Superior da Advocacia Pública (ESAP); Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | Semestral |
 | **ESAP** | `E9.O2.KR1` | Produzir relatório semestral de desenvolvimento e capacitação | Líder: Escola Superior da Advocacia Pública (ESAP); Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | Semestral |
 | **ESAP** | `E9.O2.KR1` | Integrar a capacitação contínua à política de valorização profissional do eixo 9 | Líder: Escola Superior da Advocacia Pública (ESAP); Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 180 dias |
-| **ESAP** | `E8.O2.KR1` | Ofertar suporte pedagógico e certificar as 2 ações institucionais anuais de letramento e prevenção ao assédio moral e sexual | Líder Pedagógico: Escola Superior da Advocacia Pública (ESAP); Coexecutores: Ouvidoria-Geral, Corregedoria-Geral, Comitê de Equidade, SGRH | Anual (mínimo de 2 ações/ano) |
 | **ESAP** | `E9.O2.KR1` | Promover oficinas práticas de Oratória Forense, Escuta Ativa/CNV e Media Training para membros e servidores | Líder: Escola Superior da Advocacia Pública (ESAP); Coexecutores: Procuradoria Judicial (PJ), Procuradoria de Brasília (PB), Ouvidoria (OUV), Assessoria de Comunicação (ASCOM), Comitê de Equidade | Semestral |
 | **ESAP** | `E9.O2.KR1` | Instituir Trilha Estratégica Prioritária de Direito Digital e Inteligência Artificial no Plano Anual de Capacitação (PAC) da PGE-MA | Líder: Escola Superior da Advocacia Pública (ESAP); Coexecutores: PGAAE / Laboratório INOVA, Supervisão de Informática (SI), SGRH; Apoio: Unidades Setoriais | 2027 (Trilha contínua até 2030) |
 | **OUV** | `E8.O2.KR1` | Assegurar o tratamento e o encaminhamento tempestivo de denúncias para apuração competente | Líder (triagem, acolhimento e encaminhamento): Ouvidoria; Coexecutores: Corregedoria-Geral (condução e conclusão da apuração, em atribuição privativa), Subprocuradoria-Geral Adjunta | Fluxo permanente / Imediato |
@@ -438,6 +437,7 @@
 | **SGRH** | `E9.O2.KR1` | Consolidar linha de base da capacitação institucional com base em 2025 | Líder: Serviço de Gestão de Recursos Humanos; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 60 dias |
 | **SGRH** | `E9.O2.KR1` | Integrar cursos, palestras, eventos e formação acadêmica em um portfólio único | Líder: Serviço de Gestão de Recursos Humanos; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 120 dias |
 | **SGRH** | `E9.O2.KR1` | Desdobrar a meta de 40% em metas anuais intermediárias e por unidade | Líder: Serviço de Gestão de Recursos Humanos; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 90 dias |
+| **SGRH** | `E9.O2.KR1` | Criar sistema de inscrição, frequência e histórico formativo por servidor | Líder: Serviço de Gestão de Recursos Humanos; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 150 dias |
 
 ---
 
