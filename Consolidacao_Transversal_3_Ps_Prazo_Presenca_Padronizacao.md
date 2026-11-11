@@ -70,7 +70,7 @@
   > *"KR1: Manter em zero a perda de prazos processuais peremptórios em todas as unidades da PGE até 2030"*
   - *(Redação anterior nas planilhas-base / lista pré-reunião: "Manter em zero o número de prazos processuais judiciais peremptórios perdidos mensalmente pelas unidades da PGE-MA até 2030")*
   - **Unidades Responsáveis na Lista Ajustada:** `Todas as Especializadas Contenciosas e Regionais, Serviço de Digitalização e Distribuição, Subprocuradoria-Geral Adjunta`.
-- **`E4.O1.KR1` (Objetivo `O1`: Melhorar a experiência do usuário dos serviços da PGE):**
+- **`E4.O1.KR1` (Objetivo `O1`: Excelência no Atendimento e Satisfação do Usuário):**
   > *"KR1: Responder ao menos 90% das consultas dos órgãos estaduais dentro do prazo regulamentar até 2030"*
   - *(Redação anterior nas planilhas-base / lista pré-reunião: "Assegurar que ao menos 90% das consultas das secretarias sejam respondidas dentro do prazo regulamentar estabelecido pela PGE até 2030")*
   - **Unidades Responsáveis na Lista Ajustada:** `Consultoria Geral / Todas as Especializadas Consultivas e Contenciosas, Procuradoria Administrativa, Subprocuradoria-Geral Adjunta, Ouvidoria`.

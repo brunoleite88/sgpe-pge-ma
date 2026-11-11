@@ -27,15 +27,15 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 ## 2. Quadro Comparativo Consolidado: Os 9 Eixos da Lista Mestre Oficial
 |     Nº     | Eixo Estratégico Oficial da Lista Mestre                                     |   KRs Oficiais    |               Ações Setoriais Mapeadas                |                     Cobertura de Liderança                      |
 | :--------: | :--------------------------------------------------------------------------- | :---------------: | :---------------------------------------------------: | :-------------------------------------------------------------: |
-| **Eixo 1** | Incrementar a arrecadação e otimizar a cobrança da dívida ativa              |      13 KRs       |                    112 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 1** | Otimização da Arrecadação e Recuperação da Dívida Ativa              |      13 KRs       |                    112 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
 | **Eixo 2** | Eficiência Administrativa e Redução de Custos Operacionais                   |       5 KRs       |                    61 iniciativas                     |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 3** | Incrementar e executar integralmente o orçamento institucional               |       3 KRs       | 70 iniciativas (6 de PGARI reorientadas para PGA/USF) |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 4** | Melhorar a experiência do usuário dos serviços da PGE                        |       3 KRs       |      51 iniciativas (29 de E4.O1.KR2 expurgadas)      |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 5** | Alcançar maior eficiência e resolutividade nos processos internos e externos |      15 KRs       |                    474 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 6** | Fortalecer a imagem institucional e a comunicação com a sociedade            |       3 KRs       |  63 iniciativas (+6 de fluxo contencioso para ASCOM)  |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 7** | Promover a transformação digital e a inovação tecnológica                    |       7 KRs       |                    105 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 8** | Fomentar a sustentabilidade, a integridade e a responsabilidade social       |       6 KRs       |                    84 iniciativas                     |                 **100% KRs Cobertos com Líder**                 |
-| **Eixo 9** | Valorizar, integrar e qualificar servidores e procuradores                   |       5 KRs       |                    53 iniciativas                     |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 3** | Sustentabilidade Orçamentária e Captação de Recursos               |       3 KRs       | 70 iniciativas (6 de PGARI reorientadas para PGA/USF) |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 4** | Excelência no Atendimento e Satisfação do Usuário                        |       3 KRs       |      51 iniciativas (29 de E4.O1.KR2 expurgadas)      |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 5** | Eficiência Processual, Resolutividade e Defesa Estratégica |      15 KRs       |                    474 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 6** | Fortalecimento da Imagem Institucional e Transparência            |       3 KRs       |  63 iniciativas (+6 de fluxo contencioso para ASCOM)  |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 7** | Transformação Digital e Inovação Tecnológica                    |       7 KRs       |                    105 iniciativas                    |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 8** | Governança Ética, Integridade e Sustentabilidade       |       6 KRs       |                    84 iniciativas                     |                 **100% KRs Cobertos com Líder**                 |
+| **Eixo 9** | Valorização Profissional e Desenvolvimento de Pessoas                   |       5 KRs       |                    53 iniciativas                     |                 **100% KRs Cobertos com Líder**                 |
 | **TOTAL**  | **Taxonomia Plena da Lista Mestre PGE-MA**                                   | **60 KRs Ativos** |                 **1073 iniciativas**                  | **60 Resultados-Chave Ativos (E9.O1.KR4 Concretizado em 2026)** |
 
 ---
@@ -645,7 +645,7 @@ A presente matriz restabelece a submissão formal de todas as ações propostas 
 
 # EIXO ESTRATÉGICO 4 – MELHORAR A EXPERIÊNCIA DO USUÁRIO DOS SERVIÇOS DA PGE
 
-## O1: Melhorar a experiência do usuário dos serviços da PGE
+## O1: Excelência no Atendimento e Satisfação do Usuário
 
 ### KR1: Responder ao menos 90% das consultas dos órgãos estaduais dentro do prazo regulamentar até 2030
 - **Código na Lista Mestre:** `E4.O1.KR1`
