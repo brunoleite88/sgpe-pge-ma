@@ -37,7 +37,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PCF (PROCURADORIA DO CONTENCIOSO FISCAL)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 44,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PDA",
@@ -53,7 +53,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PERJP",
@@ -343,7 +343,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PCF (PROCURADORIA DO CONTENCIOSO FISCAL)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 44,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PDA",
@@ -359,7 +359,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PEDU",
@@ -6315,10 +6315,10 @@
       "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
       "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
       "subacao": "Identificar gargalos em triagem, requisição de cálculos à SEFAZ e juntada de subsídios, desenhando fluxos padronizados com eliminação de retrabalho manual.",
-      "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
       "prazo": "Até 2028",
       "pilar_3ps": "3º P: Padronização e Prevenção",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "PGA,PGAAE,SI",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -6334,10 +6334,10 @@
       "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
       "acao": "Implantar metodologia de gestão visual de prazos e distribuição de contestações fiscais",
       "subacao": "Adotar painel Kanban para acompanhamento diário da entrada de novas ações anulatórias e mandados de segurança, equilibrando as cargas de trabalho da equipe.",
-      "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria de Gestão Estratégica",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio Metodológico: Assessoria de Gestão Estratégica",
       "prazo": "Até 2027",
       "pilar_3ps": "3º P: Padronização e Prevenção",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -6410,10 +6410,10 @@
       "kr_texto_completo": "[E5.O5.KR3] KR3: Aumentar em 25% a produtividade processual das equipes setoriais até 2030",
       "acao": "Acompanhar indicadores de vazão processual e produtividade da Procuradoria do Contencioso Fiscal",
       "subacao": "Monitorar taxa de peticionamento, tempo médio de contestação e redução do acervo judicial pendente através de painel de Business Intelligence.",
-      "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria de Gestão Estratégica",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio: Assessoria de Gestão Estratégica",
       "prazo": "Contínuo até 2030",
       "pilar_3ps": "Outros Eixos / Governança",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -7398,10 +7398,10 @@
       "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
       "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
       "subacao": "Identificar gargalos operacionais no processamento cartorário das execuções fiscais, integrando com o Núcleo de Cálculos e sistemas fiscais.",
-      "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
       "prazo": "90 dias",
       "pilar_3ps": "3º P: Padronização e Prevenção",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "NIRF,PGAAE,SI",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -7417,10 +7417,10 @@
       "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
       "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
       "subacao": "Automatizar a classificação de processos paralisados e baixas de execuções fiscais quitadas ou inviáveis, desonerando o acervo da unidade.",
-      "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI",
       "prazo": "120 dias",
       "pilar_3ps": "3º P: Padronização e Prevenção",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "PGAAE,SI",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -7455,10 +7455,10 @@
       "kr_texto_completo": "[E5.O5.KR3] KR3: Aumentar em 25% a produtividade processual das equipes setoriais até 2030",
       "acao": "Criar painel setorial de produtividade na cobrança e ajuizamento de CDAs",
       "subacao": "Medir volume de CDAs ajuizadas, penhoras obtidas, acordos firmados e expedientes baixados por procurador e servidor.",
-      "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAE",
+      "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
       "prazo": "180 dias",
       "pilar_3ps": "Outros Eixos / Governança",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "PGAAE",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -23873,10 +23873,10 @@
           "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
           "subacao": "Identificar gargalos operacionais no processamento cartorário das execuções fiscais, integrando com o Núcleo de Cálculos e sistemas fiscais.",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
           "prazo": "90 dias",
           "pilar_3ps": "3º P: Padronização e Prevenção",
-          "papel_unidade": "Líder",
+          "papel_unidade": "Apoio Operacional",
           "unidades_parceiras": "NIRF,PGAAE,SI",
           "status_execucao": "Planejado (2027–2030)"
         },
@@ -23890,10 +23890,10 @@
           "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
           "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
           "subacao": "Automatizar a classificação de processos paralisados e baixas de execuções fiscais quitadas ou inviáveis, desonerando o acervo da unidade.",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI",
           "prazo": "120 dias",
           "pilar_3ps": "3º P: Padronização e Prevenção",
-          "papel_unidade": "Líder",
+          "papel_unidade": "Apoio Operacional",
           "unidades_parceiras": "PGAAE,SI",
           "status_execucao": "Planejado (2027–2030)"
         },
@@ -24350,10 +24350,10 @@
           "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
           "subacao": "Identificar gargalos em triagem, requisição de cálculos à SEFAZ e juntada de subsídios, desenhando fluxos padronizados com eliminação de retrabalho manual.",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
           "prazo": "Até 2028",
           "pilar_3ps": "3º P: Padronização e Prevenção",
-          "papel_unidade": "Líder",
+          "papel_unidade": "Apoio Operacional",
           "unidades_parceiras": "PGA,PGAAE,SI",
           "status_execucao": "Planejado (2027–2030)"
         },
@@ -24367,10 +24367,10 @@
           "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
           "acao": "Implantar metodologia de gestão visual de prazos e distribuição de contestações fiscais",
           "subacao": "Adotar painel Kanban para acompanhamento diário da entrada de novas ações anulatórias e mandados de segurança, equilibrando as cargas de trabalho da equipe.",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria de Gestão Estratégica",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio Metodológico: Assessoria de Gestão Estratégica",
           "prazo": "Até 2027",
           "pilar_3ps": "3º P: Padronização e Prevenção",
-          "papel_unidade": "Líder",
+          "papel_unidade": "Apoio Operacional",
           "unidades_parceiras": "",
           "status_execucao": "Planejado (2027–2030)"
         },
@@ -34995,8 +34995,8 @@
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "origem": "PDA",
@@ -38735,8 +38735,8 @@
           "origem": "PCF",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "origem": "PDA",
@@ -40305,8 +40305,8 @@
           "origem": "PCF",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "origem": "PCF",
@@ -40431,15 +40431,15 @@
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI"
         },
         {
           "origem": "PDA",
@@ -40452,8 +40452,8 @@
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR3",
           "acao": "Criar painel setorial de produtividade na cobrança e ajuizamento de CDAs",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "origem": "PDA",
@@ -47572,8 +47572,8 @@
           "origem": "PCF",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "origem": "PCF",
@@ -47642,15 +47642,15 @@
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "origem": "PDA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI"
         },
         {
           "origem": "PDA",
@@ -51565,22 +51565,22 @@
           "parceiro": "PGA",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "parceiro": "PGAAE",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "parceiro": "SI",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI"
         },
         {
           "parceiro": "PGAAE",
@@ -52099,36 +52099,36 @@
           "parceiro": "NIRF",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "parceiro": "PGAAE",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "parceiro": "SI",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI"
         },
         {
           "parceiro": "PGAAE",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI"
         },
         {
           "parceiro": "SI",
           "kr_codigo": "E5.O5.KR1",
           "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI"
         },
         {
           "parceiro": "PGAAE",
@@ -52148,8 +52148,8 @@
           "parceiro": "PGAAE",
           "kr_codigo": "E5.O5.KR3",
           "acao": "Criar painel setorial de produtividade na cobrança e ajuizamento de CDAs",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "parceiro": "PGAAE",
@@ -67419,8 +67419,6 @@
           "GAB",
           "PA",
           "PB",
-          "PCF",
-          "PDA",
           "PERJP",
           "PGAAE",
           "PJ",
@@ -67433,6 +67431,8 @@
           "UGAM"
         ],
         "unidades_apoio": [
+          "PCF",
+          "PDA",
           "PEDU",
           "PGA",
           "PRI",
@@ -67474,8 +67474,6 @@
           "GAB",
           "NC",
           "PA",
-          "PCF",
-          "PDA",
           "PERJP",
           "PGAAE",
           "PJEFP",
@@ -67487,6 +67485,8 @@
         ],
         "unidades_apoio": [
           "CS",
+          "PCF",
+          "PDA",
           "PEDU",
           "PGA",
           "PRI",
@@ -74577,10 +74577,10 @@
         "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
         "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
         "subacao": "Identificar gargalos em triagem, requisição de cálculos à SEFAZ e juntada de subsídios, desenhando fluxos padronizados com eliminação de retrabalho manual.",
-        "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
         "prazo": "Até 2028",
         "pilar_3ps": "3º P: Padronização e Prevenção",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "PGA,PGAAE,SI",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -74601,10 +74601,10 @@
         "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
         "acao": "Implantar metodologia de gestão visual de prazos e distribuição de contestações fiscais",
         "subacao": "Adotar painel Kanban para acompanhamento diário da entrada de novas ações anulatórias e mandados de segurança, equilibrando as cargas de trabalho da equipe.",
-        "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria de Gestão Estratégica",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio Metodológico: Assessoria de Gestão Estratégica",
         "prazo": "Até 2027",
         "pilar_3ps": "3º P: Padronização e Prevenção",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -74697,10 +74697,10 @@
         "kr_texto_completo": "[E5.O5.KR3] KR3: Aumentar em 25% a produtividade processual das equipes setoriais até 2030",
         "acao": "Acompanhar indicadores de vazão processual e produtividade da Procuradoria do Contencioso Fiscal",
         "subacao": "Monitorar taxa de peticionamento, tempo médio de contestação e redução do acervo judicial pendente através de painel de Business Intelligence.",
-        "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: Assessoria de Gestão Estratégica",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio: Assessoria de Gestão Estratégica",
         "prazo": "Contínuo até 2030",
         "pilar_3ps": "Outros Eixos / Governança",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria do Contencioso Fiscal",
@@ -75945,10 +75945,10 @@
         "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
         "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
         "subacao": "Identificar gargalos operacionais no processamento cartorário das execuções fiscais, integrando com o Núcleo de Cálculos e sistemas fiscais.",
-        "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
         "prazo": "90 dias",
         "pilar_3ps": "3º P: Padronização e Prevenção",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "NIRF,PGAAE,SI",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -75969,10 +75969,10 @@
         "kr_texto_completo": "[E5.O5.KR1] KR1: Reduzir em 20% o tempo dedicado a tarefas manuais e repetitivas até 2028",
         "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
         "subacao": "Automatizar a classificação de processos paralisados e baixas de execuções fiscais quitadas ou inviáveis, desonerando o acervo da unidade.",
-        "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI",
         "prazo": "120 dias",
         "pilar_3ps": "3º P: Padronização e Prevenção",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "PGAAE,SI",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -76017,10 +76017,10 @@
         "kr_texto_completo": "[E5.O5.KR3] KR3: Aumentar em 25% a produtividade processual das equipes setoriais até 2030",
         "acao": "Criar painel setorial de produtividade na cobrança e ajuizamento de CDAs",
         "subacao": "Medir volume de CDAs ajuizadas, penhoras obtidas, acordos firmados e expedientes baixados por procurador e servidor.",
-        "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAE",
+        "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
         "prazo": "180 dias",
         "pilar_3ps": "Outros Eixos / Governança",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "PGAAE",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -97227,7 +97227,7 @@
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
             "prazo": "90 dias"
           },
           {
@@ -98426,7 +98426,7 @@
         "sigla": "PCF",
         "nome": "Procuradoria do Contencioso Fiscal",
         "total_acoes": 44,
-        "qtd_lider": 37,
+        "qtd_lider": 34,
         "qtd_coexecutor": 0,
         "qtd_articulador": 0,
         "parceiros_acionados": [
@@ -98907,7 +98907,7 @@
         "sigla": "PDA",
         "nome": "Procuradoria da Dívida Ativa",
         "total_acoes": 55,
-        "qtd_lider": 50,
+        "qtd_lider": 47,
         "qtd_coexecutor": 0,
         "qtd_articulador": 0,
         "parceiros_acionados": [
@@ -101236,7 +101236,7 @@
             "origem": "PCF",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-            "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
             "prazo": "Até 2028"
           },
           {
@@ -102879,7 +102879,7 @@
             "origem": "PCF",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-            "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
             "prazo": "Até 2028"
           },
           {
@@ -103005,14 +103005,14 @@
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
             "prazo": "90 dias"
           },
           {
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI",
             "prazo": "120 dias"
           },
           {
@@ -103026,7 +103026,7 @@
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR3",
             "acao": "Criar painel setorial de produtividade na cobrança e ajuizamento de CDAs",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: PGAAE",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA (Governança Processual: SGA/PGAAJ); Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
             "prazo": "180 dias"
           },
           {
@@ -110735,7 +110735,7 @@
             "origem": "PCF",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear os fluxos operacionais mais repetitivos da Procuradoria do Contencioso Fiscal",
-            "responsaveis": "Líder: Procuradoria do Contencioso Fiscal; Coexecutores: PGA, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria do Contencioso Fiscal (PCF); Apoio de Infraestrutura: SI",
             "prazo": "Até 2028"
           },
           {
@@ -110805,14 +110805,14 @@
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Mapear rotinas repetitivas de ajuizamento, cálculo de atualização e conferência de guias de pagamento",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI), NIRF",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Cartorária e Mapeamento: Procuradoria da Dívida Ativa (PDA); Apoio Técnico: NIRF, SI",
             "prazo": "90 dias"
           },
           {
             "origem": "PDA",
             "kr_codigo": "E5.O5.KR1",
             "acao": "Implantar fluxo automatizado de triagem de prescrição intercorrente e causas extintivas",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI)",
+            "responsaveis": "Líder Institucional: PGAAE / INOVA; Execução Setorial: Procuradoria da Dívida Ativa (PDA); Apoio de Infraestrutura: SI",
             "prazo": "120 dias"
           },
           {
@@ -111916,7 +111916,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PCF (PROCURADORIA DO CONTENCIOSO FISCAL)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 44,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PDA",
@@ -111932,7 +111932,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 11:25"
       },
       {
         "sigla": "PEDU",
