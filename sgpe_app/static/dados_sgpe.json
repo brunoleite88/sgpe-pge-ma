@@ -53,7 +53,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 11:25"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PERJP",
@@ -85,7 +85,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PGAAE (PROCURADOR-GERAL ADJUNTA PARA ASSUNTOS ESTRATÉGICOS (PGAAE))",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 159,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PT",
@@ -279,7 +279,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – NIRF",
         "titulo_planilha_2": "[UNIDADE DISPENSADA DE PLANILHA AUTÔNOMA – CONSOLIDADA NA PLANILHA DA PDA (DESPACHO Nº 50/2026 - SEI 2026.11103.07215)]",
         "total_acoes": 27,
-        "ultima_atualizacao": "2026-11-11 09:10"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "OUV",
@@ -359,7 +359,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 11:25"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PEDU",
@@ -423,7 +423,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PGAAE (PROCURADOR-GERAL ADJUNTA PARA ASSUNTOS ESTRATÉGICOS (PGAAE))",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 159,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PGAAJ",
@@ -845,7 +845,7 @@
       },
       {
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "qtd_acoes": 5,
@@ -853,7 +853,7 @@
       },
       {
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "qtd_acoes": 5,
@@ -893,7 +893,7 @@
       },
       {
         "kr_codigo": "E1.O4.KR3",
-        "kr_texto_completo": "[E1.O4.KR3] KR3: Reduzir em 50% as execuções fiscais extintas com condenação do Estado em honorários sucumbenciais até 2030",
+        "kr_texto_completo": "[E1.O4.KR3] KR3: Submeter 100% das CDAs de grande valor à triagem pré-ajuizamento com a SEFAZ para expurgo de inconsistências e prevenção de sucumbência até 2027",
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais",
         "qtd_acoes": 1,
@@ -901,7 +901,7 @@
       },
       {
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "qtd_acoes": 11,
@@ -4279,7 +4279,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR2",
-      "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+      "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
       "acao": "Realizar força-tarefa de saneamento e classificação do estoque",
       "subacao": "Classificar CDAs em ajuizáveis, protestáveis, dependentes de saneamento e inviáveis; organizar fila priorizada",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4298,7 +4298,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR2",
-      "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+      "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
       "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória",
       "subacao": "Verificar CPF/CNPJ, endereço, conta de honorários, exigibilidade, piso mínimo e completude documental",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4317,7 +4317,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR3",
-      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
       "acao": "Consolidar o fluxo de protesto como via ordinária de recuperação",
       "subacao": "Finalizar implantação do sistema de protesto e padronizar remessa automática ou semiautomática das CDAs aptas",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4412,7 +4412,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
       "subacao": "Definir instrumentos prioritários: protesto, negativação, pesquisa patrimonial, bloqueio de recebíveis, acordos e comunicação qualificada",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4431,7 +4431,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Criar manual operacional único de cobrança administrativa",
       "subacao": "Padronizar hipóteses de uso, documentos, responsáveis, prazos e escalonamento entre medida administrativa e judicial",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4450,7 +4450,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Implantar rotina de pesquisa patrimonial orientada por inteligência",
       "subacao": "Priorizar grandes devedores, rodar trilhas de pesquisa e documentar evidências patrimoniais",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -4469,7 +4469,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Incorporar benchmarking da PGE-CE e resultados do mutirão fiscal",
       "subacao": "Traduzir aprendizados do intercâmbio e da experiência de 2025 em protocolos formais",
       "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -6619,10 +6619,10 @@
       "kr_texto_completo": "[E1.O1.KR1] KR1: Aumentar em 20% o volume de créditos recuperados até 2028",
       "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
       "subacao": "Identificar oportunidades de compensação de precatórios com a Dívida Ativa tributária e recuperação vinculada a execuções fiscais.",
-      "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE",
+      "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)",
       "prazo": "180 dias para carteira priorizada; revisão trimestral",
       "pilar_3ps": "Outros Eixos / Governança",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "PERJP,PGAAE",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -6749,7 +6749,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR2",
-      "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+      "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
       "acao": "Realizar força-tarefa de saneamento e classificação do estoque",
       "subacao": "Inventariar CDAs ajuizáveis, estratificar por faixa de valor, verificar prescrição e criar lotes automáticos para ajuizamento.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -6768,7 +6768,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR2",
-      "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+      "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
       "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória de dados",
       "subacao": "Validar higidez da CDA, CPF/CNPJ, endereço, sócios e bens antes do ajuizamento para evitar extinção prematura da execução.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -6787,7 +6787,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR3",
-      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
       "acao": "Consolidar o fluxo de protesto como via ordinária de cobrança",
       "subacao": "Definir que toda CDA abaixo ou acima do piso de ajuizamento seja previamente submetida ao protesto extrajudicial.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -6806,7 +6806,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR3",
-      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
       "acao": "Operacionalizar o convênio com IEPTB/MA em regime automatizado",
       "subacao": "Implantar transmissão eletrônica diária de títulos protestáveis, retorno de custas pagas e cancelamento tempestivo de protesto.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -7015,7 +7015,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais",
       "kr_codigo": "E1.O4.KR3",
-      "kr_texto_completo": "[E1.O4.KR3] KR3: Reduzir em 50% as execuções fiscais extintas com condenação do Estado em honorários sucumbenciais até 2030",
+      "kr_texto_completo": "[E1.O4.KR3] KR3: Submeter 100% das CDAs de grande valor à triagem pré-ajuizamento com a SEFAZ para expurgo de inconsistências e prevenção de sucumbência até 2027",
       "acao": "Implantar protocolo de triagem preventiva e saneamento de liquidez de CDAs para redução de sucumbência",
       "subacao": "Revisar bases cadastrais antes do ajuizamento ou penhora de execuções fiscais, uniformizar rito de desistência sem ônus sucumbencial e emitir parecer padrão de cancelamento para créditos prescritos/inexistentes.",
       "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria do Contencioso Fiscal, NIRF",
@@ -7034,7 +7034,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
       "subacao": "Mapear protesto, averbação pré-executória, arrolamento administrativo de bens e inclusão em cadastros restritivos (CADIN/SERASA).",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -7053,7 +7053,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Criar manual operacional único de cobrança administrativa e extrajudicial",
       "subacao": "Padronizar procedimentos de protesto, notificação extrajudicial, termos de parcelamento e averbação de bens penhoráveis.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -7072,7 +7072,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Implantar rotina de pesquisa patrimonial orientada a grandes devedores",
       "subacao": "Priorizar cruzamentos automatizados do SISBAJUD, RENAJUD e bases imobiliárias para devedores com débito superior a R$ 500 mil.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -7091,7 +7091,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Incorporar benchmarking de outras Procuradorias Estaduais em cobrança fiscal",
       "subacao": "Avaliar modelos de sucesso de outras PGEs em busca patrimonial automatizada e averbação de certidões fiscais.",
       "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -7341,10 +7341,10 @@
       "kr_texto_completo": "[E5.O1.KR3] KR3: Atingir taxa de êxito de 80% nos processos judiciais estratégicos até 2027",
       "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
       "subacao": "Consolidar precedentes vinculantes tributários e defesas padronizadas contra exceções de pré-executividade para elevar taxa de acolhimento judicial.",
-      "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ",
+      "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
       "prazo": "120 dias e contínuo",
       "pilar_3ps": "2º P: Presença nos Tribunais",
-      "papel_unidade": "Líder",
+      "papel_unidade": "Apoio Operacional",
       "unidades_parceiras": "PCF,PGAAJ",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -10758,7 +10758,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR2",
-      "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+      "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
       "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória",
       "subacao": "Verificar CPF/CNPJ, endereço, conta de honorários, exigibilidade, piso mínimo e completude documental",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -10777,7 +10777,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR3",
-      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
       "acao": "Consolidar o fluxo de protesto como via ordinária de recuperação",
       "subacao": "Finalizar implantação do sistema de protesto e padronizar remessa automática ou semiautomática das CDAs aptas",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -10796,7 +10796,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
       "kr_codigo": "E1.O2.KR3",
-      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+      "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
       "acao": "Operacionalizar o convênio com IEPTB/MA em regime de desempenho",
       "subacao": "Definir metas mensais de protesto, taxa de retorno, tempo médio e conversão em pagamento/parcelamento",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -10986,7 +10986,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
       "subacao": "Definir instrumentos prioritários: protesto, negativação, pesquisa patrimonial, bloqueio de recebíveis, acordos e comunicação qualificada",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -11005,7 +11005,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Criar manual operacional único de cobrança administrativa",
       "subacao": "Padronizar hipóteses de uso, documentos, responsáveis, prazos e escalonamento entre medida administrativa e judicial",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -11024,7 +11024,7 @@
       "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
       "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
       "kr_codigo": "E1.O5.KR1",
-      "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+      "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
       "acao": "Incorporar benchmarking da PGE-CE e resultados do mutirão fiscal",
       "subacao": "Traduzir aprendizados do intercâmbio e da experiência de 2025 em protocolos formais",
       "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -23803,10 +23803,10 @@
           "kr_texto_completo": "[E5.O1.KR3] KR3: Atingir taxa de êxito de 80% nos processos judiciais estratégicos até 2027",
           "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
           "subacao": "Consolidar precedentes vinculantes tributários e defesas padronizadas contra exceções de pré-executividade para elevar taxa de acolhimento judicial.",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ",
+          "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
           "prazo": "120 dias e contínuo",
           "pilar_3ps": "2º P: Presença nos Tribunais",
-          "papel_unidade": "Líder",
+          "papel_unidade": "Apoio Operacional",
           "unidades_parceiras": "PCF,PGAAJ",
           "status_execucao": "Planejado (2027–2030)"
         },
@@ -36116,8 +36116,8 @@
           "origem": "PDA",
           "kr_codigo": "E5.O1.KR3",
           "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "origem": "PGAAE",
@@ -37970,8 +37970,8 @@
           "origem": "PDA",
           "kr_codigo": "E1.O1.KR1",
           "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "origem": "PGAAE",
@@ -40361,8 +40361,8 @@
           "origem": "PDA",
           "kr_codigo": "E1.O1.KR1",
           "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "origem": "PDA",
@@ -41966,8 +41966,8 @@
           "origem": "PDA",
           "kr_codigo": "E5.O1.KR3",
           "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "origem": "PDA",
@@ -51742,15 +51742,15 @@
           "parceiro": "PERJP",
           "kr_codigo": "E1.O1.KR1",
           "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "parceiro": "PGAAE",
           "kr_codigo": "E1.O1.KR1",
           "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "parceiro": "NIRF",
@@ -52106,15 +52106,15 @@
           "parceiro": "PCF",
           "kr_codigo": "E5.O1.KR3",
           "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "parceiro": "PGAAJ",
           "kr_codigo": "E5.O1.KR3",
           "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-          "papel_origem": "Líder",
-          "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ"
+          "papel_origem": "Apoio Operacional",
+          "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)"
         },
         {
           "parceiro": "NIRF",
@@ -66545,11 +66545,11 @@
         "unidades_lideres": [
           "NC",
           "PCF",
-          "PDA",
           "PERJP"
         ],
         "unidades_apoio": [
           "NIRF",
+          "PDA",
           "PGAAE"
         ]
       },
@@ -66607,7 +66607,7 @@
         "kr_codigo": "E1.O2.KR2",
         "eixo_nome": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo_nome": "O2: Aumentar a arrecadação da dívida ativa",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "pilar_3ps": "Outros Eixos / Governança",
         "qtd_acoes": 5,
         "unidades": [
@@ -66629,7 +66629,7 @@
         "kr_codigo": "E1.O2.KR3",
         "eixo_nome": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo_nome": "O2: Aumentar a arrecadação da dívida ativa",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "pilar_3ps": "Outros Eixos / Governança",
         "qtd_acoes": 5,
         "unidades": [
@@ -66736,7 +66736,7 @@
         "kr_codigo": "E1.O4.KR3",
         "eixo_nome": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo_nome": "O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais",
-        "kr_texto_completo": "[E1.O4.KR3] KR3: Reduzir em 50% as execuções fiscais extintas com condenação do Estado em honorários sucumbenciais até 2030",
+        "kr_texto_completo": "[E1.O4.KR3] KR3: Submeter 100% das CDAs de grande valor à triagem pré-ajuizamento com a SEFAZ para expurgo de inconsistências e prevenção de sucumbência até 2027",
         "pilar_3ps": "Outros Eixos / Governança",
         "qtd_acoes": 1,
         "unidades": [
@@ -66753,7 +66753,7 @@
         "kr_codigo": "E1.O5.KR1",
         "eixo_nome": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo_nome": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "pilar_3ps": "Outros Eixos / Governança",
         "qtd_acoes": 11,
         "unidades": [
@@ -67212,7 +67212,6 @@
           "PSP"
         ],
         "unidades_lideres": [
-          "PDA",
           "PERJP",
           "PGAAJ",
           "PJ",
@@ -67221,6 +67220,7 @@
           "PSP"
         ],
         "unidades_apoio": [
+          "PDA",
           "PEDU",
           "PRI",
           "PRT"
@@ -72047,7 +72047,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "acao": "Realizar força-tarefa de saneamento e classificação do estoque",
         "subacao": "Classificar CDAs em ajuizáveis, protestáveis, dependentes de saneamento e inviáveis; organizar fila priorizada",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72071,7 +72071,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória",
         "subacao": "Verificar CPF/CNPJ, endereço, conta de honorários, exigibilidade, piso mínimo e completude documental",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72095,7 +72095,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "acao": "Consolidar o fluxo de protesto como via ordinária de recuperação",
         "subacao": "Finalizar implantação do sistema de protesto e padronizar remessa automática ou semiautomática das CDAs aptas",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72215,7 +72215,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
         "subacao": "Definir instrumentos prioritários: protesto, negativação, pesquisa patrimonial, bloqueio de recebíveis, acordos e comunicação qualificada",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72239,7 +72239,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Criar manual operacional único de cobrança administrativa",
         "subacao": "Padronizar hipóteses de uso, documentos, responsáveis, prazos e escalonamento entre medida administrativa e judicial",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72263,7 +72263,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Implantar rotina de pesquisa patrimonial orientada por inteligência",
         "subacao": "Priorizar grandes devedores, rodar trilhas de pesquisa e documentar evidências patrimoniais",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -72287,7 +72287,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Incorporar benchmarking da PGE-CE e resultados do mutirão fiscal",
         "subacao": "Traduzir aprendizados do intercâmbio e da experiência de 2025 em protocolos formais",
         "responsaveis": "Líder Homologado: Procuradoria da Dívida Ativa (PDA); Execução Técnica / Inteligência Fiscal: NIRF (Despacho SEI nº 50/2026)",
@@ -75002,10 +75002,10 @@
         "kr_texto_completo": "[E1.O1.KR1] KR1: Aumentar em 20% o volume de créditos recuperados até 2028",
         "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
         "subacao": "Identificar oportunidades de compensação de precatórios com a Dívida Ativa tributária e recuperação vinculada a execuções fiscais.",
-        "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE",
+        "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)",
         "prazo": "180 dias para carteira priorizada; revisão trimestral",
         "pilar_3ps": "Outros Eixos / Governança",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "PERJP,PGAAE",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -75167,7 +75167,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "acao": "Realizar força-tarefa de saneamento e classificação do estoque",
         "subacao": "Inventariar CDAs ajuizáveis, estratificar por faixa de valor, verificar prescrição e criar lotes automáticos para ajuizamento.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75191,7 +75191,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória de dados",
         "subacao": "Validar higidez da CDA, CPF/CNPJ, endereço, sócios e bens antes do ajuizamento para evitar extinção prematura da execução.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75215,7 +75215,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "acao": "Consolidar o fluxo de protesto como via ordinária de cobrança",
         "subacao": "Definir que toda CDA abaixo ou acima do piso de ajuizamento seja previamente submetida ao protesto extrajudicial.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75239,7 +75239,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "acao": "Operacionalizar o convênio com IEPTB/MA em regime automatizado",
         "subacao": "Implantar transmissão eletrônica diária de títulos protestáveis, retorno de custas pagas e cancelamento tempestivo de protesto.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75503,7 +75503,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais",
         "kr_codigo": "E1.O4.KR3",
-        "kr_texto_completo": "[E1.O4.KR3] KR3: Reduzir em 50% as execuções fiscais extintas com condenação do Estado em honorários sucumbenciais até 2030",
+        "kr_texto_completo": "[E1.O4.KR3] KR3: Submeter 100% das CDAs de grande valor à triagem pré-ajuizamento com a SEFAZ para expurgo de inconsistências e prevenção de sucumbência até 2027",
         "acao": "Implantar protocolo de triagem preventiva e saneamento de liquidez de CDAs para redução de sucumbência",
         "subacao": "Revisar bases cadastrais antes do ajuizamento ou penhora de execuções fiscais, uniformizar rito de desistência sem ônus sucumbencial e emitir parecer padrão de cancelamento para créditos prescritos/inexistentes.",
         "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria do Contencioso Fiscal, NIRF",
@@ -75527,7 +75527,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
         "subacao": "Mapear protesto, averbação pré-executória, arrolamento administrativo de bens e inclusão em cadastros restritivos (CADIN/SERASA).",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75551,7 +75551,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Criar manual operacional único de cobrança administrativa e extrajudicial",
         "subacao": "Padronizar procedimentos de protesto, notificação extrajudicial, termos de parcelamento e averbação de bens penhoráveis.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75575,7 +75575,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Implantar rotina de pesquisa patrimonial orientada a grandes devedores",
         "subacao": "Priorizar cruzamentos automatizados do SISBAJUD, RENAJUD e bases imobiliárias para devedores com débito superior a R$ 500 mil.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75599,7 +75599,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Incorporar benchmarking de outras Procuradorias Estaduais em cobrança fiscal",
         "subacao": "Avaliar modelos de sucesso de outras PGEs em busca patrimonial automatizada e averbação de certidões fiscais.",
         "responsaveis": "Líder Institucional: Procuradoria da Dívida Ativa (PDA); Coexecutor Técnico / Inteligência Fiscal: NIRF",
@@ -75914,10 +75914,10 @@
         "kr_texto_completo": "[E5.O1.KR3] KR3: Atingir taxa de êxito de 80% nos processos judiciais estratégicos até 2027",
         "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
         "subacao": "Consolidar precedentes vinculantes tributários e defesas padronizadas contra exceções de pré-executividade para elevar taxa de acolhimento judicial.",
-        "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ",
+        "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
         "prazo": "120 dias e contínuo",
         "pilar_3ps": "2º P: Presença nos Tribunais",
-        "papel_unidade": "Líder",
+        "papel_unidade": "Apoio Operacional",
         "unidades_parceiras": "PCF,PGAAJ",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Procuradoria da Dívida Ativa",
@@ -80231,7 +80231,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR2",
-        "kr_texto_completo": "[E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028",
+        "kr_texto_completo": "[E1.O2.KR2] KR2: Tornar o ajuizamento de execuções fiscais 100% estratégico e condicionado a critérios de recuperabilidade até 2027",
         "acao": "Implantar rotina pré-ajuizamento com conferência obrigatória",
         "subacao": "Verificar CPF/CNPJ, endereço, conta de honorários, exigibilidade, piso mínimo e completude documental",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -80255,7 +80255,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "acao": "Consolidar o fluxo de protesto como via ordinária de recuperação",
         "subacao": "Finalizar implantação do sistema de protesto e padronizar remessa automática ou semiautomática das CDAs aptas",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -80279,7 +80279,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O2: Aumentar a arrecadação da dívida ativa",
         "kr_codigo": "E1.O2.KR3",
-        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027",
+        "kr_texto_completo": "[E1.O2.KR3] KR3: Encaminhar a protesto extrajudicial 100% das CDAs triadas e aptas na política de ajuizamento até 2028",
         "acao": "Operacionalizar o convênio com IEPTB/MA em regime de desempenho",
         "subacao": "Definir metas mensais de protesto, taxa de retorno, tempo médio e conversão em pagamento/parcelamento",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -80519,7 +80519,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Consolidar carteira institucional de mecanismos de cobrança administrativa",
         "subacao": "Definir instrumentos prioritários: protesto, negativação, pesquisa patrimonial, bloqueio de recebíveis, acordos e comunicação qualificada",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -80543,7 +80543,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Criar manual operacional único de cobrança administrativa",
         "subacao": "Padronizar hipóteses de uso, documentos, responsáveis, prazos e escalonamento entre medida administrativa e judicial",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -80567,7 +80567,7 @@
         "eixo": "Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa",
         "objetivo": "O5: Ampliar a utilização de ferramentas de inteligência fiscal",
         "kr_codigo": "E1.O5.KR1",
-        "kr_texto_completo": "[E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030",
+        "kr_texto_completo": "[E1.O5.KR1] KR1: Realizar pesquisa patrimonial sistematizada em 100% das execuções fiscais prioritárias de grandes devedores até 2028",
         "acao": "Incorporar benchmarking da PGE-CE e resultados do mutirão fiscal",
         "subacao": "Traduzir aprendizados do intercâmbio e da experiência de 2025 em protocolos formais",
         "responsaveis": "Coexecutores: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradoria da Dívida Ativa",
@@ -98519,7 +98519,7 @@
             "origem": "PDA",
             "kr_codigo": "E5.O1.KR3",
             "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ",
+            "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
             "prazo": "120 dias e contínuo"
           },
           {
@@ -98948,7 +98948,7 @@
         "sigla": "PDA",
         "nome": "Procuradoria da Dívida Ativa",
         "total_acoes": 55,
-        "qtd_lider": 47,
+        "qtd_lider": 45,
         "qtd_coexecutor": 0,
         "qtd_articulador": 0,
         "parceiros_acionados": [
@@ -100470,7 +100470,7 @@
             "origem": "PDA",
             "kr_codigo": "E1.O1.KR1",
             "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE",
+            "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)",
             "prazo": "180 dias para carteira priorizada; revisão trimestral"
           },
           {
@@ -102976,7 +102976,7 @@
             "origem": "PDA",
             "kr_codigo": "E1.O1.KR1",
             "acao": "Integrar recuperação de créditos a litígios de execução fiscal e depósitos judiciais",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Procuradoria de Execuções e Requisições Judiciais de Pagamento, PGAAE",
+            "responsaveis": "Líder Institucional: PERJP / NC; Apoio em Execuções Fiscais: Procuradoria da Dívida Ativa (PDA)",
             "prazo": "180 dias para carteira priorizada; revisão trimestral"
           },
           {
@@ -104625,7 +104625,7 @@
             "origem": "PDA",
             "kr_codigo": "E5.O1.KR3",
             "acao": "Uniformizar teses em embargos e incidentes fiscais para assegurar higidez das CDAs e procedência das execuções",
-            "responsaveis": "Líder: Procuradoria da Dívida Ativa; Coexecutores: Contencioso Fiscal, PGAAJ",
+            "responsaveis": "Líder Institucional: SGA / PGAAJ; Execução Setorial: Procuradoria da Dívida Ativa (PDA)",
             "prazo": "120 dias e contínuo"
           },
           {
@@ -111914,7 +111914,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – NIRF",
         "titulo_planilha_2": "[UNIDADE DISPENSADA DE PLANILHA AUTÔNOMA – CONSOLIDADA NA PLANILHA DA PDA (DESPACHO Nº 50/2026 - SEI 2026.11103.07215)]",
         "total_acoes": 27,
-        "ultima_atualizacao": "2026-11-11 09:10"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "OUV",
@@ -111994,7 +111994,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PDA (PROCURADORIA DA DÍVIDA ATIVA)",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Incorporando inteligência fiscal do NIRF - SEI 2026.11103.07215)",
         "total_acoes": 55,
-        "ultima_atualizacao": "2026-11-12 11:25"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PEDU",
@@ -112058,7 +112058,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – PGAAE (PROCURADOR-GERAL ADJUNTA PARA ASSUNTOS ESTRATÉGICOS (PGAAE))",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 159,
-        "ultima_atualizacao": "2026-11-12 10:05"
+        "ultima_atualizacao": "2026-11-12 13:01"
       },
       {
         "sigla": "PGAAJ",
