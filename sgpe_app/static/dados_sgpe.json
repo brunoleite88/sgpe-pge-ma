@@ -215,7 +215,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – ESAP (ESCOLA SUPERIOR DA ADVOCACIA PÚBLICA (ESAP))",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 58,
-        "ultima_atualizacao": "2026-11-11 09:10"
+        "ultima_atualizacao": "2026-11-12 12:07"
       },
       {
         "sigla": "GAB",
@@ -2591,11 +2591,11 @@
       "kr_texto_completo": "[E3.O1.KR1] KR1: Captar R$ 2 milhões em recursos externos (emendas, parcerias, editais) para projetos estratégicos até 2029",
       "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
       "subacao": "Editar ato interno criando programa de captação, com governança, carteira de projetos, calendário de editais, emendas e parcerias",
-      "responsaveis": "Líder: Escola Superior da Advocacia Pública (ESAP); Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC)",
+      "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA",
       "prazo": "45 dias",
       "pilar_3ps": "Outros Eixos / Governança",
-      "papel_unidade": "Líder",
-      "unidades_parceiras": "",
+      "papel_unidade": "Coexecutor",
+      "unidades_parceiras": "PGARI,PGAAE,PGA",
       "status_execucao": "Planejado (2027–2030)",
       "nome_unidade": "Escola Superior da Advocacia Pública",
       "status_reuniao": "Reunião Realizada"
@@ -26373,7 +26373,7 @@
       {
         "from": "ESAP",
         "to": "PGAAE",
-        "weight": 77,
+        "weight": 78,
         "krs": [
           "E3.O1.KR1",
           "E3.O1.KR2",
@@ -26389,11 +26389,11 @@
           "E9.O2.KR1"
         ],
         "exemplos": [
+          "[ESAP -> PGAAE | E3.O1.KR1] Instituir programa permanente de captação de recursos para projetos estratégicos",
           "[ESAP -> PGAAE | E3.O1.KR1] Consolidar carteira institucional de projetos aptos à captação",
           "[ESAP -> PGAAE | E3.O1.KR1] Manter e revisar convênios e parcerias já existentes",
           "[ESAP -> PGAAE | E3.O1.KR1] Prospectar novas parcerias com instituições públicas, privadas e acadêmicas",
-          "[ESAP -> PGAAE | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT",
-          "[ESAP -> PGAAE | E6.O2.KR1] Formalizar programa de benchmarking e intercâmbio entre PGEs"
+          "[ESAP -> PGAAE | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT"
         ]
       },
       {
@@ -26460,7 +26460,7 @@
       {
         "from": "ESAP",
         "to": "PGA",
-        "weight": 52,
+        "weight": 53,
         "krs": [
           "E2.O2.KR2",
           "E3.O1.KR1",
@@ -26471,11 +26471,11 @@
           "E9.O2.KR1"
         ],
         "exemplos": [
+          "[ESAP -> PGA | E3.O1.KR1] Instituir programa permanente de captação de recursos para projetos estratégicos",
           "[ESAP -> PGA | E3.O1.KR1] Consolidar carteira institucional de projetos aptos à captação",
           "[ESAP -> PGA | E3.O1.KR1] Manter e revisar convênios e parcerias já existentes",
           "[ESAP -> PGA | E3.O1.KR1] Prospectar novas parcerias com instituições públicas, privadas e acadêmicas",
-          "[ESAP -> PGA | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT",
-          "[ESAP -> PGA | E6.O1.KR1] Instituir calendário editorial mensal mínimo"
+          "[ESAP -> PGA | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT"
         ]
       },
       {
@@ -28069,6 +28069,22 @@
       },
       {
         "from": "ESAP",
+        "to": "PGARI",
+        "weight": 7,
+        "krs": [
+          "E3.O1.KR1",
+          "E9.O2.KR1"
+        ],
+        "exemplos": [
+          "[ESAP -> PGARI | E3.O1.KR1] Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "[ESAP -> PGARI | E3.O1.KR1] Consolidar carteira institucional de projetos aptos à captação",
+          "[ESAP -> PGARI | E3.O1.KR1] Manter e revisar convênios e parcerias já existentes",
+          "[ESAP -> PGARI | E3.O1.KR1] Prospectar novas parcerias com instituições públicas, privadas e acadêmicas",
+          "[ESAP -> PGARI | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT"
+        ]
+      },
+      {
+        "from": "ESAP",
         "to": "SGA",
         "weight": 7,
         "krs": [
@@ -28260,22 +28276,6 @@
           "[CSL -> UGAM | E2.O2.KR1] Realizar reunião executiva mensal de monitoramento do ciclo de compras",
           "[CSL -> UGAM | E2.O2.KR1] Mapeamento Ativo de Necessidades e Diálogo Contínuo com Unidades Demandantes",
           "[UGAM -> CSL | E2.O2.KR3] Implantar sistema de alerta de vencimentos contratuais"
-        ]
-      },
-      {
-        "from": "ESAP",
-        "to": "PGARI",
-        "weight": 6,
-        "krs": [
-          "E3.O1.KR1",
-          "E9.O2.KR1"
-        ],
-        "exemplos": [
-          "[ESAP -> PGARI | E3.O1.KR1] Consolidar carteira institucional de projetos aptos à captação",
-          "[ESAP -> PGARI | E3.O1.KR1] Manter e revisar convênios e parcerias já existentes",
-          "[ESAP -> PGARI | E3.O1.KR1] Prospectar novas parcerias com instituições públicas, privadas e acadêmicas",
-          "[ESAP -> PGARI | E3.O1.KR1] Avaliar juridicamente a caracterização da ESAP ou do INOVA como ICT",
-          "[PGARI -> ESAP | E3.O1.KR1] Prospectar parcerias estratégicas junto a organismos multilaterais e instituições de fomento"
         ]
       },
       {
@@ -38608,6 +38608,13 @@
         {
           "origem": "ESAP",
           "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
+        },
+        {
+          "origem": "ESAP",
+          "kr_codigo": "E3.O1.KR1",
           "acao": "Consolidar carteira institucional de projetos aptos à captação",
           "papel_origem": "Coexecutor",
           "responsaveis": "Coexecutores: Procuradoria-Geral Adjunta de Relacionamento Institucional; Procuradoria de Brasília; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procurador-Geral Adjunto; Escola Superior da Advocacia Pública (ESAP)"
@@ -39866,6 +39873,13 @@
           "acao": "Implantação de Painel Compartilhado de Visibilidade e Transparência Intersetorial de Demandas",
           "papel_origem": "Apoio Operacional",
           "responsaveis": "Liderança: CSL, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Apoio: Serviço de Controle de Contratos, Serviço de Material e Patrimônio"
+        },
+        {
+          "origem": "ESAP",
+          "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
         },
         {
           "origem": "ESAP",
@@ -42558,6 +42572,13 @@
           "acao": "Elaborar diagnósticos jurídicos e notas técnicas em macrotemas estratégicos de risco governamental",
           "papel_origem": "Líder",
           "responsaveis": "Líder: Assessoria Jurídica; Coexecutores: PGARI; CPARI; PPIMA"
+        },
+        {
+          "origem": "ESAP",
+          "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
         },
         {
           "origem": "ESAP",
@@ -49417,6 +49438,27 @@
         }
       ],
       "ESAP": [
+        {
+          "parceiro": "PGARI",
+          "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
+        },
+        {
+          "parceiro": "PGAAE",
+          "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
+        },
+        {
+          "parceiro": "PGA",
+          "kr_codigo": "E3.O1.KR1",
+          "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+          "papel_origem": "Coexecutor",
+          "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA"
+        },
         {
           "parceiro": "PB",
           "kr_codigo": "E3.O1.KR1",
@@ -66913,7 +66955,6 @@
           "SCC"
         ],
         "unidades_lideres": [
-          "ESAP",
           "PGAAE",
           "SCC"
         ],
@@ -69873,11 +69914,11 @@
         "kr_texto_completo": "[E3.O1.KR1] KR1: Captar R$ 2 milhões em recursos externos (emendas, parcerias, editais) para projetos estratégicos até 2029",
         "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
         "subacao": "Editar ato interno criando programa de captação, com governança, carteira de projetos, calendário de editais, emendas e parcerias",
-        "responsaveis": "Líder: Escola Superior da Advocacia Pública (ESAP); Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC)",
+        "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA",
         "prazo": "45 dias",
         "pilar_3ps": "Outros Eixos / Governança",
-        "papel_unidade": "Líder",
-        "unidades_parceiras": "",
+        "papel_unidade": "Coexecutor",
+        "unidades_parceiras": "PGARI,PGAAE,PGA",
         "status_execucao": "Planejado (2027–2030)",
         "nome_unidade": "Escola Superior da Advocacia Pública",
         "status_reuniao": "Reunião Realizada",
@@ -94681,8 +94722,8 @@
         "sigla": "ESAP",
         "nome": "Escola Superior da Advocacia Pública",
         "total_acoes": 58,
-        "qtd_lider": 20,
-        "qtd_coexecutor": 22,
+        "qtd_lider": 19,
+        "qtd_coexecutor": 23,
         "qtd_articulador": 0,
         "parceiros_acionados": [
           "ASCOM",
@@ -100944,7 +100985,7 @@
           "SI",
           "UGAM"
         ],
-        "qtd_demandas_recebidas": 189,
+        "qtd_demandas_recebidas": 190,
         "unidades_demandantes": [
           "CEQUIDADE",
           "CS",
@@ -101105,6 +101146,13 @@
             "acao": "Fortalecimento Institucional e Expansão da Capacidade Operacional da CSL (Pleito Prioritário)",
             "responsaveis": "Liderança: CSL; Instância Deliberativa: Procurador-Geral Adjunto / Procurador-Geral do Estado",
             "prazo": "Imediato / Contínuo"
+          },
+          {
+            "origem": "ESAP",
+            "kr_codigo": "E3.O1.KR1",
+            "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+            "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA",
+            "prazo": "45 dias"
           },
           {
             "origem": "ESAP",
@@ -102326,7 +102374,7 @@
           "SI",
           "UGAM"
         ],
-        "qtd_demandas_recebidas": 270,
+        "qtd_demandas_recebidas": 271,
         "unidades_demandantes": [
           "ASCOM",
           "ASJUR",
@@ -102440,6 +102488,13 @@
             "acao": "Implantação de Painel Compartilhado de Visibilidade e Transparência Intersetorial de Demandas",
             "responsaveis": "Liderança: CSL, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Apoio: Serviço de Controle de Contratos, Serviço de Material e Patrimônio",
             "prazo": "90 dias"
+          },
+          {
+            "origem": "ESAP",
+            "kr_codigo": "E3.O1.KR1",
+            "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+            "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA",
+            "prazo": "45 dias"
           },
           {
             "origem": "ESAP",
@@ -105183,7 +105238,7 @@
           "SGRH",
           "SI"
         ],
-        "qtd_demandas_recebidas": 44,
+        "qtd_demandas_recebidas": 45,
         "unidades_demandantes": [
           "ASJUR",
           "ESAP",
@@ -105205,6 +105260,13 @@
             "acao": "Elaborar diagnósticos jurídicos e notas técnicas em macrotemas estratégicos de risco governamental",
             "responsaveis": "Líder: Assessoria Jurídica; Coexecutores: PGARI; CPARI; PPIMA",
             "prazo": "Até 2030 / Revisão Anual"
+          },
+          {
+            "origem": "ESAP",
+            "kr_codigo": "E3.O1.KR1",
+            "acao": "Instituir programa permanente de captação de recursos para projetos estratégicos",
+            "responsaveis": "Líder Institucional: Procuradoria-Geral Adjunta de Relacionamento Institucional (PGARI); Coexecutores: Escola Superior da Advocacia Pública (ESAP), PGAAE, PGA",
+            "prazo": "45 dias"
           },
           {
             "origem": "ESAP",
@@ -111788,7 +111850,7 @@
         "titulo_planilha_1": "PLANO DE AÇÃO ESTRATÉGICO 2026–2030 (PÓS-COMPARAÇÃO) – ESAP (ESCOLA SUPERIOR DA ADVOCACIA PÚBLICA (ESAP))",
         "titulo_planilha_2": "Classificação formal de Eixos, Objetivos e KRs da PGE-MA (Ciclo 2027–2030)",
         "total_acoes": 58,
-        "ultima_atualizacao": "2026-11-11 09:10"
+        "ultima_atualizacao": "2026-11-12 12:07"
       },
       {
         "sigla": "GAB",
