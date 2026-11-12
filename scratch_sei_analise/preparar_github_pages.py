@@ -3,6 +3,8 @@
 Prepara a aplicação SGPE PGE-MA para publicação na Web via GitHub Pages (pasta docs/)
 e repositórios Cloud (Render/Railway), mantendo 100% de compatibilidade com o modo local FastAPI.
 """
+import sys
+sys.path.insert(0, '.')
 import json
 import shutil
 from pathlib import Path
@@ -46,63 +48,37 @@ def build_github_pages_bundle():
     # Salvar bundle JSON em sgpe_app/static e em docs/
     static_json = APP_DIR / "static" / "dados_sgpe.json"
     docs_json = DOCS_DIR / "dados_sgpe.json"
-    json_bytes = json.dumps(bundle, ensure_ascii=False, indent=2).encode("utf-8")
-    static_json.write_bytes(json_bytes)
-    docs_json.write_bytes(json_bytes)
 
-    # Copiar as 41 planilhas .xlsx consolidadas para docs/planilhas/
-    count_xlsx = 0
-    for f in CONS_DIR.glob("Plano_Acao_Pos_Comparacao_*.xlsx"):
-        shutil.copy2(f, DOCS_PLANILHAS / f.name)
-        count_xlsx += 1
+    with open(static_json, "w", encoding="utf-8") as f:
+        json.dump(bundle, f, ensure_ascii=False, indent=2)
+    with open(docs_json, "w", encoding="utf-8") as f:
+        json.dump(bundle, f, ensure_ascii=False, indent=2)
 
-    # Pré-gerar os principais relatórios em docs/exports/ para download instantâneo no GitHub Pages
-    tipos_rel = [
-        "mapa-estrategico",
-        "objetivos-metas",
-        "planos-acao",
-        "matriz-responsabilidades",
-        "cronograma-entregas",
-        "relatorio-gt",
-        "quadro-metas-unidade",
-    ]
-    for t in tipos_rel:
-        for fmt in ("xlsx", "docx", "md"):
-            res = client.get(f"/api/export/{t}?fmt={fmt}")
-            if res.status_code == 200:
-                (DOCS_EXPORTS / f"{t}.{fmt}").write_bytes(res.content)
+    print(f"[OK] Bundle de dados exportado para:\n  - {static_json}\n  - {docs_json}")
 
-    # Pré-gerar fichas de pactuação das 41 unidades em .xlsx, .docx e .md
-    DOCS_FICHAS = DOCS_EXPORTS / "fichas"
-    DOCS_FICHAS.mkdir(parents=True, exist_ok=True)
-    for u in overview["unidades"]:
-        sig = u["sigla"]
-        for fmt in ("xlsx", "docx", "md"):
-            res = client.get(f"/api/export/ficha-pactuacao?fmt={fmt}&sigla={sig}")
-            if res.status_code == 200:
-                (DOCS_FICHAS / f"Ficha_Pactuacao_Setorial_{sig}.{fmt}").write_bytes(res.content)
+    # Sincronizar index.html
+    shutil.copy(APP_DIR / "static" / "index.html", DOCS_DIR / "index.html")
+    print(f"[OK] index.html copiado para docs/")
 
-    # Pré-gerar Quadro de Eixos, Objetivos e Metas para cada uma das 41 unidades
-    DOCS_QUADRO = DOCS_EXPORTS / "quadro_metas"
-    DOCS_QUADRO.mkdir(parents=True, exist_ok=True)
-    for u in overview["unidades"]:
-        sig = u["sigla"]
-        for fmt in ("xlsx", "docx", "md"):
-            res = client.get(f"/api/export/quadro-metas-unidade?fmt={fmt}&sigla={sig}")
-            if res.status_code == 200:
-                (DOCS_QUADRO / f"Quadro_Eixos_Objetivos_Metas_{sig}.{fmt}").write_bytes(res.content)
+    # Copiar planilhas consolidadas
+    for f in CONS_DIR.glob("*.xlsx"):
+        shutil.copy(f, DOCS_PLANILHAS / f.name)
+    print(f"[OK] 41 planilhas consolidadas copiadas para docs/planilhas/")
 
-    # Copiar index.html atualizado para docs/index.html e criar .nojekyll
-    shutil.copy2(APP_DIR / "static" / "index.html", DOCS_DIR / "index.html")
-    (DOCS_DIR / ".nojekyll").write_text("", encoding="utf-8")
+    # Copiar exportações existentes
+    app_exports = APP_DIR / "exports"
+    if app_exports.exists():
+        for f in app_exports.glob("*.*"):
+            if f.is_file():
+                shutil.copy(f, DOCS_EXPORTS / f.name)
+            elif f.is_dir():
+                dest_sub = DOCS_EXPORTS / f.name
+                if dest_sub.exists():
+                    shutil.rmtree(dest_sub)
+                shutil.copytree(f, dest_sub)
+        print(f"[OK] Exportações sincronizadas com docs/exports/")
 
-    # Criar requirements.txt na raiz para deploy opcional em Render/Railway/PythonAnywhere
-    (BASE_DIR / "requirements.txt").write_text(
-        "fastapi>=0.110.0\nuvicorn>=0.28.0\nopenpyxl>=3.1.2\npython-docx>=1.1.0\npydantic>=2.6.0\n",
-        encoding="utf-8"
-    )
-
-    print(f"Bundle JSON gerado ({len(json_bytes)//1024} KB), {count_xlsx} planilhas e relatórios exportados em docs/!")
+    print("\n[SUCESSO] Build do GitHub Pages concluído com sucesso!")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,73 @@
+# Ficha Individualizada de Pactuação Setorial — UGAM (Unidade Gestora de Atividade Meio)
+**Procuradoria-Geral do Estado do Maranhão (PGE-MA) • Ciclo Estratégico 2027–2030**
+
+## 1. Identificação e Governança da Unidade
+- **Unidade:** UGAM — Unidade Gestora de Atividade Meio
+- **Chefia / Interlocutor(a):** Chefia de UGAM
+- **Processo SEI:** `Verificar SEI` | **Status de Pactuação:** **Reunião Realizada**
+- **Total de Ações Pactuadas:** 13 ações distribuídas em 8 Metas (`E2.O1.KR1, E2.O1.KR2, E2.O2.KR2, E2.O2.KR3, E3.O1.KR2, E5.O5.KR1, E5.O7.KR1, E9.O2.KR1`)
+- **Atuação Intersetorial:** Líder em 11 ações | Coexecutor em 0 | Articulador em 0 | Demandada externamente em 28 ações
+- **Síntese da Pauta e Deliberações Setoriais:** Coordenação executiva dos serviços administrativos de apoio, almoxarifado, patrimônio e compras (Eixo 2), apoio ao dimensionamento funcional para concursos (E5.O7.KR1) e sustentabilidade predial (Eixo 8).
+
+## 2. Plano de Ação Setorial Pactuado (Metodologia 5W2H)
+
+| # | Meta (KR) | Pilar 3 Ps | Ação (O QUÊ) | Subação / Metodologia (COMO) | Responsáveis (QUEM) | Prazo |
+| :---: | :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | `E2.O1.KR1` | Outros Eixos / Governança | Instituir programa permanente de eficiência de gastos da PGE-MA | Editar ato interno criando programa de eficiência de gastos, com escopo sobre contratos fixos, material de escritório, consumo administrativo e custos recorrentes | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 45 dias |
+| 2 | `E2.O1.KR1` | Outros Eixos / Governança | Consolidar linha de base de custos operacionais 2025/2026 | Levantar custos com contratos fixos, papel, material de escritório, consumo de almoxarifado, manutenção e despesas administrativas recorrentes | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 60 dias |
+| 3 | `E2.O1.KR2` | Outros Eixos / Governança | Realizar inventário patrimonial integral e classificação de uso | Levantar bens móveis e equipamentos, classificando-os como em uso, subutilizados, recuperáveis, ociosos ou inservíveis | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 180 dias |
+| 4 | `E2.O1.KR2` | Outros Eixos / Governança | Criar plano de desmobilização, reaproveitamento e recuperação de ativos | Definir quais bens serão realocados, recuperados, descartados ou encaminhados à SEGEP | Líder Coordenador: Unidade Gestora de Atividade Meio (UGAM); Setores Executores: SMP, SGT, SGRH | 240 dias |
+| 5 | `E2.O2.KR2` | Outros Eixos / Governança | Criar rotina preventiva de conformidade contratual | Revisar, antes da assinatura e antes do empenho, documentos essenciais, aderência orçamentária, cláusulas críticas e designação de fiscais | Líder: Unidade Gestora de Atividade Meio; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 90 dias |
+| 6 | `E2.O2.KR2` | Outros Eixos / Governança | Implantar painel de fiscalização contratual | Monitorar vigência, aditivos, saldo financeiro, entregas, sanções, atestes e execução por contrato | Líder: Unidade Gestora de Atividade Meio; Coordenação Pedagógica: ESAP (via Plano Anual de Capacitação - PAC) | 120 dias |
+| 7 | `E2.O2.KR3` | Outros Eixos / Governança | Implantar sistema de alerta de vencimentos contratuais | Configurar agenda de alertas com antecedência mínima de 180, 120, 90 e 60 dias | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Comissão Setorial de Licitação (CSL); Serviço de Controle de Contratos | 60 dias |
+| 8 | `E2.O2.KR3` | Outros Eixos / Governança | Vincular renovação contratual ao plano anual de contratações | Inserir cada vencimento no calendário institucional e cobrar providências preliminares das áreas competentes | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Comissão Setorial de Licitação (CSL); Serviço de Controle de Contratos | 90 dias |
+| 9 | `E3.O1.KR2` | Outros Eixos / Governança | Integrar orçamento, captação e planejamento estratégico em um único ciclo decisório | Cruzar metas do planejamento, disponibilidade orçamentária, fontes externas e cronograma de execução | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Serviço de Execução Orçamentária; Serviço de Controle Contábil-Financeiro; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | 120 dias |
+| 10 | `E3.O1.KR2` | Outros Eixos / Governança | Auditar anualmente a aderência do eixo às metas de financiamento e execução | Verificar captação, execução, regularidade financeira, conformidade e avanço do PROFISCO III | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Procurador-Geral Adjunto; Serviço de Execução Orçamentária; Serviço de Controle Contábil-Financeiro; Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE) | Anual |
+| 11 | `E5.O5.KR1` | 3º P: Padronização e Prevenção | Padronizar fluxos administrativos e automatizar triagem e distribuição de processos | Parametrizar rotinas de triagem automatizada (RPA) e modelos administrativos homologados, reduzindo o tempo de tramitação e intervenção manual nas áreas-meio e de distribuição. | Líder: Unidade Gestora de Atividade Meio; Coexecutores: Serviço de Digitalização e Distribuição; Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Procuradorias Especializadas e Regionais | Até 2028 |
+| 12 | `E5.O7.KR1` | Outros Eixos / Governança | Avaliar necessidade de contratação ou recomposição de apoio técnico especializado | Verificar déficit de TI, apoio administrativo, contabilidade, tecnologia e outras áreas críticas para suportar a modernização | Líderes da Meta: Gabinete do Procurador-Geral (GAB), PGA e SGRH; Apoio de Levantamento e Dimensionamento: UGAM | 150 dias |
+| 13 | `E9.O2.KR1` | Outros Eixos / Governança | Levantar necessidades anuais de capacitação da unidade e indicar trilhas técnicas ao Plano Anual de Capacitação (PAC) | Mapear anualmente as demandas prioritárias de qualificação técnica da equipe (com foco em planejamento de contratações anuais (PCA), governança administrativa, execução orçamentária, gestão de compras e logística pública integrada), encaminhar sugestões de cursos e oficinas práticas à ESAP e ao SGRH para composição do Plano Anual de Capacitação (PAC) e viabilizar a participação ativa de ao menos 40% dos integrantes do setor. | Líderes da Meta: Escola Superior da Advocacia Pública (ESAP) e SGRH; Demandante Setorial / Mapeamento: Unidade Gestora de Atividade Meio (UGAM) | Ciclo Anual até 2029 |
+
+## 3. Compromissos Cruzados (Ações de Outras Unidades que Demandam UGAM)
+
+| Unidade Demandante | Meta (KR) | Ação | Governança / Responsáveis | Prazo |
+| :---: | :---: | :--- | :--- | :--- |
+| **CSL** | `E2.O2.KR1` | Instituir grupo de trabalho permanente de contratações | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Serviço de Controle de Contratos, UGAM, USF | 30 dias |
+| **CSL** | `E2.O2.KR1` | Mapear o fluxo completo de contratação, do pedido ao pagamento (AS-IS e TO-BE) | Líder: Procurador-Geral Adjunto; Coexecutores: CSL, Serviço de Controle de Contratos, UGAM | 90 dias |
+| **CSL** | `E2.O2.KR1` | Realizar reunião executiva mensal de monitoramento do ciclo de compras | Líder: Procurador-Geral Adjunto; Participantes: CSL, Serviço de Controle de Contratos, UGAM, Demandantes | Mensal |
+| **CSL** | `E2.O2.KR1` | Mapeamento Ativo de Necessidades e Diálogo Contínuo com Unidades Demandantes | Liderança: CSL; Coexecutores: UGAM, Unidades Demandantes | 180 dias; periodicidade continuada |
+| **PGA** | `E7.O4.KR1` | Supervisionar a governança institucional e a alocação orçamentária do Plano Diretor de TIC (PDTIC) | Líder: Procurador-Geral Adjunto; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2030 |
+| **PGAAE** | `E2.O1.KR2` | Criar painel de disponibilidade, incidentes e modernização tecnológica | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 150 dias |
+| **PGAAE** | `E7.O4.KR1` | Monitorar o alinhamento estratégico e a integração dos marcos do PDTIC com o PROFISCO III | Líder: Procurador-Geral Adjunta para Assuntos Estratégicos (PGAAE); Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2030 (revisão semestral) |
+| **SCC** | `E2.O1.KR1` | Instituir programa setorial de revisão e eficiência de contratos fixos | Líder: Serviço de Controle de Contratos; Coexecutores: Procurador-Geral Adjunto; Unidade Gestora de Atividade Meio (UGAM); Serviço de Material e Patrimônio | 45 dias |
+| **SCC** | `E2.O1.KR1` | Revisar contratos fixos para busca contínua de economicidade | Líder: Serviço de Controle de Contratos; Coexecutores: Procurador-Geral Adjunto; Unidade Gestora de Atividade Meio (UGAM) | 180 dias |
+| **SCC** | `E2.O2.KR2` | Implantar painel de fiscalização e gestão contratual | Líder: Serviço de Controle de Contratos; Coexecutores: Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI); Unidade Gestora de Atividade Meio (UGAM) | 120 dias |
+| **SCC** | `E2.O2.KR3` | Vincular renovações contratuais ao Plano de Contratações Anual (PCA) | Líder: Serviço de Controle de Contratos; Coexecutores: Comissão Setorial de Licitação (CSL); Unidade Gestora de Atividade Meio (UGAM) | 90 dias |
+| **SCC** | `E2.O2.KR3` | Criar protocolo de contingência e mapa de risco para contratos essenciais | Líder: Serviço de Controle de Contratos; Coexecutores: Procurador-Geral Adjunto; Unidade Gestora de Atividade Meio (UGAM) | 120 dias |
+| **SGRH** | `E5.O7.KR1` | Auditoria prévia de lotação e dimensionamento da força de trabalho da PGE-MA (Eixo I - Despacho SEI 018120848) | Líder: Serviço de Gestão de Recursos Humanos (SGRH); Coexecutores: UGAM, Procurador-Geral | 180 dias / Anual |
+| **SGRH** | `E5.O5.KR3` | Mapeamento BPMN e definição de SLAs para rotinas de gestão de pessoas (Eixo II - Despacho SEI 018120848) | Líder: SGRH; Coexecutores: UGAM, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI) | 12 meses |
+| **SGRH** | `E9.O2.KR1` | Instituir Avaliação de Desempenho por Competências e Plano Anual de Capacitação - PACD (Eixo III - Despacho SEI 018120848) | Líder: SGRH; Coexecutores: ESAP, UGAM | Ciclo Anual até 2030 |
+| **SGRH** | `E8.O2.KR1` | Atualizar o Código de Ética e instituir canal seguro de combate ao assédio e discriminação (Eixo V - Despacho SEI 018120848) | Líder: SGRH; Coexecutores: Ouvidoria, Corregedoria-Geral, UGAM | 180 dias / Contínuo |
+| **SGT** | `E2.O1.KR1` | Gestão e fiscalização integrada de contratos de mão de obra terceirizada e apoio predial (Despacho SEI nº 56/2026) | Líder: Serviços Gerais e Transportes (SGT); Coexecutores: UGAM | Contínuo até 2026 |
+| **SGT** | `E2.O1.KR1` | Racionalização da distribuição de insumos e conservação predial (Despacho SEI nº 56/2026) | Líder: SGT; Coexecutores: UGAM, Regionais | 60 dias / Rotina Permanente |
+| **SGT** | `E2.O1.KR1` | Colaboração institucional para eliminação de impressões e papel físico | Líder: SGT; Coexecutores: Supervisão de Informática, UGAM | Até 2027 |
+| **SI** | `E2.O1.KR2` | Executar o plano plurianual de modernização e renovação do parque tecnológico da PGE-MA | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2027 (fases anuais) |
+| **SI** | `E7.O2.KR2` | Garantir a infraestrutura e arquitetura de backup automatizado e contingência de dados com Veeam Backup | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 90 dias / Contínuo |
+| **SI** | `E7.O2.KR2` | Incluir no PROFISCO e realizar capacitação técnica oficial em Nutanix HCI e Veeam Backup | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | 180 dias |
+| **SI** | `E7.O2.KR2` | Instituir calendário semestral de testes práticos de contingência e restauração de dados | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Semestral |
+| **SI** | `E7.O3.KR3` | Promover a certificação técnica oficial dos servidores de tecnologia nas soluções essenciais | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2029 |
+| **SI** | `E7.O4.KR1` | Gerenciar, revisar anualmente e executar integralmente as ações do PDTIC | Líder: Supervisão de Informática; Apoio Técnico de Infraestrutura: Supervisão de Informática (SI) / UGAM | Até 2030 (revisão anual) |
+| **SMP** | `E2.O1.KR1` | Triagem técnica e filtro restritivo das requisições de compras dos setores da PGE-MA (Despacho SEI nº 057/2026) | Líder: Serviço de Material e Patrimônio (SMP); Coexecutores: UGAM, Todas as Unidades da PGE-MA | Imediato / Contínuo até 2026 |
+| **SMP** | `E2.O1.KR1` | Modernização e informatização do controle de estoque do almoxarifado central (Despacho SEI nº 057/2026) | Líder: SMP; Coexecutores: UGAM, Assessoria em TIC da PGAAE / INOVA (Suporte de Infraestrutura: SI) | 180 dias |
+| **USF** | `E3.O1.KR2` | Subsidiar e articular a criação do Comitê de Programação Orçamentária e Financeira da PGE-MA | Líder: Unidade Setorial de Finanças (USF); Coexecutores: Subprocuradoria-Geral Adjunta; Serviço de Execução Orçamentária; Serviço de Controle Contábil-Financeiro; UGAM | 30 dias / Mensal |
+
+## 4. Termo / Despacho Padrão de Homologação no SEI
+
+```text
+À Chefia da Unidade Gestora de Atividade Meio (UGAM),
+
+No âmbito da consolidação do Planejamento Estratégico 2027–2030 da PGE-MA (Processo SEI: Verificar SEI), e em conformidade com o alinhamento técnico realizado com a unidade (Chefia de UGAM), a Assessoria de Planejamento e Gestão Estratégica acosta aos presentes autos a versão consolidada e saneada do Plano de Ação Setorial (Plano_Acao_Pos_Comparacao_UGAM.xlsx, contemplando 13 ações estratégicas vinculadas aos resultados-chave E2.O1.KR1, E2.O1.KR2, E2.O2.KR2, E2.O2.KR3, E3.O1.KR2, E5.O5.KR1, E5.O7.KR1, E9.O2.KR1).
+
+Destaques técnicos consolidados: Coordenação executiva dos serviços administrativos de apoio, almoxarifado, patrimônio e compras (Eixo 2), apoio ao dimensionamento funcional para concursos (E5.O7.KR1) e sustentabilidade predial (Eixo 8).
+
+Solicita-se a conferência e o lançamento de despacho simplificado de validação ("Com reunião de alinhamento e planilha saneada anexada aos autos, valido os dados e o Plano de Ação desta unidade para o ciclo 2027–2030"), restituindo-se os autos à Assessoria de Planejamento / PGAAE para homologação final.
+```

@@ -1,0 +1,18 @@
+# Quadro de Eixos, Objetivos e Metas — NIRF (Núcleo de Inteligência e Recuperação Fiscal)
+
+*Estrutura Estratégica: 12 Metas (KRs) Vinculadas*
+
+| Eixo | Cód. Obj | Objetivo Estratégico | Cód. KR | Meta (KR) | Total Ações |
+| :--- | :---: | :--- | :---: | :--- | :---: |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O1` | O1: Reduzir o montante de precatórios e requisições de pequeno valor | `E1.O1.KR1` | [E1.O1.KR1] KR1: Aumentar em 20% o volume de créditos recuperados até 2028 | 1 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O2` | O2: Aumentar a arrecadação da dívida ativa | `E1.O2.KR1` | [E1.O2.KR1] KR1: Aumentar em 10% a arrecadação direta da Dívida Ativa (tributária e não tributária) até 2030 | 4 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O2` | O2: Aumentar a arrecadação da dívida ativa | `E1.O2.KR2` | [E1.O2.KR2] KR2: Zerar o estoque de CDAs ajuizáveis (que superem o mínimo vigente) até 2028 | 2 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O2` | O2: Aumentar a arrecadação da dívida ativa | `E1.O2.KR3` | [E1.O2.KR3] KR3: Encaminhar para protesto 100% das CDAs elegíveis até 2027 | 1 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O4` | O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais | `E1.O4.KR1` | [E1.O4.KR1] KR1: Identificar R$ 1 milhão em créditos tributários ocultos ou subestimados até 2027 | 2 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O4` | O4: Fortalecer a Identificação e Recuperação de Ativos Fiscais | `E1.O4.KR2` | [E1.O4.KR2] KR2: Aumentar em 20% ao ano a recuperação de créditos decorrentes de saneamento cadastral até 2030 | 5 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O5` | O5: Ampliar a utilização de ferramentas de inteligência fiscal | `E1.O5.KR1` | [E1.O5.KR1] KR1: Aumentar em 40% a localização de bens penhoráveis até 2030 | 4 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O5` | O5: Fortalecer a cobrança administrativa e a execução fiscal estratégica | `E1.O5.KR2` | [E1.O5.KR2] KR2: Aumentar em 70% o montante de bens bloqueados ou arrolados de grandes devedores até 2027 | 4 |
+| E1 – Eixo Estratégico 1 – Otimização da Arrecadação e Recuperação da Dívida Ativa | `E1.O5` | O5: Ampliar a utilização de ferramentas de inteligência fiscal | `E1.O5.KR3` | [E1.O5.KR3] KR3: Reduzir em 70% o tempo de consultas processuais e cadastrais em execuções fiscais até 2028 | 1 |
+| E6 – Eixo Estratégico 6 – Fortalecimento da Imagem Institucional e Transparência | `E6.O1` | O1: Fortalecer a imagem e reputação institucional | `E6.O1.KR2` | [E6.O1.KR2] KR2: Alcançar crescimento progressivo do alcance médio mensal nas redes sociais da PGE até 2029, aferido pela comparação entre médias de períodos equivalentes | 1 |
+| E9 – Eixo Estratégico 9 – Valorização Profissional e Desenvolvimento de Pessoas | `E9.O2` | O2: Desenvolver competências, valorizar os servidores e procuradores e promover capacitação continuada | `E9.O2.KR1` | [E9.O2.KR1] KR1: Garantir a participação de ao menos 40% do corpo funcional em cursos de capacitação até 2029 | 1 |
+| E9 – Eixo Estratégico 9 – Valorização Profissional e Desenvolvimento de Pessoas | `E9.O3` | O3: Fortalecer a governança e a gestão de receitas de honorários | `E9.O3.KR1` | [E9.O3.KR1] KR1: Aumentar em 15% a arrecadação de honorários sucumbenciais até 2029 | 1 |
